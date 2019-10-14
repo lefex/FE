@@ -5,7 +5,11 @@
 
 ## 第一阶段 20 天：HTML + CSS
 
+课程目录，关注公众号查看课程内容
+
+![](https://github.com/lefex/LeetCodeGraphically/blob/master/asset/1cover.png)
 
 
 ## 第二阶段 13 天：死磕 CSS 布局
 
+正在进行中。。。。
