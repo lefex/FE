@@ -7,7 +7,7 @@
 
 课程目录，关注公众号查看课程内容
 
-![](https://github.com/lefex/LeetCodeGraphically/blob/master/asset/1cover.png)
+![](https://github.com/lefex/FE/blob/master/asset/1cover.png)
 
 
 ## 第二阶段 13 天：死磕 CSS 布局
