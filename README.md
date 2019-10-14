@@ -17,5 +17,5 @@
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
 
-## 《前端下课》宣传入队大门
+## 扫码加入《前端下课》学习
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
