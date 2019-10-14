@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px red dashed;
+            margin: 10px auto;
+            padding: 5px 5px;
+            background-color: white;
+        }
+        p {
+            width: 400px;
+            text-align: left;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: 1px red dashed;
+            margin: 10px auto;
+            padding: 5px 5px;
+            background-color: white;
+        }
+        .main {
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            width: 400px;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .row-reverse {
+            flex-direction: row-reverse;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .column-reverse {
+            flex-direction: column-reverse;
+        }
+
+        div div {
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+
+        div div:nth-child(1) {
+            background-color: red;
+        }
+
+        div div:nth-child(2) {
+            background-color: #BD10E0;
+        }
+
+        div div:nth-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-direction</h1>
+    <p>1. flex-direction: row</p>
+    <div class="main">
+        <div>前端小课</div>
+        <div>FlexBox布局</div>
+        <div>公众号：素燕</div>
+    </div>
+    <p>2. flex-direction: row-reverse</p>
+    <div class="main row-reverse">
+        <div>前端小课</div>
+        <div>FlexBox布局</div>
+        <div>公众号：素燕</div>
+    </div>
+    <p>3. flex-direction: column</p>
+    <div class="main column">
+        <div>前端小课</div>
+        <div>FlexBox布局</div>
+        <div>公众号：素燕</div>
+    </div>
+    <p>4. flex-direction: column-reverse</p>
+    <div class="main column-reverse">
+        <div>前端小课</div>
+        <div>FlexBox布局</div>
+        <div>公众号：素燕</div>
+    </div>
+</body>
+
+</html>

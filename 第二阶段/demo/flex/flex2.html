@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+.main {
+    background-color: antiquewhite;
+    display: flex;
+    width: 360px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+        div div {
+            width: 60px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            color: white;
+        }
+    
+        div div:nth-child(1) {
+            background-color: red;
+        }
+    
+        div div:nth-child(2) {
+            background-color: black;
+        }
+    
+        div div:nth-child(3) {
+            background-color: blue;
+        }
+    
+        div div:nth-child(4) {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div class="main">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </body>
+</body>
+</html>

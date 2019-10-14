@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+    .main {
+        background-color: antiquewhite;
+        display: flex;
+        width: 400px;
+        height: 60px;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    .space-around {
+        justify-content: space-around;
+    }
+    .center {
+        justify-content: center;
+    }
+    .end {
+        justify-content: flex-end;
+    }
+        div div {
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+        }
+    
+        div div:nth-child(1) {
+            background-color: red;
+        }
+    
+        div div:nth-child(2) {
+            background-color: black;
+        }
+    
+        div div:nth-child(3) {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <body>
+<div class="main">
+    <div>前端小课</div>
+    <div>FlexBox布局</div>
+    <div>公众号：素燕</div>
+</div>
+        <div class="main space-around">
+            <div>前端小课</div>
+            <div>FlexBox布局</div>
+            <div>公众号：素燕</div>
+        </div>
+        <div class="main center">
+            <div>前端小课</div>
+            <div>FlexBox布局</div>
+            <div>公众号：素燕</div>
+        </div>
+        <div class="main end">
+            <div>前端小课</div>
+            <div>FlexBox布局</div>
+            <div>公众号：素燕</div>
+        </div>
+    </body>
+</body>
+</html>

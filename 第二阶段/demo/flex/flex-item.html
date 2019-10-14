@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+        .main {
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            width: 420px;
+            align-items: flex-start;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        div div {
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            width: 100px;
+            /* flex: 1 1 auto; */
+            /* flex: 1 1 0; */
+            /* flex: 0 1 0; */
+        }
+
+        div div:nth-child(1) {
+            background-color: #0077FF;
+            flex-basis: 0;
+        }
+
+        div div:nth-child(2) {
+            background-color: #BD10E0;
+            flex-basis: auto;
+        }
+
+        div div:nth-child(3) {
+            background-color: #FE7235;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div>前端小课</div>
+        <div>FlexBox</div>
+        <div>公众号：素燕</div>
+    </div>
+</body>
+
+</html>

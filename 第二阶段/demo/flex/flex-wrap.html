@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=3.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex布局</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+        }
+
+        h1 {
+            width: 400px;
+            text-align: center;
+            box-sizing: border-box;
+            border: 1px red dashed;
+            margin: 10px auto;
+            padding: 5px 5px;
+            background-color: white;
+        }
+
+        p {
+            width: 400px;
+            text-align: left;
+            font-size: 20px;
+            box-sizing: border-box;
+            border: 1px red dashed;
+            margin: 10px auto;
+            padding: 5px 5px;
+            background-color: white;
+        }
+
+        .main {
+            margin: 0 auto;
+            background-color: white;
+            display: flex;
+            width: 400px;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: nowrap;
+            margin-bottom: 10px;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        div div {
+            text-align: center;
+            font-size: 40;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            white-space: nowrap;
+        }
+
+        div div:nth-child(1) {
+            background-color: red;
+        }
+
+        div div:nth-child(2) {
+            background-color: #BD10E0;
+        }
+
+        div div:nth-child(3) {
+            background-color: blue;
+        }
+        div div:nth-child(4) {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-wrap</h1>
+    <p>1. flex-wrap: nowrap</p>
+    <div class="main">
+        <div>前端小课，每日一课</div>
+        <div>FlexBox布局</div>
+        <div>关注公众号：素燕，和我学前端</div>
+        <div>图解算法</div>
+    </div>
+    <p>2. flex-wrap: wrap</p>
+    <div class="main wrap">
+        <div>前端小课，每日一课</div>
+        <div>FlexBox布局</div>
+        <div>关注公众号：素燕，和我学前端</div>
+        <div>图解算法</div>
+    </div>
+    <p>3. flex-wrap: wrap-reverse</p>
+    <div class="main wrap-reverse">
+        <div>前端小课，每日一课</div>
+        <div>FlexBox布局</div>
+        <div>关注公众号：素燕，和我学前端</div>
+        <div>图解算法</div>
+    </div>
+</body>
+
+</html>
