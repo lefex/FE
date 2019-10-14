@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #eeeeee;
+        }
+        .app {
+            background-color: #eeeeee;
+        }
+
+        .top {
+            background-color: #eeeeee;
+        }
+
+        .top div {
+            height: 200px;
+            margin-bottom: 5px;
+            background: white;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: 0 0;
+        }
+
+        .top :nth-child(1) {
+            background-image: url('./images/1-1.png');
+        }
+
+        .top :nth-child(2) {
+            background-image: url('./images/1-2.png');
+        }
+
+        .top :nth-child(3) {
+            background-image: url('./images/1-3.png');
+        }
+
+        .top :nth-child(4) {
+            background-image: url('./images/1-4.png');
+        }
+
+        .top :nth-child(5) {
+            background-image: url('./images/1-5.png');
+        }
+
+        .content {
+            background-color: white;
+            padding-bottom: 30px;
+        }
+
+        .content p {
+            text-align: center;
+            padding: 10px;
+            font-size: 17px;
+        }
+
+        .title {
+            font-size: 24px;
+            color: #258BD6;
+            font-weight: bold;
+            border-bottom: 1px solid #eeeeee;
+            text-align: center;
+            width: 160px;
+            margin: 0 auto;
+        }
+
+        .title-active {
+            color: red;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media screen and (min-width: 700px) {
+            .app {
+                display: flex;
+                flex-direction: row;
+                margin-top: 30px;
+            }
+
+            .top {
+                width: 40%;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .top div {
+                height: 250px;
+            }
+
+            .content {
+                width: 60%;
+                margin-right: 30px;
+            }
+
+            .hidden {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="top">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="hidden"></div>
+            <div class="hidden"></div>
+        </div>
+        <div class="content">
+            <h2 class="title">说好不哭</h2>
+            <p>没有了联络后来的生活</p>
+            <p>我都是听别人说</p>
+            <p>说你怎么了说你怎么过</p>
+            <p>放不下的人是我</p>
+            <p class="title-active">人多的时候就待在角落</p>
+            <p>就怕别人问起我</p>
+            <p>你们怎么了你低着头</p>
+            <p>护着我连抱怨都没有</p>
+            <p>电话开始躲从不对我说</p>
+            <p>不习惯一个人生活</p>
+            <p>离开我以后要我好好过</p>
+            <p>怕打扰想自由的我</p>
+            <p>都这个时候你还在意着</p>
+            <p>别人是怎么怎么看我的</p>
+            <p>拼命解释着不是我的错是你要走</p>
+            <p>眼看着你难过挽留的话却没有说</p>
+            <p>你会微笑放手说好不哭让我走</p>
+            <p>电话开始躲从不对我说</p>
+            <p>不习惯一个人生活</p>
+            <p>离开我以后要我好好过</p>
+            <p>怕打扰想自由的我</p>
+            <p>都这个时候你还在意着</p>
+            <p>别人是怎么怎么看我的</p>
+            <p>拼命解释着不是我的错是你要走</p>
+            <p>眼看着你难过挽留的话却没有说</p>
+            <p>你会微笑放手说好不哭让我走</p>
+            <p>你什么都没有却还为我的梦加油</p>
+            <p>心疼过了多久还在找理由等我</p>
+        </div>
+    </div>
+</body>
+
+</html>

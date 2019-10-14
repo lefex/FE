@@ -1,0 +1,101 @@
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+    border: 1px dotted rgb(253, 168, 168);
+    text-align: center;
+    margin: 20px auto;
+    width: 220px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.greet {
+    font-size: 18px;
+    color: #3f3e3f;
+    text-decoration: underline dotted #9B9B9B;
+}
+.content {
+    margin: 16px;
+}
+.des {
+    font-size: 16px;
+    color: #3f3e3f;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+[wo]::first-letter {
+    font-size: 30px;
+}
+.stress-word {
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+.footer {
+    text-align: right;
+}
+.stress-hard {
+    color: red;
+}
+
+.dsa-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+.qrcode-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.qrcode-img {
+    width: 140px;
+    height: 140px;
+}
+.qrcode-text {
+    font-size: 14px;
+    color: #3f3e3f;
+    margin-bottom: 0;
+}
+@media (min-width: 700px) {
+    .dsa-box {
+        grid-template-columns: repeat(5, 120px);
+        grid-template-rows: repeat(2, 120px);
+    }
+}
+.dsa-box > div {
+    margin: 1px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.dsa-box div:nth-child(1) {
+    background-image: url('./images/1.png');
+}
+.dsa-box div:nth-child(2) {
+    background-image: url('./images/2.png');
+}
+.dsa-box div:nth-child(3) {
+    background-image: url('./images/3.png');
+}
+.dsa-box div:nth-child(4) {
+    background-image: url('./images/4.png');
+}
+.dsa-box div:nth-child(5) {
+    background-image: url('./images/5.png');
+}
+.dsa-box div:nth-child(6) {
+    background-image: url('./images/6.png');
+}
+.dsa-box div:nth-child(7) {
+    background-image: url('./images/7.png');
+}
+.dsa-box div:nth-child(8) {
+    background-image: url('./images/8.png');
+}
+.dsa-box div:nth-child(9) {
+    background-image: url('./images/9.png');
+}

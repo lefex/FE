@@ -1,0 +1,44 @@
+@import "./base.less";
+
+each(range(9), {
+    .dsa-box div:nth-child(@{value}) {
+        background-image: url("./images/@{value}.png");
+    }
+});
+
+.header {
+    padding: 0 @edge-width;
+    background-color: @backgroud-color;
+    .title {
+        color: @text-color;
+        font-size: @nomal-font-size;
+        &::first-letter {
+            font-size: 24px;
+            color: @strong-color;
+        }
+    }
+    p a {
+        color: @main-color;
+        font-size: @nomal-font-size;
+        &:hover {
+            color: @strong-color;
+        }
+    }
+    p:nth-child(3) {
+        width: 100px;
+        text-align: center;
+        padding: @small-edge-width;
+        .wx-border();
+    }
+}
+.footer {
+    padding: 0 @edge-width;
+    background-color: @backgroud-color;
+    margin-top: @small-edge-width;
+    #alert {
+        width: @edge-width + 80px;
+        height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+    }
+}

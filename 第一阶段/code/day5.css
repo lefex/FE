@@ -1,0 +1,21 @@
+.code-bg {
+    border-left: 3px solid #2a7ae2;
+    background-color: #eef;
+    border-radius: 3px;
+    padding: 10px;
+}
+hr {
+    height: 0.5px;
+}
+.name {
+    color: #2a7ae2;
+}
+.title {
+    text-align: center;
+}
+h3 {
+    border-left: 3px solid #2a7ae2;
+    background-color: #eef;
+    border-radius: 3px;
+    padding: 10px;
+}

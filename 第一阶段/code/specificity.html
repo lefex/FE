@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <style>
+/* 权重值为 0-0-0 */
+/* * {
+    color: blue;
+} */
+/* 权重值为 0-0-1 ，元素选择器*/
+p {
+    background-color: #eeeeee;
+    /* color: purple; */
+}
+/* 权重值为 0-1-1 = 0-0-1（元素选择器） + 0-1-0（伪类选择器） */
+/* p:nth-child(2) {
+    color: red;
+} */
+
+/* 权重值为 0-0-1 （1个元素选择器）*/
+p {
+    color: purple;
+}
+/* 权重值为 0-0-2 （2个元素选择器）*/
+div p {
+    color: bisque;
+}
+/* 权重值为 0-1-0（ class 选择器） */
+.title {
+    color: blue;
+}
+/* 权重值为 1-0-0 （id选择器）*/
+#name, #name1, #name2, #name3 {
+    color: green;
+}
+/* important 不会增加权重值，但是使用它的时候浏览器会直接使用这个属性值忽略其它属性值，它是老大 */
+.imp {
+    color: red !important;
+}
+/* 权重值为 1-0-1 = 1-0-0（id选择器）+ 0-0-1（伪元素选择器）*/
+#name::first-letter {
+    color: peru;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p id="name" class="title">第1个p</p>
+        <p id="name1" class="title">第2个p</p>
+        <p id="name2" class="title imp">第3个p</p>
+        <!--  style 的权重中为 1-0-0-0 -->
+        <p id="name3" class="title" style="color: brown">第4个p</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./iscroll/iscroll.js"></script>
+    <title>Document</title>
+    <script>
+        let cspanckScroll = function () {
+            console.log('hellow');
+            //滚动到该元素的位置，第二个参数为时间，第三个第四个参数为偏移量（如果设置这两个参数为true，该元素将会显示在容器的中间）  
+            // myScroll.scrollToElement('#a', 1000, 0, 0);
+        }
+        window.setTimeout(function() {
+            console.log("a ====");
+            myScroll.scrollToElement('#a', 1000, -160, 0);
+        }, 3000);
+
+        // window.setTimeout(function() {
+        //     console.log("b ====");
+        //     myScroll.scrollToElement('#b', 500, 100, 0);
+        // }, 5000);
+    </script>
+    <style>
+        #wrapper {
+            position: absolute;
+            z-index: 1;
+            top: 10px;
+            bottom: 10px;
+            height: 33px;
+            left: 0;
+            width: 100%;
+            background: #ccc;
+            overflow: hidden;
+        }
+
+        #scroller {
+            position: absolute;
+            z-index: 1;
+            /* -webkit-tap-highspanght-color: rgba(0, 0, 0, 0); */
+            width: 1600px;
+            height: 100%;
+            background-color: #a00;
+            /* -webkit-transform: translateZ(0);
+            -moz-transform: translateZ(0);
+            -ms-transform: translateZ(0);
+            -o-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-text-size-adjust: none;
+            -moz-text-size-adjust: none;
+            -ms-text-size-adjust: none;
+            -o-text-size-adjust: none;
+            text-size-adjust: none; */
+        }
+
+        #scroller ul {
+            spanst-style: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            text-aspangn: center;
+        }
+
+        #scroller span {
+            display: block;
+            float: left;
+            width: 100px;
+            height: 100%;
+            padding-top: 10px;
+            border-right: 1px sospand #ccc;
+            background-color: #555555;
+            color: white;
+            font-size: 14px;
+        }
+        #a {
+            background-color: red;
+        }
+        #b {
+            background-color: yellow;
+        }
+        #button {
+            height: 40px;
+            line-height: 40px;
+            background-color: #0077FF;
+            border-radius: 4px;
+            color: white;
+            margin: 100px auto;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="scroller">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span id="a">5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span id="b">10</span>
+                <span>11</span>
+                <span>12</span>
+                <span>13</span>
+                <span>14</span>
+                <span>15</span>
+                <span>16</span>
+        </div>
+    </div>
+    <div id="button" oncspanck="cspanckScroll()">点击滚动菜单</div>
+
+    <script>
+        //阻止默认事件
+        // document.addEventspanstener('touchstart', function (ev) {
+        //     ev.preventDefault()
+        // }, { passive: false });
+
+        //IScroll会获取容器内的第一个子元素进行滚动，其它子元素会被忽略，且该子元素（scroller）必须有固定的高度（或宽度），在这里，即ID为scroller的元素可以滚动  
+        var myScroll = new IScroll('#wrapper', {
+            mouseWheel: true,      //鼠标滚轮支持  
+            scrollbars: false,      //滚动条支持  
+            scrollY: false,         //滚动方向（垂直）  
+            scrollX: true,         //滚动方向（水平）  
+            bounce: true,          //边界时的反弹动画，默认true  
+            cspanck: true,           //IScroll默认禁止了点击事件，如需绑定点击事件，请将该参数值设为true  
+            freeScroll: true,      //当需要执行两个纬度上的滚动时（即横向、纵向都开启），设置该参数，默认为false  
+            startX: 0,             //滚动条开始的位置（横坐标）  
+            startY: 0,             //滚动条开始的位置（纵坐标）  
+            tap: true,             //设置为true时，允许为用户点击或者触摸（并没有滚动时）触发一个自定义事件，或者设置值为一个自定义事件名称的字符串  
+            snap: 'span'             //对齐（根据元素span对齐切割整个容器）  
+        });
+
+        // console.log(myScroll.options);      //通过options对象访问myScroll实例的配置信息  
+
+        //给span绑定点击事件  
+        // $('#scroller ul span').on('cspanck', function () {
+        //     console.log($(this).html());
+        // })
+
+        //绑定tap自定义事件  
+        // $('#wrapper').on('tap', function () {
+        //     console.log('开始滚动了');
+        // })
+
+        // myScroll.scrollTo(0, -250);      //控制滚动条到任意的位置  
+
+        // myScroll.scrollBy(0, -10);       //从当前位置向下滚动10个像素  
+
+        //滚动到该元素的位置，第二个参数为时间，第三个第四个参数为偏移量（如果设置这两个参数为true，该元素将会显示在容器的中间）  
+        // myScroll.scrollToElement('#a', 1000, 0, 0);
+
+        //关于snap对齐后操作的方法  
+        // myScroll.goToPage(0, 5, 1000);    //滚动到对齐后的第五页（即第五个span的位置）  
+        // myScroll.next();    //当前位置的下一页  
+        // myScroll.prev();    //当前位置的上一页  
+
+        //IScroll需要知道容器确切的尺寸，如果容器大小发生了变化，需要使用刷新方法  
+        // myScroll.refresh();
+
+        //自定义事件  
+        // myScroll.on('scrollEnd', function () {
+        //     console.log('滚动结束');
+        //     console.log(this.x + '&' + this.y);     //当前位置  
+        //     console.log(this.directionX + '&' + this.directionY);   //最后的方向  
+        //     console.log(this.currentPage);      //当前对齐捕获点  
+        // })
+
+        //销毁  
+        // myScroll.destroy();
+
+        //当滚动到底部时的myScroll.x/y  
+        // console.log(myScroll.maxScrollX + '&' + myScroll.maxScrollY);  
+    </script>
+</body>
+
+</html>

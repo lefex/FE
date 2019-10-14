@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>伪选择器</title>
+    <style>
+.left {
+    color: black;
+    font-size: 15px;
+}
+.left::after {
+    /* content: 'before'; */
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url('./images/hert.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+}
+.right {
+    color: black;
+    font-size: 15px;
+}
+.right::after {
+    content: '→';
+    display: inline-block;
+    color: red;
+    margin-left: 5px;
+}
+a {
+    font-size: 18px;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+a:visited {
+    color: gray;
+}
+    </style>
+</head>
+<body>
+    <!-- <p class="left">前端小课</p> -->
+    <p class="right">前端小课</p>
+    <a href="https://fanyi.baidu.com/#auto/zh/">前端小课</a>
+</body>
+</html>

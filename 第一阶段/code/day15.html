@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>只显示 n 行文字</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            background-color: bisque;
+        }
+
+        .title {
+            font-size: 16px;
+            background-color: red;
+            color: white;
+        }
+
+        .singal-line {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .two-line {
+            display: -webkit-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="title singal-line">学习前端这个想法一直都有，只是一直没找到它对我有什么作用。直到我想建一个网站的时候，才下定决心。最终通过 Jekyll 做了我第一个网站。</p>
+    </div>
+</body>
+
+</html>

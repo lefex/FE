@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+    <style>
+        .title {
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 20px;
+            padding-bottom: 5px;
+            margin-left: 10px;
+            color: #258BD6;
+            font-weight: 600;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+        }
+
+        .des {
+            font-size: 17px;
+            padding: 10px;
+            letter-spacing: 1px;
+            line-height: 26px;
+        }
+
+        .num {
+            color: red;
+        }
+
+        .triangle {
+            width: 0;
+            /* width style */
+            border: 20px solid;
+            /* top [left, tight] bottom*/
+            border-color: #f30 transparent transparent;
+        }
+
+.icon {
+    background-color: antiquewhite;
+    width: 15px;
+    height: 15px;
+    border: 11px solid transparent;
+}
+    </style>
+</head>
+
+<body>
+    <h1 class="title">前端小课</h1>
+    <span class="section-title">简介</span>
+    <p class="des">《前端小课》是一本关于前端入门到进阶的多媒体电子书，通过公众号的形式呈现内容，并与粉丝形成互动，推动读者自我驱动，利用
+        业余时间学习前端，迎合大前端的浪潮。
+    </p>
+    <span class="section-title">关于创办者</span>
+    <p class="des">创办者，素燕，来自一线大厂互联网从业者，做过移到端开发，非常热爱大前端，热爱跨平台技术，希望能够把前端技术灵活运用到
+        移动端。
+    </p>
+    <span class="section-title">打卡学习</span>
+    <p class="des">目前共有<span class="num">220+</span>名同学加入打卡学习队伍中，它们来自不同的领域，有iOS, Android 和前端的小伙伴。添加微信 wsy9871，备注小课，
+        便会有人邀请加入微信群。
+    </p>
+    <div class="triangle"></div>
+    <div class="icon"></div>
+</body>
+
+</html>

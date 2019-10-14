@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>动画</title>
+    <style>
+        .bg-box {
+            background-color: gray;
+            width: 100px;
+            height: 100px;
+        }
+
+        .bg-box-animation {
+            /* 动画的名字和动画执行的时间，需要把动画绑定到某个选择器上才会执行*/
+            animation: background-change 2s;
+        }
+
+        /* 动画的关键帧 ，帧数可以为任意多个 */
+        @keyframes background-change {
+            0% {
+                background-color: antiquewhite;
+            }
+
+            50% {
+                background-color: brown;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+
+        .move-box {
+            background-color: red;
+            position: relative;
+            width: 60px;
+            height: 60px;
+            border-radius: 30px;
+        }
+
+        .move-box-animation {
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* 名字，为 @keyframes 的名字 */
+            animation-name: move;
+            /*  动画的时间 */
+            animation-duration: 5s;
+            /* 动画执行函数 */
+            animation-timing-function: ease-in-out;
+            /* 动画延迟时间 */
+            animation-delay: 1s;
+            /* 动画重复次数 */
+            animation-iteration-count: 10;
+            /* 动画的方向，先正向后逆向 */
+            animation-direction: alternate;
+            /* 动画执行后的填充模式 */
+            animation-fill-mode: backwards;
+            /* 动画的运行状态 */
+            animation-play-state: running;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                left: 100px;
+                top: 0;
+            }
+
+            50% {
+                left: 100px;
+                top: 100px;
+            }
+
+            75% {
+                left: 0;
+                top: 100px;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-box bg-box-animation"></div>
+    <div class="move-box move-box-animation"></div>
+</body>
+
+</html>

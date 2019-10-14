@@ -1,0 +1,20 @@
+body {
+    background-color: #2A3950;
+}
+.button {
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 40px 50px;
+    border-radius: 4px;
+    background-color: #7089FF;
+    color: white;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+    color: white;
+}
+#content {
+    margin: 20px;
+}

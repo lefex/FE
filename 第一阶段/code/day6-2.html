@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirstChild</title>
+    <style>
+        .box,
+        .box2,
+        #box3 {
+            background-color: #eeeeee;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+/* 匹配 p 标签作为第一个孩子，这里注意是 p 元素的第一个孩子，不是 p 元素 */
+/* p:first-child {
+    color: red;
+    background-color: black;
+    padding: 10px;
+} */
+/* 匹配 div 的第二个孩子，也就是说 div 作为父元素，它子元素的第二个孩子 */
+/* div:nth-child(2) {
+    background-color: cornflowerblue;
+    color: white;
+}  */
+/* class 为 box2 的第一个孩子*/
+/* .box2 :nth-child(1) {
+    background-color: red;
+    color: white;
+} */
+/* class 为 box3 的第一个孩子 */
+#box3 :nth-child(2) {
+    background-color: #0077FF;
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+    <p>贵在坚持</p>
+    <div class="box">
+        <p>前端小课</p>
+        <p>超越技术</p>
+        <p>每日一课</p>
+    </div>
+
+    <div class="box2">
+        <h2>中秋节快乐</h2>
+        <p>花好月圆</p>
+    </div>
+
+    <div id="box3">
+        <p>早上好！</p>
+        <h3>前端小课，每日一课</h3>
+    </div>
+</body>
+
+</html>
