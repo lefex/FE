@@ -9,6 +9,8 @@
 
 ![](https://github.com/lefex/FE/blob/master/asset/1cover.png)
 
+![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
+
 
 ## 第二阶段 13 天：死磕 CSS 布局
 
