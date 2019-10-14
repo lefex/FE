@@ -13,3 +13,6 @@
 ## 第二阶段 13 天：死磕 CSS 布局
 
 正在进行中。。。。
+
+
+![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
