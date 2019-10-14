@@ -5,7 +5,19 @@
 
 ## 第一阶段 20 天：HTML + CSS
 
+课程目录，关注公众号查看课程内容
+
+![](https://github.com/lefex/FE/blob/master/asset/1cover.png)
+
+![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
 
 
 ## 第二阶段 13 天：死磕 CSS 布局
 
+正在进行中。。。。
+
+![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
+
+
+## 扫码加入《前端下课》学习
+![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
