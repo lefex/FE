@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+.main {
+    margin: 20px;
+    background-color: #eeeeee;
+    display: flex;
+    width: 600px;
+    height: 80px;
+}
+
+div div {
+    height: 40px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    /* flex-basis: 0; */
+    /* flex-grow: 1; */
+    /* flex: 1; */
+}
+
+div div:nth-child(1) {
+    background-color: red;
+    order: 3;
+    /* max-width: 80px;
+    width: 160px;
+    flex-basis: 120px;
+    max-width: 110px; */
+}
+
+div div:nth-child(2) {
+    background-color: black;
+}
+
+div div:nth-child(3) {
+    background-color: purple;
+    order: -1;
+}
+    </style>
+</head>
+
+<body>
+<div class="main">
+    <div>前端小课</div>
+    <div>FlexBox World</div>
+    <div>Layout For CSS</div>
+</div>
+</body>
+
+</html>
