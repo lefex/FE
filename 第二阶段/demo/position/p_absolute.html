@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 500px;
+        }
+        body {
+            height: 1000px;
+        }
+
+        .box {
+            /* position: relative; */
+            margin: 10px;
+            height: 200px;
+            /* background-color: #eeeeee; */
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            line-height: 40px;
+        }
+
+        p:nth-child(1) {
+            background-color: red; 
+        }
+
+        p:nth-child(2) {
+            background-color: green;
+            /* position: absolute; */
+            /* top: 0; */
+            /* left: 0; */
+            bottom: 0;
+            right: 0;
+        }
+
+        p:nth-child(3) {
+            background-color: black;
+        }
+        .strong {
+            position: absolute;
+            top: 180px;
+            left: 0;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>前端小课，每日一课</p>
+        <p>前端从0-1 <span class="strong">重要</span></p>
+        <p>我们今天学习 position：absolute 布局</p>
+    </div>
+</body>
+
+</html>

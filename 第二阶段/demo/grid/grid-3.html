@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #2A3950;
+        }
+.main {
+    margin: 40px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+}
+.container {
+    grid-template-columns: 40% auto;
+    grid-template-rows: 60px 20%;
+    display: grid;
+    grid-gap: 5px 10px;
+}
+div div {
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+}
+div div:nth-child(1) {
+    background-color: #FE0000;
+}
+
+div div:nth-child(2) {
+    background-color: #F5A623;
+}
+
+div div:nth-child(3) {
+    background-color: #BD10E0;
+}
+div div:nth-child(4) {
+    background-color: #F04A4D;
+}
+
+    </style>
+</head>
+
+<body>
+<div class="main container">
+    <div>前端小课</div>
+    <div>超越技术</div>
+    <div>Grid布局</div>
+    <div>大家加油</div>
+</div>
+</body>
+
+</html>

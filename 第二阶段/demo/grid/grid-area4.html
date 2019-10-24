@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid-area</title>
+<style>
+.main {
+    background-color: #eeeeee;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 40px);
+    grid-auto-rows: 40px;
+    row-gap: 20px;
+    column-gap: 20px;
+    grid-template-areas: 
+        "caiyuan caiyuan caiyuan caiyuan caiyuan caiyuan guoyuan guoyuan"
+        "caiyuan caiyuan caiyuan caiyuan caiyuan caiyuan guoyuan guoyuan"
+        "rest_area rest_area house house house house guoyuan guoyuan"
+        "rest_area rest_area house house house house guoyuan guoyuan"
+        "rest_area rest_area house house house house guoyuan guoyuan"
+        "rest_area rest_area house house house house guoyuan guoyuan"
+        "rest_area rest_area house house house house guoyuan guoyuan"
+        "rest_area rest_area huayuan huayuan huayuan huayuan guoyuan guoyuan"
+        "rest_area rest_area huayuan huayuan huayuan huayuan guoyuan guoyuan"
+        ". . tree tree tree tree . .";
+}
+.huayuan {
+    background-color: brown;
+    grid-area: huayuan;
+}
+.caiyuan {
+    background-color: cadetblue;
+    grid-area: caiyuan;
+}
+.house {
+    background-color: cornflowerblue;
+    grid-area: house;
+}
+.rest_area {
+    background-color: darksalmon;
+    grid-area: rest_area;
+}
+.guoyuan {
+    background-color: hotpink;
+    grid-area: guoyuan;
+}
+.tree {
+    background-color: green;
+    grid-area: tree;
+}
+</style>
+</head>
+<body>
+    <div class="main">
+        <div class="huayuan"></div>
+        <div class="caiyuan"></div>
+        <div class="house"></div>
+        <div class="rest_area"></div>
+        <div class="guoyuan"></div>
+        <div class="tree"></div>
+    </div>
+</body>
+</html>

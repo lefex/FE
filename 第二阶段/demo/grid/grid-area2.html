@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid-area</title>
+    <style>
+    .main {
+        background-color: royalblue;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 100px 150px 200px;
+        gap: 10px;
+    }
+    div div:first-child {
+        background-color: salmon;
+    }
+    div div:nth-child(2) {
+        background-color: red;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
