@@ -54,7 +54,7 @@
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
 
-## 扫码加入《前端下课》学习
+## 微信扫码加入《前端小课》，和我一起学习前端
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 
 ![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
