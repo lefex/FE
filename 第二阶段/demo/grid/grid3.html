@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+<style>
+    body {
+        background-color: #eeeeee;
+        margin: 0;
+        padding: 0;
+    }
+    .main {
+        background-color: antiquewhite;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        justify-items: center;
+    }
+    div div {
+        background-color: red;
+        text-align: center;
+        line-height: 40px;
+    }
+    div div:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        /* align-self: start; */
+    }
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <div>前端小课</div>
+        <div>素燕公众号</div>
+        <div>每天一小课</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+    <style>
+        body {
+            background-color: #eeeeee;
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            background-color: antiquewhite;
+            display: grid;
+            /* 显示创建的 1 行 1 列 */
+            /* 第1列的宽度 */
+            grid-template-columns: 100px;
+            /* 第1行的宽度 */
+            grid-template-rows: 100px;
+            /* 隐式创建的列宽 */
+            grid-auto-columns: 40px;
+            /* 隐式创建的行高 */
+            grid-auto-rows: 60px;
+        }
+        .item-a {
+            background-color: red;
+            text-align: center;
+            grid-column: 1 / 3;
+            grid-row: 2 / 3;
+        }
+        .item-b {
+            background-color: yellow;
+            text-align: center;
+            grid-column: 4 / 6;
+            grid-row: 1 / 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="item-a">item-a</div>
+        <div class="item-b">item-b</div>
+    </div>
+</body>
+
+</html>
