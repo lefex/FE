@@ -4,12 +4,11 @@
 **[demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)**
 
 ## 写在开始
+
 - [前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 - [死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
 
 ## 第一阶段 20 天：HTML + CSS
-
-**课程目录，关注公众号查看课程内容**
 
 - [坚持学习前端的第20天](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
 - [第19天：写出易复用、易维护、结构清晰的 CSS](https://mp.weixin.qq.com/s/IqqoMc967gFYfHRJoCAJhw)
