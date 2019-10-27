@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    body {
+        background-color: #eeeeee;
+    }
+
+.main {
+    margin-left: 50px;
+    background-color: white;
+    width: 600px;
+    height: 400px;
+    padding: 10px;
+}
+
+.box {
+    float: left;
+    margin: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+}
+.wrapper {
+    background-color: red;
+    color: #fff; 
+    padding: 10px;
+    overflow: auto;
+}
+/* .wrapper::after {
+  content: "";
+  clear: both;
+  display: block;
+} */
+.cleared {
+    clear: left;
+}
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Float布局 by 素燕公众号</h1>
+        <div class="wrapper">
+            <div class="box">Float</div>
+            <p>《前端小课》是一本多媒体电子书</p>
+        </div>
+
+        <p class="cleared">系统地学习前端知识。避免 case-by-case 学习。
+            每天的内容会在素燕公众号发布，你只需关注这个公众号，便可和小伙伴没一起打卡互动学习。</p>
+        <p>目前已累计4w+ 阅读量，共发布30天
+            的内容。如果你想学习前端，或者你没有系统学习过前端，不防和我一起系统学习前端知识。</p>
+    </div>
+</body>
+
+</html>
