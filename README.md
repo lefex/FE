@@ -38,6 +38,9 @@
 
 ## 第二阶段 13 天：死磕 CSS 布局
 
+- [第13天：布局的兼容性与两种不常用的布局](https://mp.weixin.qq.com/s/fM8DkM9sGAGzu-G3TW_5UA)
+- [第12天： 靠边站之float](https://mp.weixin.qq.com/s/ba8kJOU2a83NBnwG0y8fdQ)
+- [第11天：grid布局对齐属性](https://mp.weixin.qq.com/s/9_zPYmfYzhIu-vgnfDGk4g)
 - [第10天：买一块地盖一处院子](https://mp.weixin.qq.com/s/ZziZ9jDKGPORnV8Yv5r_lQ)
 - [第9天: position 布局之 fixed、sticky](https://mp.weixin.qq.com/s/OOOrutqFKvOsY_Td-cpi4w)
 - [第8天：布局翘楚 - Grid 布局概述](https://mp.weixin.qq.com/s/SJ7k23nIgMOcR2fDjOHhGg)
