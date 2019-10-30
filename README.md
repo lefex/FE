@@ -56,9 +56,11 @@
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
 
-## 🌹微信扫码加入《前端小课》，和我一起学习前端
+## 🌹公众号素燕
 
+公众号中各个阶段课程总结：
 ![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
 
+微信扫码加入《前端小课》，和我一起学习前端
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 
