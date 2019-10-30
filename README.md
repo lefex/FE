@@ -7,7 +7,7 @@
 
 **[demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)**
 
-## 第一阶段 20 天：HTML + CSS
+## 🐝第一阶段 20 天：HTML + CSS
 
 - [坚持学习前端的第20天](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
 - [第19天：写出易复用、易维护、结构清晰的 CSS](https://mp.weixin.qq.com/s/IqqoMc967gFYfHRJoCAJhw)
@@ -36,7 +36,7 @@
 - [第1天：开篇词，开发环境准备](https://mp.weixin.qq.com/s/66oU0fY502OYK9WpxiaCtA)
 
 
-## 第二阶段 13 天：死磕 CSS 布局
+## 🐝第二阶段 13 天：死磕 CSS 布局
 
 - [第13天：布局的兼容性与两种不常用的布局](https://mp.weixin.qq.com/s/fM8DkM9sGAGzu-G3TW_5UA)
 - [第12天： 靠边站之float](https://mp.weixin.qq.com/s/ba8kJOU2a83NBnwG0y8fdQ)
@@ -56,7 +56,7 @@
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
 
-## 微信扫码加入《前端小课》，和我一起学习前端
+## 🐝微信扫码加入《前端小课》，和我一起学习前端
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 
 ![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
