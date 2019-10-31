@@ -37,6 +37,7 @@
 
 ## 🌺第二阶段 13 天：死磕 CSS 布局
 
+- [用前端仿写朋友圈](https://mp.weixin.qq.com/s/BUMaJXJ2bD0FcZ5kMI_WrA)
 - [第13天：布局的兼容性与两种不常用的布局](https://mp.weixin.qq.com/s/fM8DkM9sGAGzu-G3TW_5UA)
 - [第12天： 靠边站之float](https://mp.weixin.qq.com/s/ba8kJOU2a83NBnwG0y8fdQ)
 - [第11天：grid布局对齐属性](https://mp.weixin.qq.com/s/9_zPYmfYzhIu-vgnfDGk4g)
