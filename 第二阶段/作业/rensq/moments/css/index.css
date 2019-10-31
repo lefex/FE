@@ -1,0 +1,193 @@
+* {margin: 0;padding: 0;}
+a {text-decoration: none;}
+ul {list-style: none;}
+.fr {
+    float: right;
+}
+.fl {
+    float: left;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body {
+    font: 17px/24px "PingFangSC-Regular";
+    background-color: #fff;
+    min-width: 320px;
+    max-width: 414px;
+}
+.header {
+    width: 100%;
+    height: 319px;
+    background: url("../images/cover.jpeg") no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+.header>h1 {
+    height: 100%;
+    line-height: 319px;
+    text-align: center;
+    color: #fff;
+    font-size: 44px;
+}
+.header-user {
+    position: absolute;
+    right: 12px;
+    bottom: -20px;
+    display: flex;
+    justify-content: right;
+}
+.header-user>p {
+    color: #fff;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.header-user>img {
+    width: 71px;
+    height: 71px;
+    border-radius: 6px;
+    background: #4e92ef;
+    
+}
+.main>ol {
+    padding-top: 60px;
+}
+.main .item {
+    padding: 10px;
+    display: flex;
+    border-bottom: 1px solid #EBEBEC;
+}
+
+.item .avatar>img {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+    background: #2c5948;
+}
+.item .content {
+    margin-left: 10px;
+    
+}
+.item .content>p:first-child {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #4D638F;
+}
+.item .content>ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 10px 0;
+}
+.item .content>ul>li {
+    width: 80px;
+    height: 80px;
+}
+.item .content>ul>li>a>img {
+    display: inline-block;
+    background: brown;
+    width: 100%;
+    height: 100%;
+}
+.content .timestamp {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0;
+}
+.content .timestamp>p {
+    font-size: 14px;
+    color: #B7B7B7;
+}
+.content .timestamp>a>img {
+    width: 29px;
+    vertical-align: middle;
+}
+.content .comments {
+    background: #F3F3F5;
+    border-radius: 2px;
+}
+.comments p{
+    font-size: 15px;
+    color: #000;
+    padding: 5px;
+}
+.comments .zan a::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 10px;
+    margin-right: 8px;
+    background: url("../images/star_small.png") no-repeat center;
+    background-size: cover;
+    vertical-align: middle;
+}
+.comments p + p {
+    border-top: 1px solid #EBEBEC;
+}
+.comments p a {
+    color: #536892;
+}
+
+/* 第一条 */
+.item:nth-child(1) .content>ul {
+    width: 250px;
+    height: 250px;
+}
+
+/* 第二条 */
+.item:nth-child(2) .avatar>img {
+    background: #baaa89;
+}
+.item:nth-child(2) .zhuanfa {
+    background-color: #F3F3F5;
+    padding: 4px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.item:nth-child(2) .zhuanfa>img {
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    background: #6f989e;
+}
+.item:nth-child(2) .zhuanfa>p {
+    font-size: 15px;
+    color: #121212;
+    margin-left: 10px;
+}
+
+/* 第三条 */
+.item:nth-child(3) .avatar>img {
+    background: #342829;
+}
+.item:nth-child(3) .content>ul>li {
+    width: 260px;
+    height: 162px;
+}
+.item:nth-child(3) .content>ul>li>a>img {
+    background: #BEB499;
+}
+
+/* 第四条 */
+.item:nth-child(4) .avatar>img {
+    background: #342829;
+}
+.item:nth-child(4) .content>ul>li {
+    width: 174px;
+    height: 174px;
+}
+.item:nth-child(4) .content>ul>li>a>img {
+    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+}
