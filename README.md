@@ -55,10 +55,12 @@
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
 
-## 🌹公众号素燕
+## 🌹网站
 
-公众号中各个阶段课程总结：
-![](https://github.com/lefex/FE/blob/master/asset/1enter.png)
+你也可以通过网站学习，[超越技术](https://lefex.github.io/)
+
+![](https://github.com/lefex/FE/blob/master/asset/web.png)
+
 
 微信扫码加入《前端小课》，和我一起学习前端
 
