@@ -3,7 +3,7 @@
 
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 - [✅死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
-- [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)**
+- [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
 ## 🐝第一阶段 20 天：HTML + CSS
 
