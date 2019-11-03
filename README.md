@@ -1,7 +1,6 @@
 # 《前端小课》
 前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。每天打卡，自我驱动学习，有问题及时讨论。通过下面的方式加入：
 
-- [✅前端小课](https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI5MTY0ODAwNQ==&scene=124#wechat_redirect)
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 - [✅死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
 - [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)**
