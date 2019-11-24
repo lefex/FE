@@ -54,6 +54,16 @@
 
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
+## 🐝第三阶段：搞懂网络，掌握网页请求流程
+
+- [第三阶段 - 重学网络编程（HTTP、TCP、WebServer）](https://mp.weixin.qq.com/s/c_VnSTjtgearUjx6ttqzwQ)
+- [一条命令开启一个 WebServer](https://mp.weixin.qq.com/s/7_gGs16ZCoL_GQKPtGFCcw)
+- [第2天：server 的接口是如何实现的](https://mp.weixin.qq.com/s/nMgN10N1JViigUkwh5UEOg)
+- [第3天：HTTP 之客户端与服务端](https://mp.weixin.qq.com/s/DSCjhv0z--2zxKnUh0Vt7A)
+- [第4天：数据传输之 TCP ，聊天室实践（含视频）](https://mp.weixin.qq.com/s/6Bcxbl2M4Mkbo6CALuoSkg)
+- [第 5 天： 以农村故事说说我对 socket 的理解](https://mp.weixin.qq.com/s/jfAEhPmQya0Ok9wvgK5vZw)
+- [第 6 天：HTTP背景与整个请求响应流程 （官方英文描述）](https://mp.weixin.qq.com/s/ZQxl7zmMd4imJT6llJkMww)
+
 
 ## 🌹网站
 
