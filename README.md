@@ -63,6 +63,8 @@
 - [第4天：数据传输之 TCP ，聊天室实践（含视频）](https://mp.weixin.qq.com/s/6Bcxbl2M4Mkbo6CALuoSkg)
 - [第 5 天： 以农村故事说说我对 socket 的理解](https://mp.weixin.qq.com/s/jfAEhPmQya0Ok9wvgK5vZw)
 - [第 6 天：HTTP背景与整个请求响应流程 （官方英文描述）](https://mp.weixin.qq.com/s/ZQxl7zmMd4imJT6llJkMww)
+.......
+**第三阶段正在进行中，首发公众号，后续同步到这里，底部有二维码**
 
 
 ## 🌹网站
