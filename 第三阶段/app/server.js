@@ -35,6 +35,6 @@ server.on('request', function(req, res) {
 });
 
 // 监听 8888 端口
-server.listen(8888, function() {
-    console.log('Server run in: http://127.0.0.1:8888');
+server.listen(9999, function() {
+    console.log('Server run in: http://127.0.0.1:9999');
 });
