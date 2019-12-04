@@ -1,5 +1,9 @@
 # 《前端小课》
-前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。每天打卡，自我驱动学习，有问题及时讨论。通过下面的方式加入：
+前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。每天打卡，自我驱动学习，有问题及时讨论。
+
+我总结了学习前端需要的知识点：**[前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)**
+
+通过下面的方式加入学习：
 
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 - [✅死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
@@ -63,7 +67,9 @@
 - [第4天：数据传输之 TCP ，聊天室实践（含视频）](https://mp.weixin.qq.com/s/6Bcxbl2M4Mkbo6CALuoSkg)
 - [第 5 天： 以农村故事说说我对 socket 的理解](https://mp.weixin.qq.com/s/jfAEhPmQya0Ok9wvgK5vZw)
 - [第 6 天：HTTP背景与整个请求响应流程 （官方英文描述）](https://mp.weixin.qq.com/s/ZQxl7zmMd4imJT6llJkMww)
-.......
+
+
+
 **第三阶段正在进行中，首发公众号，后续同步到这里，底部有二维码**
 
 
