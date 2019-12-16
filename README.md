@@ -67,6 +67,18 @@
 - [第4天：数据传输之 TCP ，聊天室实践（含视频）](https://mp.weixin.qq.com/s/6Bcxbl2M4Mkbo6CALuoSkg)
 - [第 5 天： 以农村故事说说我对 socket 的理解](https://mp.weixin.qq.com/s/jfAEhPmQya0Ok9wvgK5vZw)
 - [第 6 天：HTTP背景与整个请求响应流程 （官方英文描述）](https://mp.weixin.qq.com/s/ZQxl7zmMd4imJT6llJkMww)
+- [第 7 天：小卖部与生产商之间的协作](https://mp.weixin.qq.com/s/riPVolCKUpWFXwz42AWMvw)
+- [这些网络(HTTP, TCP, WebServer)学习资料不容错过](https://mp.weixin.qq.com/s/MjVEnN3wDK6N4qfW5L23RA)
+- [第 8 天：弄懂 HTTP 请求报文](https://mp.weixin.qq.com/s/lXMHuLT0AfkkdwAOSAjZyw)
+- [第 9 天：HTTP 响应报文与状态码](https://mp.weixin.qq.com/s/9V-TIyeOFzLW8dQ5S9P2-A)
+- [第 10 天：我犯了个错误](https://mp.weixin.qq.com/s/PQZQcGy7Pyrx_ohSlYVk0w)
+- [第 11 天：我找到了学习 socket 的正确姿势](https://mp.weixin.qq.com/s/dPa9tC-LcWiJ7lvlvtvIZg)
+- [第 12 天：从 0 徒手实现一个 HTTP Server](https://mp.weixin.qq.com/s/mWu3RS0AHKeFUxUOqOdXqQ)
+- [第 13 天：从 HTTP 到 HTTPS，取得阶段性胜利](https://mp.weixin.qq.com/s/JLyU8P5_8JauB6wh9Cyyeg)
+- [用故事说透 HTTPS（漫画）](https://mp.weixin.qq.com/s/MfvUuitrF8MN16nxyZNB8A)
+- [OpenSSL 自述](https://mp.weixin.qq.com/s/jp88sX84RQGy7N1j-ydVTA)
+- [被乱用的 Cookie](https://mp.weixin.qq.com/s/iDOoeBA48gnoJUhkCHosqA)
+- [打破讨论薪资的红线 之 签名原理（漫画）](https://mp.weixin.qq.com/s/7tR0kDKdrXotPCKji_2iBw)
 
 
 
@@ -76,8 +88,6 @@
 ## 🌹网站
 
 你也可以通过网站学习，[超越技术](https://lefex.github.io/)
-
-![](https://github.com/lefex/FE/blob/master/asset/web.png)
 
 
 微信扫码加入《前端小课》，和我一起学习前端
