@@ -90,7 +90,7 @@
 你也可以通过网站学习，[超越技术](https://lefex.github.io/)
 
 
-微信扫码加入《前端小课》，和我一起学习前端
+### 微信扫码加入《前端小课》，和我一起学习前端
 
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 
