@@ -5,6 +5,7 @@
 
 通过下面的方式加入学习：
 
+- [✅我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 - [✅死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
 - [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
@@ -79,10 +80,22 @@
 - [OpenSSL 自述](https://mp.weixin.qq.com/s/jp88sX84RQGy7N1j-ydVTA)
 - [被乱用的 Cookie](https://mp.weixin.qq.com/s/iDOoeBA48gnoJUhkCHosqA)
 - [打破讨论薪资的红线 之 签名原理（漫画）](https://mp.weixin.qq.com/s/7tR0kDKdrXotPCKji_2iBw)
+- [被“同源策略”限制的我却想着“跨域”](https://mp.weixin.qq.com/s/tsCFBmNRSLXNR6OeZtAAfg)
+- [第三阶段结语：告别网络编程](https://mp.weixin.qq.com/s/XB1h-jvztNG_rime7P2bMw)
 
+## 🐝第四阶段：系统深入学习 JavaScript
+- [第四阶段 - 系统深入学习 JavaScript](https://mp.weixin.qq.com/s/TMdSJcq9s525MdMFmgT9Gw)
+- [程序原本 — 推荐3本免费电子书](https://mp.weixin.qq.com/s/eH7rHCIvp4l29GcMQ7UYMQ)
+- [被招安的 JavaScript ，取名为 ECMAScript](https://mp.weixin.qq.com/s/5UwQiNiB9i5eQQ-Nr9kFHA)
+- [让 JavaScript 跑起来+函数](https://mp.weixin.qq.com/s/TwaIoofmixKTKEymiNfueQ)
+- [JavaScript 中的对象](https://mp.weixin.qq.com/s/2G2LRIGXPjGQsRnoCB3NGQ)
+- [var 很傻、let 很亲切 、const 更坚定](https://mp.weixin.qq.com/s/uZOj5HzJmH_fNeUEPipqwA)
+- [期中考试之 var、let、const](https://mp.weixin.qq.com/s/F8Awa1S7bKBpx-ihQxkFfg)
+- [用2000字详细解答昨天的题目（再忙也要看一下）](https://mp.weixin.qq.com/s/Vl1ft7ipsG9NDVE0qMXY8A)
+- [JavaScript 内置对象数组](https://mp.weixin.qq.com/s/hTjTl9BQHTxpZtSDJu2s5w)
+- [用故事说透 JavaScript 中的原型](https://mp.weixin.qq.com/s/2GOcsgdfFiQkUcvIh3d4zQ)
 
-
-**第三阶段正在进行中，首发公众号，后续同步到这里，底部有二维码**
+**第四阶段 深入学习JavaScript，首发公众号，后续同步到这里，底部有二维码**
 
 
 ## 🌹网站
