@@ -94,6 +94,17 @@
 - [用2000字详细解答昨天的题目（再忙也要看一下）](https://mp.weixin.qq.com/s/Vl1ft7ipsG9NDVE0qMXY8A)
 - [JavaScript 内置对象数组](https://mp.weixin.qq.com/s/hTjTl9BQHTxpZtSDJu2s5w)
 - [用故事说透 JavaScript 中的原型](https://mp.weixin.qq.com/s/2GOcsgdfFiQkUcvIh3d4zQ)
+- [从源码到抽象语法树可视化](https://mp.weixin.qq.com/s/n4yaR4cYz65YGBVB_Faycg)
+- [字节码与二进制的“样貌”](https://mp.weixin.qq.com/s/zComXbs9jbVWPd4FL2lAOA)
+- [执行上下文与调用栈](https://mp.weixin.qq.com/s/a71BhSmwdrE2whvEAuVv2A)
+- [看透变量提升与块级作用域实现的原理](https://mp.weixin.qq.com/s/WUTAm9IaL_0nByKVGrHQSg)
+- [推荐我精心准备的 JavaScript 学习资源](https://mp.weixin.qq.com/s/hj00b4BjJFD9yBorSa-4kw)
+- [让 JavaScript 文件代码相互独立](https://mp.weixin.qq.com/s/v3sRBOvXG5wu-4btURYnhA)
+- [带有执行环境的函数 - 闭包](https://mp.weixin.qq.com/s/ocWhTCCiNXAr7Si5mo99aw)
+- [调试 JavaScript 少不了这几个技巧](https://mp.weixin.qq.com/s/Ps7A5sJQfJ2MwJOPjlovuQ)
+- [连接你、我、他 —— this](https://mp.weixin.qq.com/s/gFIRL-HFqql19fYOU-V3Og)
+- [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
+- [&& ，|| 超越了我的认知](https://mp.weixin.qq.com/s/qCnDp6oxLik2s1H_wbGZTg)
 
 **第四阶段 深入学习JavaScript，首发公众号，后续同步到这里，底部有二维码**
 
