@@ -1,15 +1,13 @@
 # 《前端小课》
 前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。每天打卡，自我驱动学习，有问题及时讨论。
 
-我总结了学习前端需要的知识点：**[前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)**
+我总结了**[✅前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)**
 
 通过下面的方式加入学习：
 
 - [✅我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
 - [✅2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
-- [✅我总结了学习前端的路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)
-
 - [✅第一阶段 · 坚持学习前端的第20天（领电子书）](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
 - [✅第二阶段 · 坚持14天学懂CSS布局（领电子书）](https://mp.weixin.qq.com/s/oN_U1SAm8WJ1CLZQNJtIPA)
 - [✅第三阶段 · 告别网络编程](https://mp.weixin.qq.com/s/XB1h-jvztNG_rime7P2bMw)
