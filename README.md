@@ -6,8 +6,15 @@
 通过下面的方式加入学习：
 
 - [✅我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
+- [✅2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
-- [✅死磕 CSS 布局 - 前端小课第二阶段](https://mp.weixin.qq.com/s/gtyiCDbtRRvBxOaR0DPkKg)
+- [✅我总结了学习前端的路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)
+
+- [✅第一阶段 · 坚持学习前端的第20天（领电子书）](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
+- [✅第二阶段 · 坚持14天学懂CSS布局（领电子书）](https://mp.weixin.qq.com/s/oN_U1SAm8WJ1CLZQNJtIPA)
+- [✅第三阶段 · 告别网络编程](https://mp.weixin.qq.com/s/XB1h-jvztNG_rime7P2bMw)
+- [✅第四阶段 · JavaScript 专题结束（领电子书）](https://mp.weixin.qq.com/s/BT85qhtP52Hn46qt3R_Y-g)
+
 - [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
 ## 🐝第一阶段 20 天：HTML + CSS
@@ -103,10 +110,16 @@
 - [带有执行环境的函数 - 闭包](https://mp.weixin.qq.com/s/ocWhTCCiNXAr7Si5mo99aw)
 - [调试 JavaScript 少不了这几个技巧](https://mp.weixin.qq.com/s/Ps7A5sJQfJ2MwJOPjlovuQ)
 - [连接你、我、他 —— this](https://mp.weixin.qq.com/s/gFIRL-HFqql19fYOU-V3Og)
-- [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [&& ，|| 超越了我的认知](https://mp.weixin.qq.com/s/qCnDp6oxLik2s1H_wbGZTg)
 
-**第四阶段 深入学习JavaScript，首发公众号，后续同步到这里，底部有二维码**
+## 🐝第五阶段：深入学习 DOM、浏览器工作原理
+- [深入学习 DOM、浏览器工作原理](https://mp.weixin.qq.com/s/zeFQRjx3B11-QviBxTbLEQ)
+- [我是一颗树 · DOM](https://mp.weixin.qq.com/s/rpY9fl9d_fM9P7uG8NxfUQ)
+- [回到工位“我”悟出了 DOM 设计的精华](https://mp.weixin.qq.com/s/kVPqY09YDL4RjmOlqVe8mg)
+- [打通 DOM 的设计架构](https://mp.weixin.qq.com/s/wDKzA3qJguRvPlznRsw4_w)
+
+
+**第五阶段 深入学习 DOM、浏览器工作原理，首发公众号，后续同步到这里，底部有二维码**
 
 
 ## 🌹网站
@@ -114,7 +127,7 @@
 你也可以通过网站学习，[超越技术](https://lefex.github.io/)
 
 
-### 微信扫码加入《前端小课》，和我一起学习前端
+### 微信扫码加入《前端小课》，和我一起学习前端，以上只是冰山一角，还有更多优质内容
 
 ![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 
