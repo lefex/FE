@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 800px;
+        }
+
+        .box-outer {
+            position: relative;
+            width: 180px;
+            height: 200px;
+            border: brown 2px solid;
+            overflow: scroll;
+        }
+
+        .box {
+            box-sizing: border-box;
+            width: 80px;
+            height: 300px;
+            margin-left: 12px;
+            margin-top: 14px;
+            padding-left: 16px;
+            padding-top: 15px;
+        }
+
+        #boxId {
+            background-color: brown;
+        }
+
+        .bg {
+            background-color: bisque;
+        }
+
+        .span-box {
+            position: relative;
+            margin-top: 20px;
+            margin-left: 30px;
+            border: springgreen 2px solid;
+            width: 80px;
+            height: 100px;
+        }
+
+        #span-1 {
+            color: rebeccapurple;
+        }
+
+        #span-2 {
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="bg">前端小课：公众号素燕</h1>
+    <div class="box-outer">
+        <div id="boxId" class="box">红色的箱子</div>
+    </div>
+    <p class="bg">修改颜色</p>
+    <div class="span-box">
+        <span id="span-1">我是第一个span</span>
+        <span id="span-2">我是第二个span</span>
+    </div>
+    <script>
+        let queryById = function (id) {
+            let elm = document.getElementById(id);
+            // elm.style.backgroundColor = 'red';
+        };
+        queryById('boxId');
+    </script>
+    <script>
+        let querySelectorId = function (id) {
+            let elm = document.querySelector(id);
+            console.log(id, '-------------------------');
+            console.log('getClientRects', elm.getClientRects());
+            console.log('getBoundingClientRect', elm.getBoundingClientRect());
+            let log = function (elm) {
+                for (key in elm) {
+                    let whiteList = [
+                        'offsetTop', 'offsetLeft', 'offsetWidth', 'offsetHeight',
+                        'scrollTop', 'scrollLeft', 'scrollWidth', 'scrollHeight',
+                        'clientTop', 'clientLeft', 'clientWidth', 'clientHeight',
+                        'offsetParent'
+                    ];
+                    if (whiteList.indexOf(key) !== -1) {
+                        console.log(key, ' = ', elm[key]);
+                    }
+                }
+            }
+            log(elm);
+
+            elm.onscroll = function () {
+                log(elm);
+            }
+        };
+        window.onscroll = function () {
+            querySelectorId('#boxId');
+            querySelectorId('.box-outer');
+        };
+    // querySelectorId('#boxId');
+    // querySelectorId('#span-1');
+    // querySelectorId('#span-2');
+    </script>
+    <script>
+        let querySelector = function (id) {
+            let elm = document.querySelector(id);
+            for (key in elm) {
+                let isEvent = false;
+                if (key.indexOf('on') !== -1) {
+                    isEvent = true;
+                }
+
+                let isInBlackList = false;
+                if (key.indexOf('DOCUMENT') !== -1) {
+                    isInBlackList = true;
+                }
+                if (key.indexOf('ELEMENT') !== -1) {
+                    isInBlackList = true;
+                }
+                if (key.indexOf('COMMENT') !== -1) {
+                    isInBlackList = true;
+                }
+                if (key.indexOf('ATTRIBUTE') !== -1) {
+                    isInBlackList = true;
+                }
+                if (key.indexOf('ENTITY') !== -1) {
+                    isInBlackList = true;
+                }
+                if (key.indexOf('CDATA') !== -1) {
+                    isInBlackList = true;
+                }
+
+                if (typeof elm[key] !== 'function' && !isEvent && !isInBlackList) {
+                    console.log(key, ' = ', elm[key]);
+                }
+            }
+        };
+    // querySelector('p.bg');
+    </script>
+    <script>
+        let querySelectorAll = function (selector) {
+            let elms = document.querySelector(selector);
+            // elms.forEach(item => {
+            //     console.log(item.constructor);
+            //     console.log(item);
+            // });
+            // console.log(elms);
+        };
+        // 通过 ID 选择器 #boxId 查找
+        querySelectorAll('#boxId');
+        // 通过类选择器 .bg 查找
+        querySelectorAll('.bg');
+        // 通过类选择器 .box 查找
+        querySelectorAll('.box');
+        // 通过标签名查找
+        querySelectorAll('p');
+        querySelectorAll('div');
+        // 查找标签名为 h1，选择器为 .bg 的元素
+        querySelectorAll('h1.bg');
+        // 可通过逗号分割，查询多个选择器
+        querySelectorAll('.bg, .box');
+    </script>
+    <!-- <h1 class="bg">前端小课：公众号素燕</h1>
+    <div id="boxId" class="box"></div>
+    <p class="bg">修改颜色</p>
+    <img src="./listen.png" width="100px" alt="听"> -->
+</body>
+</body>
+
+</html>

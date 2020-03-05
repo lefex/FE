@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientFrame</title>
+    <script src="./logFrame.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            background-color: sandybrown;
+            text-align: center;
+        }
+        .container {
+            position: absolute;
+            top: 70px;
+            box-sizing: border-box;
+            background-color: gray;
+            width: 260px;
+            height: 300px;
+        }
+        .box {
+            background-color: red;
+            box-sizing: border-box;
+            width: 200px;
+            height: 240px;
+            border-top: blue 15px solid;
+            border-bottom: green 16px solid;
+            border-left: rebeccapurple 18px solid;
+            border-right: gold 19px solid;
+            padding-top: 11px;
+            padding-bottom: 23px;
+            margin-top: 25px;
+            margin-left: 27px;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到前端小课</h1>
+    <div class="container">
+        <div class="box">《前端小课》由素燕创建，你现在学习的是第五阶段。关注公众号
+            素燕，前端从 0 到 1.
+        </div>
+    </div>
+    <script>
+        logBySelector('.box');
+    </script>
+</body>
+</html>
