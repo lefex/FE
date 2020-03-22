@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条件渲染</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p v-if="type === 0">Vue 虚拟实验室</p>
+        <p v-else-if="type === 1">Vue 虚拟实验室 2</p>
+        <p v-else>呵呵</p>
+        <!--  template 为不可见的标签 -->
+        <template v-if="docType === 'doc'">
+            <p>文档列表</p>
+            <p>文档1</p>
+        </template>
+        <!-- 使用 key 来保证 input 元素不会被复用 -->
+        <template v-if="loginType === 'username'">
+            <label>Username</label>
+            <input placeholder="Enter your username" key="username-input">
+          </template>
+          <template v-else>
+            <label>Email</label>
+            <input placeholder="Enter your email address" key="email-input">
+          </template>
+          <div @click="change">切换登录方式</div>
+          <!-- v-show -->
+          <div v-show="isShow">显示隐藏</div>
+          <div @click="changeShow">点我</div>
+    </div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    type: 0,
+                    docType: 'doc',
+                    loginType: 'username',
+                    isShow: true
+                }
+            },
+            methods: {
+                change: function () {
+                    if (this.loginType === 'username') {
+                        this.loginType = 'email';
+                    }
+                    else {
+                        this.loginType = 'username';
+                    }
+                },
+                changeShow: function () {
+                    this.isShow = !this.isShow;
+                }
+            }
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ msg }}</h1>
+    </div>
+    <div id="app-body">
+        <h4>{{ title }}</h4>
+    </div>
+    <div class="app-footer">
+        <h4>{{ footer }}</h4>
+    </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    msg: "欢迎来到前端小课",
+                }
+            }
+        });
+    </script>
+    <script>
+        const vmBody = new Vue({
+            el: '#app-body',
+            data: function () {
+                return {
+                    title: "Vue 实例讲解"
+                }
+            }
+        });
+    </script>
+    <script>
+        const vmFooter = new Vue({
+            el: '.app-footer',
+            data: function () {
+                return {
+                    footer: "感谢阅读",
+                }
+            }
+        });
+    </script>
+</body>
+</html>

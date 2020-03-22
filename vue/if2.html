@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>条件渲染</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        #app {
+            margin: 20px;
+        }
+        .btn {
+            width: 100px;
+            height: 40px;
+            background-color: green;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: 700;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p v-if="type === 0">我想学习前端</p>
+        <p v-else-if="type === 1">Vue虚拟实验室等你</p>
+        <p v-else-if="type === 2">前端小课等你</p>
+        <p v-else>关注公众号：素燕</p>
+        <div class="btn" @click="nextAction">下一步</div>
+    </div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    type: 0
+                }
+            },
+            methods: {
+                nextAction: function () {
+                    let total = this.type + 1;
+                    this.type = total % 4;
+                }
+            }
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

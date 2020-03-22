@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算属性和侦听器</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">价钱：{{ priceShow }}</div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    price: 988,
+                    title: "Vue 实例讲解",
+                    lists: ['前端小课', '素燕'],
+                    author: {
+                        name: 'suyan',
+                        age: 10,
+                        sex: 1
+                    }
+                }
+            },
+            // 计算属性
+            computed: {
+                priceShow() {
+                    return '￥' + this.price / 100;
+                }
+            },
+            watch: {
+                title: function (val, oldVal) {
+                    console.log('title changed ', val);
+                },
+                'author.age': function (val, oldVal) {
+                    console.log('age changed from ' + oldVal + ' to ' + val);
+                }
+            },
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

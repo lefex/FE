@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>模板</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-once 只更新一次 -->
+        <div v-once>{{ title }}</div>
+        <!-- Mustache 语法绑定 data 中的值 -->
+        <div>Hello {{ msg }}</div>
+        <!-- html 会被当做普通的问题 -->
+        <p>{{ rawHtml }}</p>
+        <!-- html 会被解析 -->
+        <span v-html="rawHtml"></span>
+        <!-- html不能作用在 attribute 上，需要使用 v-bind 指令 -->
+        <!--  div 标签 id 选择器是动态的 -->
+        <div v-bind:id="contentId">ID选择器 </div>
+        <!-- JavaScript 表达式，只能访问全局变量的白名单，不能访问自定义的全局变量，只能是单个表达式 -->
+        <div>sum = {{ count + 1}}</div>
+        <!-- 指令是由 v- 前缀的特殊 attribute -->
+        <p v-if="seen">我在这儿呢</p>
+        <!-- 参数 -->
+        <a v-bind:href="link">前端小课</a>
+        <div v-on:click='clickMe'>点我</div>
+        <!-- 动态参数 没跑通-->
+        <div v-on:[eventName]="eventAction">点我，移动我</div>
+        <a v-on:[href]="link">我是连接</a>
+        <!-- 修饰符 present-->
+        <div v-on:click.present="clickMe">点我</div>
+        <!-- 缩写 -->
+        <div v-on:click="clickMe">点击</div>
+        <div @click="clickMe">点击</div>
+        <a v-bind:href="link">前端小课</a>
+        <a :href="link">前端小课</a>
+    </div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    msg: '前端小课',
+                    title: '同学，早上好！',
+                    rawHtml: '<span style="color:red">我是 HTML</span>',
+                    contentId: 'content-id',
+                    count: 1,
+                    seen: true,
+                    link: 'https://github.com/lefex/FE',
+                    eventName: 'click',
+                    href: 'href'
+                }
+            },
+            mounted() {
+                this.changeTitle();
+                let elm = document.getElementById(this.contentId);
+                console.log('elm = ', elm);
+            },
+            methods: {
+                changeTitle () {
+                    this.title = "前端小课 · 前端从 0 到 1"
+                },
+                clickMe() {
+                    console.log('点我');
+                },
+                eventAction() {
+                    console.log('动态参数');
+                }
+            }
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

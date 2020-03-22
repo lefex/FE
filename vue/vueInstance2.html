@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实例ue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div>{{ title }}</div>
+    <div id="app">Hello {{ msg }}</div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    msg: '前端小课',
+                    title: '早上好，打卡！'
+                }
+            }
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

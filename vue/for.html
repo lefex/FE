@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-for渲染</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 数组 -->
+        <p v-for="(title, index) in list" :key="index">{{ title }}</p>
+        <!-- 对象 -->
+        <p v-for="(v, k, i) in me">{{ i }} - {{ k }}: {{ v }}</p>
+    </div>
+    <script>
+        const obj = {
+            el: '#app',
+            data: function () {
+                return {
+                    list: [
+                        '前端小课',
+                        'Vue 虚拟实验室',
+                        '素燕'
+                    ],
+                    me: {
+                        fe: '前端小课',
+                        vue: 'Vue 虚拟实验室',
+                        name: '素燕'
+                    }
+                }
+            },
+            methods: {
+                change: function () {
+                    if (this.loginType === 'username') {
+                        this.loginType = 'email';
+                    }
+                    else {
+                        this.loginType = 'username';
+                    }
+                },
+                changeShow: function () {
+                    this.isShow = !this.isShow;
+                }
+            }
+        }
+        const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>

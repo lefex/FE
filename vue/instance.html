@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ msg }}</h1>
+        <!-- 这里不能声明一个新的 Vue 实例 -->
+        <!-- <div id="app-body">
+            <h4>{{ title }}</h4>
+        </div> -->
+    </div>
+    <div id="app-body">
+        <h4>{{ title }}</h4>
+        <p>{{ showTitle }}</p>
+        <p>{{ showAge }}</p>
+        <p>{{ author.sex | showSex }}</p>
+    </div>
+    <div class="footer">
+        <h3>参考：</h3>
+        <div id='app-footer'>
+            <h4>{{ footer }}</h4>
+        </div>
+    </div>
+    <div id="copyright">
+        <h3>版权信息</h3>
+    </div>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    msg: "欢迎来到前端小课",
+                }
+            },
+            beforeCreated: function () {
+                console.log('life beforeCreated');
+            },
+            created: function () {
+                console.log('life created');
+            },
+            beforeMount: function () {
+                console.log('life beforeMount');
+            },
+            mounted: function () {
+                console.log('life mounted');
+            },
+            beforeUpdate: function () {
+                console.log('life beforeUpdate');
+            },
+            updated: function () {
+                console.log('life updated');
+            },
+            beforeDestory: function () {
+                console.log('life beforeDestory');
+            },
+            destroyed: function () {
+                console.log('life destroyed');
+            }
+        });
+    </script>
+    <script>
+        const vmBody = new Vue({
+            el: '#app-body',
+            data: function () {
+                return {
+                    title: "Vue 实例讲解",
+                    lists: ['前端小课', '素燕'],
+                    author: {
+                        name: 'suyan',
+                        age: 10,
+                        sex: 1
+                    }
+                }
+            },
+            // 计算属性
+            computed: {
+                // 当 title 发生变化时，showTitle 的值也会发生变化
+                showTitle: function () {
+                    return '欢迎学习 - ' + this.title;
+                },
+                // 读取和 set
+                showAge: {
+                    get: function () {
+                        return '年龄为：' + this.author.age;
+                    },
+                    set: function (v) {
+                        this.author.age = v;
+                    }
+                }
+            },
+            // 定义方法
+            methods: {
+                loadData: function () {
+                    console.log('load data');
+                }
+            },
+            // 监听
+            watch: {
+                title: function (val, oldVal) {
+                    console.log('title changed ', val);
+                },
+                'author.age': function (val, oldVal) {
+                    console.log('age changed from ' + oldVal + ' to ' + val);
+                }
+            },
+            // 过滤器
+            filters: {
+                showSex: function (age) {
+                    return age === 1 ? '男' : '女';
+                }
+            },
+            // 全局可用组件的哈希表
+            components: {
+
+            }
+        });
+    </script>
+    <script>
+        const vmFooter = new Vue({
+            // 提供一个 vue 实例的挂载节点，可以是一个选择器，或者是一个 HTMLElement
+            el: '#app-footer',
+            data: function () {
+                return {
+                    footer: "感谢阅读",
+                }
+            }
+        });
+        // 访问 vue 实例的挂载节点
+        console.log(vmFooter.$el);
+    </script>
+    <script>
+        const vmC = new Vue({
+            // 提供一个 vue 实例的挂载节点，可以是一个选择器，或者是一个 HTMLElement
+            el: '#copyright',
+            // 将覆盖掉 #copyright 节点的元素内容
+            template: '<p>{{copyright}}</p>',
+            data: function () {
+                return {
+                    copyright: "Vue 虚拟实验室",
+                }
+            }
+        });
+        // 访问 vue 实例的挂载节点
+        console.log(vmFooter.$el);
+    </script>
+</body>
+</html>

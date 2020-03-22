@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue实例</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ msg }}</h1>
+        <!-- 这里不能声明一个新的 Vue 实例 -->
+        <div id="app-body">
+            <h4>会渲染吗？{{ title }}</h4>
+        </div>
+    </div>
+    <script>
+        const vmBody = new Vue({
+            el: '#app-body',
+            data: function () {
+                return {
+                    title: "#app-body - Vue 实例讲解"
+                }
+            }
+        });
+    </script>
+    <script>
+        const vm = new Vue({
+            el: '#app',
+            data: function () {
+                return {
+                    msg: "欢迎来到前端小课",
+                    title: "#app - Vue 实例讲解"
+                }
+            }
+        });
+    </script>
+</body>
+</html>

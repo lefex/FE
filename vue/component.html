@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>组件</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <counter-view></counter-view>
+    </div>
+    <script>
+        Vue.component('counter-view', {
+            data: function () {
+                return {
+                    count: 0
+                };
+            },
+            template: '<button v-on:click="count++">You clicked me {{ count }} times.</button>'
+        })
+    </script>
+    <script>
+        const vm = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+
+</html>

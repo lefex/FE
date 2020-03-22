@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 与 Style 绑定</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<style>
+    .title {
+        color: red;
+        font-size: 20px;
+    }
+    .blue {
+        color: blue;
+    }
+    .small {
+        font-size: 10px;
+    }
+</style>
+</head>
+
+<body>
+<div id="app">
+    <!-- :class 可动态绑定一个 class，如果 isBlue 为真时，使用  blue 选择器；isSmall 为真时，使用  small 选择器-->
+    <div class="title" :class="{blue: isBlue, small: isSmall}">{{title}}</div>
+    <!-- 这个和上面的等价，可以把选择器直接在 data 中 -->
+    <div class="title" :class="titleClass">{{title}}</div>
+    <!-- 样式 -->
+    <div :style="{color: activeColor, fontSize: size + 'px'}">前端小课</div>
+</div>
+    <script>
+const obj = {
+    el: '#app',
+    data: function () {
+        return {
+            title: '前端小课',
+            isBlue: true,
+            isSmall: false,
+            titleClass: {
+                // blue 与 small 是选择器名
+                blue: false,
+                small: true
+            },
+            activeColor: 'red',
+            size: 26
+        }
+    }
+}
+const vm = new Vue(obj);
+    </script>
+</body>
+
+</html>
