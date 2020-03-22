@@ -110,14 +110,23 @@
 - [连接你、我、他 —— this](https://mp.weixin.qq.com/s/gFIRL-HFqql19fYOU-V3Og)
 - [&& ，|| 超越了我的认知](https://mp.weixin.qq.com/s/qCnDp6oxLik2s1H_wbGZTg)
 
-## 🐝第五阶段：深入学习 DOM、浏览器工作原理
+## 🐝第五阶段：深入学习 DOM
 - [深入学习 DOM、浏览器工作原理](https://mp.weixin.qq.com/s/zeFQRjx3B11-QviBxTbLEQ)
 - [我是一颗树 · DOM](https://mp.weixin.qq.com/s/rpY9fl9d_fM9P7uG8NxfUQ)
 - [回到工位“我”悟出了 DOM 设计的精华](https://mp.weixin.qq.com/s/kVPqY09YDL4RjmOlqVe8mg)
 - [打通 DOM 的设计架构](https://mp.weixin.qq.com/s/wDKzA3qJguRvPlznRsw4_w)
+- [两种方法轻松找到 DOM 元素](https://mp.weixin.qq.com/s/wW6gsRdWOpf19ai3m7ZAnQ)
+- [彻底搞懂 offsetX、scrollX、clientX 的区别](https://mp.weixin.qq.com/s/HYD_WEG8ObWAe4WYvqDdPg)
+- [了如指掌 · DOM 舆图](https://mp.weixin.qq.com/s/aIfJC1fDf-y0SqvZT0KcUw)
+
+## 🐝第六阶段：深入学习 Vue
+- [第六阶段 · 期待已久的 Vue](https://mp.weixin.qq.com/s/-Xc89GniErkrOf_cL9RNRQ)
+- [学习 Vue 从如何贡献代码开始](https://mp.weixin.qq.com/s/H_B8ITW5tMSRF128cQXswg)
+- [创建第一个 Vue 项目](https://mp.weixin.qq.com/s/KyQGSXfhrDePwL6OOBmpYQ)
+- [一个页面 Vue 实例只能有一个吗？](https://mp.weixin.qq.com/s/_du0IZ5VZXg9ug1SEWNUFg)
 
 
-**第五阶段 深入学习 DOM、浏览器工作原理，首发公众号，后续同步到这里，底部有二维码**
+**第六阶段 深入学习 Vue，首发公众号，后续同步到这里，底部有二维码**
 
 
 ## 🌹网站
