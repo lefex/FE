@@ -1,0 +1,24 @@
+/**
+ * @file index.css
+ * @author swan
+ */
+.sheet-box {
+    position: absolute;
+    z-index: 30;
+    background-color: red;
+    left: 0;
+    right: 0;
+    height: 300px;
+    bottom: -300px;
+    opacity: 0;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity .5s ease-in;
+}

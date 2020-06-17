@@ -1,0 +1,16 @@
+<!-- index.swan -->
+<view class="container">
+    <button type="primary" size="mini" bind:tap="tapAction">按钮 </button>
+</view>
+
+<!-- 蒙层，弹窗出来后显示 -->
+<view class="mask"
+      style="height: {{mHeight}}vh;opacity: {{mOpacity}};"
+      bind:tap="maskAction">
+</view>
+
+<!-- 弹窗 -->
+<view 
+    class="sheet-box"
+    animation="{{animation}}">
+</view>
