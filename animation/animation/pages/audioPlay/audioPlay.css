@@ -1,0 +1,89 @@
+.audio-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: #eee;
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 164px;
+    height: 170px;
+}
+.audio-item {
+    width: 26px;
+    background-color: #3B7EEE;
+    border-radius: 13px;
+}
+.animation {
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.audio-item:first-child {
+    height: 54px;
+    animation-name: audio-item1;
+}
+.audio-item:nth-child(2) {
+    height: 140px;
+    animation-name: audio-item2;
+}
+.audio-item:nth-child(3) {
+    height: 70px;
+    animation-name: audio-item3;
+}
+.audio-item:last-child {
+    height: 170px;
+    animation-name: audio-item4;
+}
+
+/* 最低到最高 */
+@keyframes audio-item1 {
+    from {
+        height: 54px;
+    }
+    to {
+        height: 170px;
+    }
+}
+/* 中间到最低 */
+@keyframes audio-item2 {
+    from {
+        height: 140px;
+    }
+    to {
+        height: 54px;
+    }
+}
+/* 中间到最高 */
+@keyframes audio-item3 {
+    from {
+        height: 70px;
+    }
+    to {
+        height: 170px;
+    }
+}
+/* 最高到最低 */
+@keyframes audio-item4 {
+    from {
+        height: 170px;
+    }
+    to {
+        height: 54px;
+    }
+}
+
+
+@keyframes bounce {
+    0% {
+        background-color: royalblue;
+        margin-top: 0;
+    }
+    100% {
+        background-color: yellow;
+        margin-top: 40%;
+    }
+}
