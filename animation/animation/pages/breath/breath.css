@@ -1,0 +1,27 @@
+.breath {
+    margin: 150px auto;
+    width: 150px;
+    height: 150px;
+    background-image: url(../../images/given.png);
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.animation {
+    animation-name: breath;
+    animation-duration: .8s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+@keyframes breath {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2, 1.5);
+    }
+}

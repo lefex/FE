@@ -1,5 +1,6 @@
 {
     "pages": [
+        "pages/breath/breath",
         "pages/audioPlay/audioPlay",
         "pages/index/index"
     ],
