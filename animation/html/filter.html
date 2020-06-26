@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filter</title>
+    <style>
+        .bg-box {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        .bg {
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background-color: #161824;
+            background-image: url(http://img2-cloud.itouchtv.cn/tvtouchtv/image/20171028/1509173046145823.jpg);
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: auto 100%;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            -webkit-transform-origin: center top;
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            -webkit-transition: opacity .3s linear;
+            transition: opacity .3s linear;
+            z-index: 1;
+        }
+        .bg::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0,0,0,.8);
+        }
+
+        .blur {
+            filter: blur(10px);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- style="background-image: url(https://music.163.com/api/img/blur/8896148580676276);" -->
+    <div class="bg-box">
+        <div class="bg blur"></div>
+    </div>
+</body>
+</html>

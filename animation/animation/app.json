@@ -1,7 +1,7 @@
 {
     "pages": [
-        "pages/breath/breath",
         "pages/audioPlay/audioPlay",
+        "pages/breath/breath",
         "pages/index/index"
     ],
     "window": {

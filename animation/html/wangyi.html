@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yunyinyue</title>
+    <style>
+        .song-root {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .song-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #161824;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            -webkit-transform: scale(1.5);
+            -ms-transform: scale(1.5);
+            transform: scale(1.5);
+            -webkit-transform-origin: center top;
+            -ms-transform-origin: center top;
+            transform-origin: center top;
+            -webkit-transition: opacity .3s linear;
+            transition: opacity .3s linear;
+            z-index: 1;
+        }
+        .song-bg::before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            background-color: rgba(0,0,0,.5);
+        }
+        .text-out {
+            background-color: royalblue;
+            font-size: 300px;
+            color: white;
+        }
+        .text-in {
+            font-size: 20px;
+            padding-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="song-root">
+        <div class="song-bg" style="background-image: url(//music.163.com/api/img/blur/8896148580676276);"></div>
+    </div>
+    <div class="text-out">
+        <div class="text-in">前端小课</div>
+    </div>
+</body>
+</html>

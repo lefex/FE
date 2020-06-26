@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .box {
+            width: 60px;
+            height: 60px;
+            background-image: url(./monkey.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            color: royalblue;
+            font-weight: bold;
+            border: 1px red solid;
+        }
+        .tx {
+            /* 向右前进 90px */
+            transform: translateX(90px);
+        }
+        .tx2 {
+            /* 百分比表示基于 transform-box 的宽度，这里的 100% 相当于元素的宽度 */
+            transform: translateX(100%);
+        }
+        .tr {
+            /* 相当于 Z 轴旋转 */
+            transform: rotate(45deg);
+        }
+        .trX {
+            transform: rotateX(80deg);
+        }
+        .trY {
+            transform: rotateY(80deg);
+        }
+        .trZ {
+            transform: rotateZ(45deg);
+        }
+        .ts {
+            /* 相当于 Z 轴旋转 */
+            transform: scale(0.5);
+        }
+        .tsX {
+            transform: scaleX(0.5);
+        }
+        .tsY {
+            transform: scaleY(0.5);
+        }
+        .tsZ {
+            transform: scaleZ(0.5);
+        }
+        p {
+            padding: 10px;
+            font-size: 18px;
+        }
+        .line {
+            height: 2px;
+            background-color: burlywood;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="line"></div>
+    <!-- 位移 -->
+    <p>translateX(90px)</p>
+    <div class="box tx"></div>
+    <div class="line"></div>
+    <p>translateX(30%)</p>
+    <div class="box tx2"></div>
+    <div class="line"></div>
+    <!-- 旋转 -->
+    <p>rotate(45deg)</p>
+    <div class="box tr"></div>
+    <div class="line"></div>
+    <p>rotateX(80deg)</p>
+    <div class="box trX"></div>
+    <div class="line"></div>
+    <p>rotateY(80deg)</p>
+    <div class="box trY"></div>
+    <div class="line"></div>
+    <p>rotateZ(45deg)</p>
+    <div class="box trZ"></div>
+    <div class="line"></div>
+    <!-- 缩放 -->
+    <p>scale(0.5)</p>
+    <div class="box ts"></div>
+    <div class="line"></div>
+    <p>scaleX(0.5)</p>
+    <div class="box tsX"></div>
+    <div class="line"></div>
+    <p>scaleY(0.5)</p>
+    <div class="box tsY"></div>
+    <div class="line"></div>
+    <p>scaleZ(0.5)</p>
+    <div class="box tsZ"></div>
+    <div class="line"></div>
+</body>
+
+</html>

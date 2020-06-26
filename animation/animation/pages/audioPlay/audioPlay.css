@@ -15,7 +15,7 @@
 }
 .animation {
     animation-duration: .5s;
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     animation-delay: 0;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -41,38 +41,26 @@
 
 /* 最低到最高 */
 @keyframes audio-item1 {
-    from {
-        height: 54px;
-    }
     to {
-        height: 170px;
+        height: 100%;
     }
 }
 /* 中间到最低 */
 @keyframes audio-item2 {
-    from {
-        height: 140px;
-    }
     to {
-        height: 54px;
+        height: calc(100% * .3);
     }
 }
 /* 中间到最高 */
 @keyframes audio-item3 {
-    from {
-        height: 70px;
-    }
     to {
-        height: 170px;
+        height: 100%;
     }
 }
 /* 最高到最低 */
 @keyframes audio-item4 {
-    from {
-        height: 170px;
-    }
     to {
-        height: 54px;
+        height: calc(100% * .3);
     }
 }
 

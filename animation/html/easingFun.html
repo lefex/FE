@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: inline-block;
+            width: 60px;
+            height: 90px;
+            margin: 0 auto;
+            background-image: url(./monkey.png);
+            background-size: 60px 60px;
+            background-repeat: no-repeat;
+            background-position: 0 20px;
+            border-radius: 50%;
+            color: royalblue;
+            font-weight: bold;
+        }
+        .animation {
+            animation-duration: 2s;
+            animation-name: mover;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+        .linear {
+            animation-timing-function: linear;
+        }
+        .ease {
+            animation-timing-function: ease;
+        }
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes mover {
+            100% {
+                transform: translateY(400px);
+            }
+        }
+        .time-box {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item-item {
+            width: 96px;
+            height: 40px;
+            background-color: #eeeeee;
+            border-radius: 4px;
+            margin: 10px;
+            white-space: nowrap;
+            text-align: center;
+            font-size: 20px;
+            line-height: 2;
+            cursor: pointer;
+        }
+        .line {
+            height: 2px;
+            background-color: green;
+        }
+        .text {
+            color: black;
+            font-weight: 700;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="time-box">
+        <div class="item-item" onclick="timeChange('ease')">ease</div>
+        <div class="item-item" onclick="timeChange('ease-in')">ease-in</div>
+        <div class="item-item" onclick="timeChange('ease-out')">ease-out</div>
+        <div class="item-item" onclick="timeChange('ease-in-out')">ease-in-out</div>
+        <div class="item-item" onclick="timeChange('liner')">liner</div>
+        <div class="item-item" onclick="timeChange('step-end')">step-end</div>
+        <div class="item-item" onclick="timeChange('step-start')">step-start</div>
+    </div>
+    <div class="line"></div>
+    <div class="box animation linear" id="animation-block">linear</div>
+    <div class="box animation ease">ease</div>
+    <div class="box animation ease-in">ease-in</div>
+    <div class="box animation ease-out">ease-out</div>
+    <div class="box animation ease-in-out">in-out</div>
+
+    <div class="line"></div>
+    <div class="line" style="margin-top: 400px;"></div>
+    <div class="text" id="text-time" style="margin-top: -200px;"></div>
+    <script>
+        var count = 0;
+        var animationBox = document.getElementById('animation-block');
+        var timeChange = function(fun) {
+            console.log(fun);
+            count += 1;
+            animationBox.style.animationTimingFunction = fun;
+            animationBox.style.animationIterationCount = 2 * count;
+            animationBox.style.animationPlayState = 'running';
+
+            let textBox = document.getElementById('text-time');
+            textBox.innerText = fun;
+        }
+    </script>
+</body>
+</html>

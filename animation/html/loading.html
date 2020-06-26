@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .progress-box {
+            width: 240px;
+            position: relative;
+        }
+
+        #circle-canvas {
+            background-color: #fff;
+        }
+        .animation {
+            animation-name: loading;
+            animation-duration: .6s;
+            animation-direction: normal;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            animation-fill-mode: forwards;
+        }
+        @keyframes loading {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-box">
+        <canvas class="animation" id="circle-canvas" width="240px" height="240px"></canvas>
+    </div>
+    <script>
+        let srartAngle = 0;
+        let canvas = document.getElementById('circle-canvas');
+        let ratio = window.devicePixelRatio;
+        let width = canvas.width;
+        let height = canvas.height;
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        canvas.height = height * ratio;
+        canvas.width = width * ratio;
+
+        function drawCircle(n, width) {
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+                if (ratio) { // 处理锯齿
+                    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+                }
+                // 进度条的颜色
+                ctx.strokeStyle = '#3B7EEE';
+                // 进度条的宽度
+                ctx.lineWidth = width;
+                ctx.lineCap = 'round';
+                ctx.beginPath();
+                // arc(x, y, radius, startAngle, endAngle, anticlockwise)
+                // x, y 为圆心，radius 为半径，从 startAngle 到 endAngle，anticlockwise 为顺时针
+                ctx.arc(120, 120, 100, srartAngle, (Math.PI / 180) * n, false); // 绘制
+                ctx.stroke();
+            }
+        }
+        drawCircle(260, 8);
+    </script>
+</body>
+
+</html>

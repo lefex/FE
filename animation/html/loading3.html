@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juhua</title>
+    <style>
+        .box {
+            position: relative;
+            margin: 100px auto;
+            width: 30px;
+            height: 30px;
+        }
+
+        .dot {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: rgb(25, 137, 250);
+            /* border: 1px solid #000; */
+        }
+
+        .dot::before {
+            display: block;
+            width: 2px;
+            height: 25%;
+            margin: 0 auto;
+            background-color: currentColor;
+            border-radius: 40%;
+            content: " "
+        }
+
+        .animation {
+            animation-name: spinner;
+            animation-duration: 1.2s;
+            animation-delay: 0;
+            animation-timing-function: steps(12);
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0);
+            }
+
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+
+        .dot:first-child {
+            transform: rotate(30deg);
+            opacity: 1;
+        }
+        .dot:nth-child(2) {
+            transform: rotate(60deg);
+            opacity: .9375;
+        }
+        .dot:nth-child(3) {
+            transform: rotate(90deg);
+            opacity: .875;
+        }
+        .dot:nth-child(4) {
+            transform: rotate(120deg);
+            opacity: .8125;
+        }
+        .dot:nth-child(5) {
+            transform: rotate(150deg);
+            opacity: .75;
+        }
+        .dot:nth-child(6) {
+            transform: rotate(180deg);
+            opacity: .6875;
+        }
+        .dot:nth-child(7) {
+            transform: rotate(210deg);
+            opacity: .625;
+        }
+        .dot:nth-child(8) {
+            transform: rotate(240deg);
+            opacity: .5625
+        }
+        .dot:nth-child(9) {
+            transform: rotate(270deg);
+            opacity: .5;
+        }
+        .dot:nth-child(10) {
+            transform: rotate(300deg);
+            opacity: .4375;
+        }
+
+        .dot:nth-child(11) {
+            transform: rotate(330deg);
+            opacity: .375;
+        }
+
+        .dot:nth-child(12) {
+            transform: rotate(1turn);
+            opacity: .3125;
+        }
+
+        /* 圆形进度条 */
+        .circular {
+            border: 1px solid transparent;
+            border-top-color: initial;
+            border-radius: 100%
+        }
+        .circular-animation {
+            animation: spinner .8s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box animation">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <!-- <div class="box circular circular-animation">
+
+    </div> -->
+</body>
+
+</html>

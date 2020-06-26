@@ -1,9 +1,21 @@
 {
     "editor": {
-        "curPath": "",
-        "expands": [],
+        "curPath": "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay/audioPlay.css",
+        "expands": [
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay"
+        ],
         "markdownUploadTimeMap": {},
-        "paths": [],
-        "recentlyFiles": []
+        "paths": [
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/app.json",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay/audioPlay.css"
+        ],
+        "recentlyFiles": [
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay/audioPlay.css",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay/audioPlay.js",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pages/audioPlay/audioPlay.json",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/app.json",
+            "/Users/suyanwang/Desktop/fe/FE/animation/animation/pkginfo.json"
+        ]
     }
 }

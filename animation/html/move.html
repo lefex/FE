@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move</title>
+    <style>
+        .progress-box {
+            width: 240px;
+            position: relative;
+        }
+        #circle-canvas {
+            background-color: royalblue;
+        }
+        .progress-text {
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress-box">
+        <canvas id="circle-canvas" width="240px" height="240px"></canvas>
+        <div class="progress-text" id="progress-text-id">0%</div>
+    </div>
+    <script>
+        let canvas = document.getElementById('circle-canvas');
+        let ratio = window.devicePixelRatio;
+        let width = canvas.width;
+        let height = canvas.height;
+        canvas.style.width = width + "px";
+        canvas.style.height = height + "px";
+        canvas.height = height * ratio;
+        canvas.width = width * ratio;
+
+        let prgrossText = document.getElementById('progress-text-id');
+
+        function drawCircle(n, width) {
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+                if (ratio) { // 处理锯齿
+                    ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+                }
+                // 进度条的颜色
+                ctx.strokeStyle = 'white';
+                // 进度条的宽度
+                ctx.lineWidth = width;
+                ctx.lineCap = 'round';
+                ctx.beginPath();
+                // arc(x, y, radius, startAngle, endAngle, anticlockwise)
+                // x, y 为圆心，radius 为半径，从 startAngle 到 endAngle，anticlockwise 为顺时针
+                ctx.arc(120, 120, 100, 0, (Math.PI / 180) * n, false); // 绘制
+                ctx.stroke();
+                // 设置进度值
+                prgrossText.innerText = `${Math.round(n/360 * 100)}%`;
+            }
+        }
+        drawCircle(360, 4);
+
+        var n = 1;
+        let interval = setInterval(() => {
+            if (n <= 360) {
+                drawCircle(n, 4);
+                n += 1;
+            }
+            if (n === 361) {
+                // 清除定时器
+                clearInterval(interval);
+                // 清除先前画的圆，有锯齿
+                let ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);  
+                drawCircle(360, 4);
+            }
+        }, 1);
+
+    </script>
+</body>
+
+</html>

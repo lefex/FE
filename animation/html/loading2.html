@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading2</title>
+    <style>
+        .loading-box {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        .size {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border-style: dotted;
+            border-width: 18px;
+        }
+        .outer {
+            border-color: teal;
+            opacity: 1;
+        }
+        .in {
+            border-color: black;
+            transform: rotate(4.4deg);
+            opacity: 0;
+        }
+        .animation {
+            animation-timing-function: ease-in;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+        .hidden {
+            animation-name: hidden;
+        }
+        .show {
+            animation-name: show;
+        }
+        @keyframes hidden {
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes show {
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-box">
+        <div class="outer size animation hidden"></div>
+        <div class="in size animation show"></div>
+    </div>
+</body>
+</html>
