@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 2000px;
+        }
+
+        .pop-tips-wrapper {
+            position: fixed;
+            width: 420px;
+            height: 176px;
+            right: 50%;
+            margin-right: -210px;
+            transition: all 1s ease;
+            transition-timing-function: ease-in-out;
+            z-index: 201;
+            bottom: 40%;
+        }
+
+        #pop-tips {
+            height: 176px;
+            border-radius: 2px;
+            background: #fff;
+            box-shadow: 0 2px 8px 0 rgba(50, 50, 51, .1);
+            border: 0 solid #e5e5e5;
+        }
+
+        .header {
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .free-use {
+            border: 1px solid #155bd4;
+            color: #155bd4;
+            margin-left: 92px;
+            width: 112px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            box-sizing: border-box;
+            font-weight: 300;
+            font-family: PingFangSC-Regular;
+            border-radius: 2px;
+        }
+
+        .contact {
+            border: 1px solid #155bd4;
+            background: #155bd4;
+            color: #fff;
+            margin-left: 14px;
+            width: 112px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 14px;
+            box-sizing: border-box;
+            font-weight: 300;
+            font-family: PingFangSC-Regular;
+            border-radius: 2px;
+        }
+
+        .animation {
+            position: absolute;
+            bottom: 0;
+            height: 20px;
+            width: 100%;
+            background-image: linear-gradient(232deg, #3260c9 27%, #497ad6 87%);
+            opacity: .13;
+            overflow: hidden;
+        }
+
+        .bl1 {
+            position: absolute;
+            z-index: 10;
+            height: 2612px;
+            width: 2612px;
+            border-radius: 48%;
+            bottom: 23px;
+            animation-name: rotate;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-duration: 18s;
+            background-color: hsla(0, 0%, 100%, .4);
+            background-color: yellowgreen;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .bl2 {
+            position: absolute;
+            height: 2612px;
+            width: 2612px;
+            bottom: 15px;
+            border-radius: 48%;
+            background-color: hsla(0, 0%, 100%, .9);
+            animation-name: rotate1;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes rotate1 {
+            0% {
+                transform: translate(-42%) rotate(1turn);
+            }
+
+            50% {
+                transform: translate(-42%) rotate(180deg);
+            }
+
+            100% {
+                transform: translate(-42%) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pop-tips-wrapper">
+        <div id="pop-tips">
+            <header class="header"></header>
+            <section class="content">
+                <p>和素燕一起系统学前端</p>
+            </section>
+            <footer class="footer">
+                <div class="free-use">关注</div>
+                <div class="contact">公众号素燕</div>
+                <div class="animation">
+                    <div class="bl1"></div>
+                    <div class="bl2"></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
