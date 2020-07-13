@@ -1,24 +1,19 @@
-# 《前端小课》
-前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。每天打卡，自我驱动学习，有问题及时讨论。
+## 《前端小课 · 前端 100 天》
+前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。如果你有编程基础，这个课程非常适合你。
 
-我总结了**[✅前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)**
+- [前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)
 
-- [✅学习前端的 8 个专题](https://mp.weixin.qq.com/s/H7k8IHxL-YmxCE-QQDc12w)
+- [前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
 
-通过下面的方式加入学习：
+- [学习前端的 8 个专题](https://mp.weixin.qq.com/s/H7k8IHxL-YmxCE-QQDc12w)
 
-- [✅我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
-- [✅2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
-- [✅前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
-- [✅第一阶段 · 坚持学习前端的第20天（领电子书）](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
-- [✅第二阶段 · 坚持14天学懂CSS布局（领电子书）](https://mp.weixin.qq.com/s/oN_U1SAm8WJ1CLZQNJtIPA)
-- [✅第三阶段 · 告别网络编程](https://mp.weixin.qq.com/s/XB1h-jvztNG_rime7P2bMw)
-- [✅第四阶段 · JavaScript 专题结束（领电子书）](https://mp.weixin.qq.com/s/BT85qhtP52Hn46qt3R_Y-g)
+- [我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
 
+- [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 
-- [✅demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
+- [demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
-## 🐝第 1 阶段：HTML + CSS
+### 第 1 阶段：HTML + CSS
 
 - [坚持学习前端的第20天](https://mp.weixin.qq.com/s/-js2txXGKUzEFEMUlF8JBg)
 - [第19天：写出易复用、易维护、结构清晰的 CSS](https://mp.weixin.qq.com/s/IqqoMc967gFYfHRJoCAJhw)
@@ -47,7 +42,7 @@
 - [第1天：开篇词，开发环境准备](https://mp.weixin.qq.com/s/66oU0fY502OYK9WpxiaCtA)
 
 
-## 🌺第 2 阶段：死磕 CSS 布局
+### 第 2 阶段：死磕 CSS 布局
 
 - [用前端仿写朋友圈](https://mp.weixin.qq.com/s/BUMaJXJ2bD0FcZ5kMI_WrA)
 - [第13天：布局的兼容性与两种不常用的布局](https://mp.weixin.qq.com/s/fM8DkM9sGAGzu-G3TW_5UA)
@@ -67,7 +62,7 @@
 
 ![](https://github.com/lefex/FE/blob/master/asset/css-layout.png)
 
-## 🐝第 3 阶段：搞懂网络，掌握网页请求流程
+### 第 3 阶段：搞懂网络，掌握网页请求流程
 
 - [第三阶段 - 重学网络编程（HTTP、TCP、WebServer）](https://mp.weixin.qq.com/s/c_VnSTjtgearUjx6ttqzwQ)
 - [一条命令开启一个 WebServer](https://mp.weixin.qq.com/s/7_gGs16ZCoL_GQKPtGFCcw)
@@ -91,7 +86,7 @@
 - [被“同源策略”限制的我却想着“跨域”](https://mp.weixin.qq.com/s/tsCFBmNRSLXNR6OeZtAAfg)
 - [第三阶段结语：告别网络编程](https://mp.weixin.qq.com/s/XB1h-jvztNG_rime7P2bMw)
 
-## 🐝第 4 阶段：系统深入学习 JavaScript
+### 第 4 阶段：系统深入学习 JavaScript
 - [第四阶段 - 系统深入学习 JavaScript](https://mp.weixin.qq.com/s/TMdSJcq9s525MdMFmgT9Gw)
 - [程序原本 — 推荐3本免费电子书](https://mp.weixin.qq.com/s/eH7rHCIvp4l29GcMQ7UYMQ)
 - [被招安的 JavaScript ，取名为 ECMAScript](https://mp.weixin.qq.com/s/5UwQiNiB9i5eQQ-Nr9kFHA)
@@ -120,7 +115,7 @@
 - [被我忽略的 6 个 JS 开发小技巧](https://mp.weixin.qq.com/s/UjC6vFXczrmCv5v0dbHK_Q)
 - [群里分享的关于我对 JS 闭包的理解](https://mp.weixin.qq.com/s/X0FLyn7aSJGq8y4m_6onpw)
 
-## 🐝第 5 阶段：深入学习 DOM
+### 第 5 阶段：深入学习 DOM
 - [深入学习 DOM、浏览器工作原理](https://mp.weixin.qq.com/s/zeFQRjx3B11-QviBxTbLEQ)
 - [我是一颗树 · DOM](https://mp.weixin.qq.com/s/rpY9fl9d_fM9P7uG8NxfUQ)
 - [回到工位“我”悟出了 DOM 设计的精华](https://mp.weixin.qq.com/s/kVPqY09YDL4RjmOlqVe8mg)
@@ -129,13 +124,13 @@
 - [彻底搞懂 offsetX、scrollX、clientX 的区别](https://mp.weixin.qq.com/s/HYD_WEG8ObWAe4WYvqDdPg)
 - [了如指掌 · DOM 舆图](https://mp.weixin.qq.com/s/aIfJC1fDf-y0SqvZT0KcUw)
 
-## 🐝第 6 阶段：深入学习 Vue (内容还会补充)
+### 第 6 阶段：深入学习 Vue (内容还会补充)
 - [第六阶段 · 期待已久的 Vue](https://mp.weixin.qq.com/s/-Xc89GniErkrOf_cL9RNRQ)
 - [学习 Vue 从如何贡献代码开始](https://mp.weixin.qq.com/s/H_B8ITW5tMSRF128cQXswg)
 - [创建第一个 Vue 项目](https://mp.weixin.qq.com/s/KyQGSXfhrDePwL6OOBmpYQ)
 - [一个页面 Vue 实例只能有一个吗？](https://mp.weixin.qq.com/s/_du0IZ5VZXg9ug1SEWNUFg)
 
-## 🐝第 7 阶段：云与环境部署
+### 第 7 阶段：云与环境部署
 - [第七阶段 · 云与环境部署](https://mp.weixin.qq.com/s/kKjmqConeMI2zlJpvX0XSw)
 - [精心画了一张 vim 壁纸](https://mp.weixin.qq.com/s/KvYVT5YDt_G_J4RJ98wo4w)
 - [使用 vim 不得不看的 2 个 tips](https://mp.weixin.qq.com/s/0zDETiTCU_GANaIthHegnw)
@@ -147,7 +142,7 @@
 - [10x 程序员 · 提高 shell 的使用效率](https://mp.weixin.qq.com/s/cHexunWiAy4ms32UWVz7_Q)
 - [与前端部署相关的一些关键词](https://mp.weixin.qq.com/s/GDXvtesbsTgE8XIrkBKfwA)
 
-## 第 8 阶段：小程序与前端动画特效
+### 第 8 阶段：小程序与前端动画特效
 - [小程序向上弹出动画效果](https://mp.weixin.qq.com/s/HR2LnHgcplAcBKXhzKdhUg)
 - [网易云音乐背景高斯模糊探索](https://mp.weixin.qq.com/s/Yd2-Sb6F6tNFd8ojS9N0mw)
 - [跳动的音符动画实现原理剖析](https://mp.weixin.qq.com/s/Dp_-tE8Ioj9eybxIZ5Jhdw)
@@ -161,7 +156,7 @@
 - [给 HTML 元素 Hover 态加点料](https://mp.weixin.qq.com/s/xVMQrjHNdxUbyr0FDKCyLg)
 - [第 8 阶段前端动效结束，下一阶段内容预告](https://mp.weixin.qq.com/s/H7k8IHxL-YmxCE-QQDc12w)
 
-## 🐝第 9 阶段：搞懂搞透前端构建
+### 第 9 阶段：搞懂搞透前端构建
 - [每位前端人都需要搞懂、搞透前端构建](https://mp.weixin.qq.com/s/5nR8LeiJVYgmudUhdgXbWg)
 - [webpack 究竟是什么，初学者晕头转向](https://mp.weixin.qq.com/s/284LdM-xuiYdhON4Sw0krQ)
 - [安装 webpack 搞定 Vue 打包](https://mp.weixin.qq.com/s/nCjUZgQMzOSHZ2Z05LuvqA)
