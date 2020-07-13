@@ -167,7 +167,7 @@
 - [安装 webpack 搞定 Vue 打包](https://mp.weixin.qq.com/s/nCjUZgQMzOSHZ2Z05LuvqA)
 - [从使用 loader 到实现 loader · webpack](https://mp.weixin.qq.com/s/jfxEOBW89IUV5BWkwOYuGQ)
 
-**第 9 阶段 搞懂搞透 webpack，首发公众号素燕，后续同步到这里，底部有二维码**
+**第 9 阶段 搞懂搞透 webpack，首发公众号素燕，后续同步到这里**
 
 
 ## 🌹网站
