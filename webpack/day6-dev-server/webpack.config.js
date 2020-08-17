@@ -35,7 +35,7 @@ const plugins = [];
                 charset: { charset: 'utf-8' },
                 viewport: 'width=device-width, initial-scale=1'
             },
-            // 控制 script 标签插入的位置
+            // 控制 script 标签插入的位置(head(true),body(false),)
             inject: "body",
             favicon: 'favicon.png',
         });
@@ -47,29 +47,18 @@ const plugins = [];
 module.exports = {
     // 设置打包方式，支持 development 和 production
     mode: 'development',
-    // 打包入口文件
+    // 打包入口文件w
     entry: entry,
     // 最终打包结果配置
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, './dist')
     },
-    plugins: plugins
+    plugins: plugins,
+    devtool: 'source-map',
+    devServer: {
+        contentBase: path.join(__dirname, 'dist'),
+        compress: true,
+        port: 9000
+    }
 }
-
-        // 使用 HtmlWebpackPlugin
-        // new HtmlWebpackPlugin({
-        //     title: '和素燕一起学 webpack',
-        //     filename: 'index.html',
-        //     minify: {
-        //         removeComments: true,
-        //         // collapseWhitespace: true
-        //     },
-        //     meta: {
-        //         charset: { charset: 'utf-8' },
-        //         viewport: 'width=device-width, initial-scale=1'
-        //     },
-        //     // 控制 script 标签插入的位置
-        //     inject: "head",
-        //     favicon: 'favicon.png',
-        // }),
