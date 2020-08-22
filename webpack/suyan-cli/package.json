@@ -1,0 +1,25 @@
+{
+  "name": "suyan-cli",
+  "version": "1.0.0",
+  "description": "创建一个 CLI 工具，来源于公众号素燕",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Suyan",
+    "CLI"
+  ],
+  "bin": {
+    "suyan-cli": "./index.js"
+  },
+  "author": "公众号素燕",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "commander": "^6.0.0",
+    "figlet": "^1.5.0",
+    "inquirer": "^7.3.3"
+  }
+}

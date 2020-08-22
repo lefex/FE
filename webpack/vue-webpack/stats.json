@@ -1,0 +1,18 @@
+Hash: 917da18c3658710f536a
+Version: webpack 4.43.0
+Time: 634ms
+Built at: 08/20/2020 7:16:35 AM
+  Asset     Size  Chunks             Chunk Names
+day1.js  277 KiB    main  [emitted]  main
+Entrypoint main = day1.js
+[./home/index.js] 138 bytes {main} [built]
+[./home/index.vue] 1.13 KiB {main} [built]
+[./home/index.vue?vue&type=script&lang=js&] 252 bytes {main} [built]
+[./home/index.vue?vue&type=style&index=0&lang=css&] 544 bytes {main} [built]
+[./home/index.vue?vue&type=template&id=908012a0&] 197 bytes {main} [built]
+[./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./home/index.vue?vue&type=style&index=0&lang=css&] ./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./home/index.vue?vue&type=style&index=0&lang=css& 311 bytes {main} [built]
+[./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib/index.js?!./home/index.vue?vue&type=style&index=0&lang=css&] ./node_modules/style-loader/dist/cjs.js!./node_modules/css-loader/dist/cjs.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/vue-loader/lib??vue-loader-options!./home/index.vue?vue&type=style&index=0&lang=css& 670 bytes {main} [built]
+[./node_modules/vue-loader/lib/index.js?!./home/index.vue?vue&type=script&lang=js&] ./node_modules/vue-loader/lib??vue-loader-options!./home/index.vue?vue&type=script&lang=js& 219 bytes {main} [built]
+[./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./home/index.vue?vue&type=template&id=908012a0&] ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./home/index.vue?vue&type=template&id=908012a0& 342 bytes {main} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {main} [built]
+    + 7 hidden modules
