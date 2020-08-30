@@ -129,6 +129,15 @@
 - [学习 Vue 从如何贡献代码开始](https://mp.weixin.qq.com/s/H_B8ITW5tMSRF128cQXswg)
 - [创建第一个 Vue 项目](https://mp.weixin.qq.com/s/KyQGSXfhrDePwL6OOBmpYQ)
 - [一个页面 Vue 实例只能有一个吗？](https://mp.weixin.qq.com/s/_du0IZ5VZXg9ug1SEWNUFg)
+- [关于 Vue 中计算与侦听属性的一些思考](https://mp.weixin.qq.com/s/xlilwHoVtmOE0Ogf1h_DyA)
+- [让 Class 与 Style 动起来](https://mp.weixin.qq.com/s/vHnDVe_RTQikxTu6Bgfrdg)
+- [动静结合 · Vue 模板](https://mp.weixin.qq.com/s/JqqLT3VrvwRHjAIjNe-vzQ)
+- [Vue 模板的功臣 · 指令](https://mp.weixin.qq.com/s/U6zdZeUj5Qwhw8irF1JufQ)
+- [关于 v-model 的一点思考](https://mp.weixin.qq.com/s/C0aqI0cBix1rCiB_LYCk_g)
+- [太强了，从 0 到 1 搭建 vue-cli](https://mp.weixin.qq.com/s/97v5r122BNQF5erN95PyPQ)
+- [各种博客的代码高亮是如何实现的](https://mp.weixin.qq.com/s/HagUTO9KZjZqovAIbvx8Hg)
+- [scoped 减少了我对 CSS 样式冲突的焦虑](https://mp.weixin.qq.com/s/b2Tjl2CWhZ_GSjheIELXpw)
+- [Vue CLI 3.0 配置项 - 设置接口代理](https://mp.weixin.qq.com/s/lc9krc4AqXcj2WZhEeYb0g)
 
 ### 第 7 阶段：云与环境部署
 - [第七阶段 · 云与环境部署](https://mp.weixin.qq.com/s/kKjmqConeMI2zlJpvX0XSw)
@@ -161,6 +170,15 @@
 - [webpack 究竟是什么，初学者晕头转向](https://mp.weixin.qq.com/s/284LdM-xuiYdhON4Sw0krQ)
 - [安装 webpack 搞定 Vue 打包](https://mp.weixin.qq.com/s/nCjUZgQMzOSHZ2Z05LuvqA)
 - [从使用 loader 到实现 loader · webpack](https://mp.weixin.qq.com/s/jfxEOBW89IUV5BWkwOYuGQ)
+- [搞定 webpack 的 plugin 不在话下](https://mp.weixin.qq.com/s/q1yPGGXmUvEMQ0JNNDoWzA)
+- [使用 webpack 动态生成 html](https://mp.weixin.qq.com/s/ScwmFkxoEzCVWO8dXbSPVQ)
+- [webpack 与 tapable 擦出火花，实现 plugin 系统](https://mp.weixin.qq.com/s/aBXcxvqGZVzbs7G0DcH7DA)
+- [webpack 性能优化 DLL 才硬核](https://mp.weixin.qq.com/s/GiPfo5lgxkES4je_gNuNyQ)
+- [webpack 辅助高效开发](https://mp.weixin.qq.com/s/qO5LBpEpxahQK1v1DWGnqA)
+- [原来实现 CLI 工具如此简单，以前路走错了](https://mp.weixin.qq.com/s/ZwfQoGTtIecQFepdb8E1SQ)
+- [webpack 性能优化之定位问题](https://mp.weixin.qq.com/s/WtC1RACuTmGZuvUWmZOtvg)
+- [这些资料助你搞透 Webpack](https://mp.weixin.qq.com/s/fu58YXwN3Mxn-7MFBNDCQw)
+- [统一管理多项目 webpack 配置文件](https://mp.weixin.qq.com/s/6J9X8s_QfQcv2g5Wr-qn-A)
 
 **第 9 阶段 搞懂搞透 webpack，首发公众号素燕，后续同步到这里**
 
