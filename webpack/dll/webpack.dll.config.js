@@ -18,6 +18,7 @@ module.exports = {
         library: '[name]_[hash]'
     },
     plugins: [
+        // 生成 manifest 文件
         new webpack.DllPlugin({
             name: '[name]_[hash]',
             path: resolve(__dirname, 'dll/[name].manifest.json')

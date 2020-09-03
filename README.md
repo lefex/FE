@@ -2,16 +2,15 @@
 前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。如果你有编程基础，这个课程非常适合你。
 
 - [前端学习路线](https://mp.weixin.qq.com/s/yveUo-1akuhP4Yi8wUZPhg)
-
 - [前端小课开课啦](https://mp.weixin.qq.com/s/6_3hSOw5Lv4p-vxIJS1woQ)
-
 - [学习前端的 8 个专题](https://mp.weixin.qq.com/s/H7k8IHxL-YmxCE-QQDc12w)
-
 - [我的2019 —我与《前端小课》](https://mp.weixin.qq.com/s/AktmmOJ0HRJ3daZVxYMR_A)
-
 - [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
-
 - [demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
+
+### 微信扫码加入《前端小课》，和我一起学习前端，以上只是冰山一角，还有更多优质内容
+
+![](https://github.com/lefex/FE/blob/master/asset/suyan.png)
 
 ### 第 1 阶段：HTML + CSS
 
@@ -170,7 +169,4 @@
 你也可以通过网站学习，[超越技术](https://lefex.github.io/)
 
 
-### 微信扫码加入《前端小课》，和我一起学习前端，以上只是冰山一角，还有更多优质内容
-
-![](https://github.com/lefex/FE/blob/master/asset/qrcode.png)
 

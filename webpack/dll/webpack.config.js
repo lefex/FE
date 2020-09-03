@@ -36,29 +36,29 @@ module.exports = {
             }
         ]
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: './home/index.html'
-        }),
-        // vue-loader 目前需要 VueLoaderPlugin，不然会报错
-        // 直接创建了 VueLoaderPlugin 实例
-        new VueLoaderPlugin(),
-        // DLL
-        // jquery 不参与打包
-        new webpack.DllReferencePlugin({
-            manifest: path.resolve(__dirname, 'dll/jquery_dll.manifest.json')
-        }),
-        // vue 不参与打包
-        new webpack.DllReferencePlugin({
-            manifest: path.resolve(__dirname, 'dll/vue_dll.manifest.json')
-        }),
-        // 在 HTML 中添加动态库 jquery_dll.js
-        new AddAssetHtmlWebpackPlugin({
-            filepath: path.resolve(__dirname, 'dll/jquery_dll.js')
-        }),
-        // 在 HTML 中添加动态库 vue_dll.js
-        new AddAssetHtmlWebpackPlugin({
-            filepath: path.resolve(__dirname, 'dll/vue_dll.js')
-        }),
-    ]
+plugins: [
+    new HtmlWebpackPlugin({
+        template: './home/index.html'
+    }),
+    // vue-loader 目前需要 VueLoaderPlugin，不然会报错
+    // 直接创建了 VueLoaderPlugin 实例
+    new VueLoaderPlugin(),
+    // DLL
+    // jquery 不参与打包
+    new webpack.DllReferencePlugin({
+        manifest: path.resolve(__dirname, 'dll/jquery_dll.manifest.json')
+    }),
+    // vue 不参与打包
+    new webpack.DllReferencePlugin({
+        manifest: path.resolve(__dirname, 'dll/vue_dll.manifest.json')
+    }),
+    // 在 HTML 中添加动态库 jquery_dll.js
+    new AddAssetHtmlWebpackPlugin({
+        filepath: path.resolve(__dirname, 'dll/jquery_dll.js')
+    }),
+    // 在 HTML 中添加动态库 vue_dll.js
+    new AddAssetHtmlWebpackPlugin({
+        filepath: path.resolve(__dirname, 'dll/vue_dll.js')
+    }),
+]
 }

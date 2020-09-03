@@ -1,1 +1,38 @@
-{"name":"vue_dll_8bbec4b3bba61dd68c13","content":{"./node_modules/webpack/buildin/global.js":{"id":0,"buildMeta":{"providedExports":true}},"./node_modules/vue/dist/vue.runtime.esm.js":{"id":4,"buildMeta":{"exportsType":"namespace","providedExports":["default"]}},"./node_modules/timers-browserify/main.js":{"id":5,"buildMeta":{"providedExports":true}},"./node_modules/setimmediate/setImmediate.js":{"id":6,"buildMeta":{"providedExports":true}},"./node_modules/process/browser.js":{"id":7,"buildMeta":{"providedExports":true}}}}
+{
+    "name": "vue_dll_8bbec4b3bba61dd68c13",
+    "content": {
+        "./node_modules/webpack/buildin/global.js": {
+            "id": 0,
+            "buildMeta": {
+                "providedExports": true
+            }
+        },
+        "./node_modules/vue/dist/vue.runtime.esm.js": {
+            "id": 4,
+            "buildMeta": {
+                "exportsType": "namespace",
+                "providedExports": [
+                    "default"
+                ]
+            }
+        },
+        "./node_modules/timers-browserify/main.js": {
+            "id": 5,
+            "buildMeta": {
+                "providedExports": true
+            }
+        },
+        "./node_modules/setimmediate/setImmediate.js": {
+            "id": 6,
+            "buildMeta": {
+                "providedExports": true
+            }
+        },
+        "./node_modules/process/browser.js": {
+            "id": 7,
+            "buildMeta": {
+                "providedExports": true
+            }
+        }
+    }
+}
