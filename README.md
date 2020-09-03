@@ -8,9 +8,9 @@
 - [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
-### 微信扫码加入《前端小课》，和我一起学习前端，以上只是冰山一角，还有更多优质内容
+### 微信公众号，内容同步
 
-![](https://github.com/lefex/FE/blob/master/asset/suyan.png)
+![](https://upload-images.jianshu.io/upload_images/1664496-bf289ad08cbf3b28.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 第 1 阶段：HTML + CSS
 
