@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一次使用自编译的 Vue</title>
+    <script src="../../../fe/vue-next/packages/vue/dist/vue.global.js"></script>
+    <style>
+        .text {
+            font-size: 40px;
+            text-align: center;
+            color: #add;
+        }
+
+        .content {
+            margin-top: 30px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <p class="text">{{ message }}</p>
+        <p class="content">{{ content }}</p>
+    </div>
+    <script>
+        const CONTENTS = [
+            'HTML + CSS',
+            '搞透 webpack',
+            '死磕 CSS 布局',
+            '动画提升用户体验'
+        ];
+        const Welcome = {
+            data() {
+                return {
+                    message: '和素燕一起学习 Vue3 源码',
+                    content: 'HTML + CSS'
+                };
+            },
+            mounted() {
+                setInterval(() => {
+                    let index = Math.floor(Math.random() * (CONTENTS.length - 1));
+                    this.content = CONTENTS[index];
+                }, 1000)
+            }
+        };
+        Vue.createApp(Welcome).mount('#app');
+        console.log(Vue);
+    </script>
+</body>
+
+</html>
