@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-position</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, .1);
+        }
+.banner {
+    /* 宽度始终填满屏幕 */
+    width: 100%;
+    /* 高度固定 */
+    height: 300px;
+    /* 尽可能地大，填满内容区域，背景图可能显示不全 */
+    background-size: cover;
+    background-image: url(./images/banner-cover.png);
+    background-repeat: no-repeat;
+    background-color: #add;
+    /* 背景始终在中间 */
+    background-position: 50% 50%;
+    /* 也可以把 50% 缓存关键字 */
+    /* background-position: center center; */
+}
+        .pop-wrap {
+            position: relative;
+            width: 400px;
+            height: 250px;
+            margin: 100px auto;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* 点击区域大大小 */
+    width: 40px;
+    height: 40px;
+    /* 图标的大小 */
+    background-size: 25px 25px;
+    background-image: url(./images/close.png);
+    /* 保证背景图不重叠 */
+    background-repeat: no-repeat;
+    background-color: #add;
+    /* 设置背景图的位置 */
+    background-position: left bottom;;
+}
+    </style>
+</head>
+<body>
+    <div class="banner"></div>
+    <!-- <div class="pop-wrap">
+        <div class="close"></div>
+    </div> -->
+</body>
+</html>

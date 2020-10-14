@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>禁止点击右键</title>
+</head>
+
+<body>
+    <script>
+        // 禁止使用 F12
+        window.onkeydown = window.onkeyup = window.onkeypress = function (event) {
+            // F12 键码为 123
+            if (event.keyCode === 123) {
+                event.preventDefault();
+                window.event.returnValue = false;
+            }
+        }
+        // 为右键添加自定义事件，可以禁用
+        window.oncontextmenu = function () {
+            event.preventDefault();
+            return false;
+        }
+    </script>
+</body>
+
+</html>
