@@ -20,7 +20,7 @@
 
 ### 微信公众号，内容同步
 
-![](https://upload-images.jianshu.io/upload_images/1664496-1471f633bfc7d877.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://s1.ax1x.com/2020/10/10/06VvOx.png)
 
 ### 第 1 阶段：HTML + CSS
 
