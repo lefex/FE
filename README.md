@@ -194,7 +194,7 @@
 
 ## 🌹网站
 
-你也可以通过网站学习，[超越技术](https://lefex.github.io/)
+你也可以通过网站学习，[前端小课](https://lefex.github.io/)
 
 
 
