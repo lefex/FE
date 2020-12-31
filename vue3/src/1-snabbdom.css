@@ -1,0 +1,11 @@
+.wrap {
+    background-color: #eee;
+    padding: 10px;
+}
+
+.nomal {
+    color: #222;
+}
+.selected {
+    color: blue;
+}

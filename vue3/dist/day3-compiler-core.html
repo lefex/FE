@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue3编程思想、源码解读</title>
+</head>
+<body>
+<div id="suyan-app">
+    <p class="wrap">
+        </p><h1 v-if="isShow">和素燕一起学前端{{ des }}</h1>
+    <p></p>
+</div>
+    <div id="suyan-app">
+        <div>{{ title }}</div>
+        <div>{{ age + 1}}</div>
+        <div>{{ age > 18 ? '大朋友' : '小朋友'}}</div>
+    
+        <a v-bind:href="url">点我</a>
+        <a :href="url">点我</a>
+    
+        <div v-once="">{{ from }}</div>
+    
+        <div v-html="html">v-html</div>
+    
+        <button v-on:click="clickMe">von</button>
+        <button @click="clickMe">von</button>
+        <button v-on:[eventName]="eventChange">von</button>
+        <form v-on:submit.prevent="onSubmit">提交</form>
+    
+        <p v-for="name in welcomes">{{ name }}</p>
+        <p v-for="name of welcomes">{{ name }}</p>
+        <p v-for="(name, index) in welcomes">{{ name }}</p>
+        <p v-for="(name, index) in welcomes" :key="name.id">{{ name }}</p>
+        <p v-for="(value, name) in myObject">{{ name }}: {{ value }}</p>
+    
+        <h1 v-if="age < 18">我是小朋友</h1>
+        <h1 v-else-if="age > 18 && age < 60">我是中年人</h1>
+        <h1 v-else="">我是老年人</h1>
+    
+        <h1 v-show="isShow">Hello!</h1>
+    
+        <div :class="{ active: isActive }">class1</div>
+        <div :class="{ active: isActive, selected: isSelect}">class2</div>
+        <div :class="clsObj">class3</div>
+        <div :class="[clsObj, clsObj2]">class4</div>
+        <div :class="[isActive ? activeClass : '']">class5</div>
+        <div :class="[{ active: isActive }, errorClass]">class6</div>
+        <div class="one-line" :class="{ active: isActive }">class7</div>
+    
+        <div :style="{ color: activeColor, fontSize: fontSize + 'px' }">style1</div>
+        <div :style="styleObject">style2</div>
+        <div :style="[colorObj, edgeObj]">style3</div>
+        <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }">style4</div>
+    </div>
+    <script src="/day3-compiler-core.2119eb1b.js"></script>
+</body>
+</html>

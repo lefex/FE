@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA","file":"vue3.9ad09f98.css","sourceRoot":"..","sourcesContent":["#app2 {\n    height: 100px;\n    background-color: #eee;\n}\n.text {\n    cursor: pointer;\n}"]}

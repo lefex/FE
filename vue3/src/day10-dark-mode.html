@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" data-color-mode="light"">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub中的夜间模式实现预览探索</title>
+    <style>
+[data-color-mode=dark] {
+    --color-suyan-black: #010409;
+    --color-suyan-bg: #0d1117;
+    --color-text-primary: #c9d1d9;
+}
+[data-color-mode=light] {
+    --color-suyan-black: #010409;
+    --color-suyan-bg: #fff;
+    --color-text-primary: #24292e;
+}
+body {
+    background-color: var(--color-suyan-bg);
+}
+.book-name, .author, .des {
+    color: var(--color-text-primary);
+}
+    </style>
+</head>
+<body>
+    <h1 class="book-name">《读懂Vue编程思想》</h1>
+    <p class="author">作者：素燕</p>
+    <div class="des">帮助10W人入门并进阶前端</div>
+    <button onclick="changeMode()">切换</button>
+    <script>
+        window.changeMode = function (){
+            const ele = document.getElementsByTagName('html')[0];
+            const orgMode = ele.getAttribute('data-color-mode');
+            const targetMode = orgMode === 'dark' ? 'light' : 'dark';
+            ele.setAttribute('data-color-mode', targetMode);
+            console.log('change mode to ', targetMode);
+        };
+    </script>
+</body>
+</html>

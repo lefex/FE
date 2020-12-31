@@ -1,0 +1,1 @@
+{"version":3,"sources":["1-snabbdom.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"1-snabbdom.7b865740.css","sourceRoot":"../src","sourcesContent":[".wrap {\n    background-color: #eee;\n    padding: 10px;\n}\n\n.nomal {\n    color: #222;\n}\n.selected {\n    color: blue;\n}"]}

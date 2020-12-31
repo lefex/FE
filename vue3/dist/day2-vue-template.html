@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue3编程思想、源码解读</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="suyan-app">
+        <span>suyan</span>
+    </div>
+    <div id="suyan-app2">
+        <!-- 使用双大括号，可直接渲染变量，当 title 发生变化时，页面也会发生变化 -->
+        <!-- title 可以是一个计算属性 -->
+        <div>{{ title }}</div>
+        <!-- 可接收表达式 -->
+        <div>{{ age + 1}}</div>
+        <div>{{ age > 18 ? '大朋友' : '小朋友'}}</div>
+
+        <!-- 通过 v-bind 来绑定属性 -->
+        <!-- <a v-bind:href="url">点我</a> -->
+        <!-- 可简写 -->
+        <!-- <a :href="url">点我</a> -->
+
+        <!-- v-once 指令，只修改一次 -->
+        <!-- <div v-once>{{ from }}</div> -->
+
+        <!-- 可渲染 HTML 字符串 -->
+        <!-- <div v-html="html">v-html</div> -->
+
+        <!-- 监听事件 -->
+        <!-- <button v-on:click="clickMe">von</button> -->
+        <!-- 简写 -->
+        <!-- <button @click="clickMe">von</button> -->
+        <!-- 支持动态属性名， eventName 可动态变化，它的值可以是 click、focus-->
+        <!-- <button v-on:[eventName]="eventChange">von</button> -->
+        <!-- 指令的特殊修饰符，表示指令以某种特定的方式触发 -->
+        <!-- <form v-on:submit.prevent="onSubmit">提交</form> -->
+
+        <!-- for 指令，循环创建 -->
+        <!-- <p v-for="name in welcomes">{{ name }}</p> -->
+        <!-- in 和 of 等价 -->
+        <p v-for="name of welcomes">{{ name }}</p>
+        <p v-for="(name, index) in welcomes">{{ name }}</p>
+        <p v-for="(name, index) in welcomes" :key="name.id">{{ name }}</p>
+        <!-- 遍历对象 -->
+        <p v-for="(value, name) in myObject">{{ name }}: {{ value }}</p>
+
+        <!-- v-model 双向绑定 -->
+        <input v-model="question">
+
+        <!-- v-if 条件渲染 -->
+        <h1 v-if="age < 18">我是小朋友</h1>
+        <h1 v-else-if="age > 18 && age < 60">我是中年人</h1>
+        <h1 v-else="">我是老年人</h1>
+
+        <!-- v-show 控制是否显示，通过控制 css 属性 display 控制显示隐藏 -->
+        <h1 v-show="isShow">Hello!</h1>
+
+        <!-- class -->
+        <!-- 动态绑定 class，当 isActive 为真时才会使用选择器 active -->
+        <div :class="{ active: isActive }">class1</div>
+        <!-- 可以绑定多个 -->
+        <div :class="{ active: isActive, selected: isSelect}">class2</div>
+        <!-- 可直接通过一个对象来告诉 vue 该用哪个属性，也就是把模板里的对象换个地方写-->
+        <div :class="clsObj">class3</div>
+        <!-- 可使用多个对象，类似于数组 -->
+        <div :class="[clsObj, clsObj2]">class4</div>
+        <!-- 直接使用三元表达式 -->
+        <div :class="[isActive ? activeClass : '']">class5</div>
+        <!-- 还可以这样用 -->
+        <div :class="[{ active: isActive }, errorClass]">class6</div>
+        <!-- class 和  :class 可同时存在 -->
+        <div class="one-line" :class="{ active: isActive }">class7</div>
+
+        <!-- style -->
+        <div :style="{ color: activeColor, fontSize: fontSize + 'px' }">style1</div>
+        <!-- 直接使用对象 -->
+        <div :style="styleObject">style2</div>
+        <!-- 使用多个对象 -->
+        <div :style="[colorObj, edgeObj]">style3</div>
+        <!-- 支持多个值 -->
+        <div :style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }">style4</div>
+    </div>
+    <script src="/day2-vue-template.876b16a8.js"></script>
+</body>
+
+</html>

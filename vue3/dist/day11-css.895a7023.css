@@ -1,0 +1,37 @@
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+#suyan-root {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.dark {
+    background-color: #0d1117;
+}
+.light {
+    background-color: #fff;
+}
+.dark-text {
+    color: #fff;
+}
+.light-text {
+    color: #000;
+}
+.title {
+    text-align: center;
+}
+.content {
+    color: #000;
+    font-size: 17px;
+    margin: 10px;
+}
+.stress {
+    color: red;
+}
+
+/*# sourceMappingURL=/day11-css.895a7023.css.map */
