@@ -121,8 +121,21 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var Root = {
   template: '<h1>{{ title }}</h1>' + '<div>{{ des }}</div>'
 };
-var app = Vue.createApp(Root);
+console.log(Vue);
+var _Vue = Vue,
+    createApp = _Vue.createApp,
+    ref = _Vue.ref,
+    watchEffect = _Vue.watchEffect,
+    computed = _Vue.computed,
+    customRef = _Vue.customRef,
+    reactive = _Vue.reactive;
+var app = createApp(Root);
 app.mount('#suyan-app');
+console.log('log');
+var obj = {
+  name: '<script><iframe onload=alert(5)></script>'
+};
+JSON.stringify(obj);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -151,7 +164,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50371" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51862" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

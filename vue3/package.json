@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "parcel ./src/day12-slots.html --open",
+    "dev": "parcel ./src/day9-composition-api.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
