@@ -1,0 +1,37 @@
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin utils-user-select($value) {
+    -moz-user-select: $value;
+    -webkit-user-select: $value;
+    -ms-user-select: $value;
+}
+
+@mixin utils-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin util-vertical-center {
+    $selector: &;
+    @at-root {
+        #{$selector}::after {
+            display: inline-block;
+            content: "";
+            height: 100%;
+            vertical-align: middle;
+        }
+    }
+}
+
+@mixin when($state) {
+    color: #222;
+    @at-root {
+      &.#{'is-' + $state} {
+        @content;
+      }
+    }
+  }

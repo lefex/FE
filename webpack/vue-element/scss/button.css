@@ -1,0 +1,15 @@
+.button-wrap {
+  border-radius: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #222;
+}
+.button-wrap::after {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=button.css.map */

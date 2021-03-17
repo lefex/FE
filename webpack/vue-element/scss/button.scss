@@ -1,0 +1,10 @@
+@import './common';
+@import './var';
+@import './mixin.scss';
+
+.button-wrap {
+    border-radius: 4px;
+    @include util-vertical-center;
+    @include utils-ellipsis;
+    @include when(primary);
+}
