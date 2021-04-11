@@ -1,0 +1,1 @@
+let namesuyan: string = 'suyan';

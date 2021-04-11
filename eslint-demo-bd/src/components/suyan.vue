@@ -2,7 +2,7 @@
     <div>
         <div v-if="name === 'suyan'">{{ title }}</div>
         <div v-else>{{ title }}</div>
-        <Banner/>
+        <Banner :author-name="name"/>
     </div>
 </template>
 
@@ -21,6 +21,9 @@ export default {
 };
 </script>
 
-<style>
-
+<style lang="stylus">
+.box
+    font-size 12px
+.name
+    color: #99999
 </style>

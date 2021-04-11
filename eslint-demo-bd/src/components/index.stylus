@@ -1,0 +1,5 @@
+.box
+    font-size 12px
+
+.name
+    color: #999
