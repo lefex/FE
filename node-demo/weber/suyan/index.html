@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>和素燕一起学前端</title>
+    <style>
+        .title {
+            font-size: 20px;
+            padding: 10px 0;
+        }
+        @font-face {
+            font-family: "Bitstream Vera Serif Bold";
+            src: url("http://localhost:8686/VeraSeBd.ttf");
+        }
+    </style>
+</head>
+<body>
+    <div class="title" id="leran-title">和素燕一起学习前端</div>
+    <div class="title" id="leran-title2" style="font-family: serif;">1、serif衬线字体，如：宋体（衬线字体，通俗讲就是笔画开始、结束的地方有额外 装饰而且笔画的粗细会有所不同的字体）: Learn FE with Suyan</div>
+    <div class="title" id="leran-title3" style="font-family: sans-serif;">2、sans-serif无衬线字体，如：雅黑、苹方: Learn FE with Suyan</div>
+    <div class="title" style="font-family: monospace;">3、monospace等宽字体: Learn FE with Suyan</div>
+    <div class="title" style="font-family: monospace;">iiiiiiiiii</div>
+    <div class="title" style="font-family: monospace;">MMMMMMMMMM</div>
+    <div class="title" style="font-family: cursive;">4、cursive手写字体: Learn FE with Suyan</div>
+    <div class="title" style="font-family: fantasy;">5、fantasy奇幻字体: Learn FE with Suyan</div>
+    <div class="title" style="font-family: system-ui;">6、system-ui系统 UI 字体: Learn FE with Suyan</div>
+    <div class="title" id="leran-title7" style="font-family: Suyan,YouYuan,LiSu,STKaiti,STSong;">7、YouYan,LiSu,STKaiti,STSong 多种字体加载字体: Learn FE with Suyan</div>
+<!-- 如果字体未下载成功使用字体   -->
+    <div class="title" style="font-family: 'Bitstream Vera Serif Bold', cursive;">8、font-face 字体: Learn FE with Suyan</div>
+    <h1 id="sum"></h1>
+    <script type="module">
+        import add from './add.js';
+        let sumDom = document.getElementById('sum');
+        sumDom.innerText = add(7, 5);
+    </script>
+    <script>
+        // 获取字体
+        function getFontFamily(elem) {
+            if (!elem) {
+                return;
+            }
+            var computedStyles = window.getComputedStyle(elem);
+            console.log(computedStyles['font-family']);
+        }
+        getFontFamily(document.getElementById('leran-title'));
+        getFontFamily(document.getElementById('leran-title2'));
+        getFontFamily(document.getElementById('leran-title3'));
+        getFontFamily(document.getElementById('leran-title7'));
+    </script>
+</body>
+</html>

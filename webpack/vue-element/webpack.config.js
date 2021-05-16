@@ -12,10 +12,15 @@ module.exports = {
     // 设置打包方式，支持 development 和 production
     mode: 'development',
     // 打包入口文件
-    entry: './home/index.js',
+    // 把 vue 和 element-ui 单独进行打包，包更小
+    entry: {
+        main: './home/index.js',
+        vue: './home/vue.js',
+        element: './home/element.js'
+    },
     // 最终打包结果配置
     output: {
-        filename: 'day1.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, './dist')
     },
     // 配置 loader，不同文件应用不同的 loader
@@ -34,7 +39,17 @@ module.exports = {
             {
                 test: /\.(eot|svg|ttf|woff|woff2)(\?\S*)?$/,
                 loader: 'file-loader'
-             }
+             },
+             {
+                //  正则表达式匹配js文件
+                test: /\.js$/,
+                exclude: /(node_modules)/,
+                use: [
+                  {
+                    loader: 'babel-loader',
+                  },
+                ],
+              }
         ]
     },
     plugins: [

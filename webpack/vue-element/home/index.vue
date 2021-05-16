@@ -4,6 +4,7 @@
         <h1>{{title}}</h1>
         <p class="des">{{des}}</p>
         <el-button type="primary">主要按钮</el-button>
+        <el-input></el-input>
         <sy-info></sy-info>
         <sy-message></sy-message>
     </div>
