@@ -2,7 +2,7 @@
 
 import 'element-ui/lib/theme-chalk/index.css';
 import ElementUI from 'element-ui';
-Vue.use(ElementUI);
+window.Vue.use(ElementUI);
 
 
 // 单文件引入
@@ -13,8 +13,3 @@ Vue.use(ElementUI);
 
 // Vue.use(Button);
 // Vue.use(Input);
-
-// import {
-//     Button,
-//     Input
-// } from 'element-ui';

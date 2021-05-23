@@ -1,3 +1,4 @@
 .vscode/
 /vue3/.cache/
 node_modules
+**/**/dist/*
