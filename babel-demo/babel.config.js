@@ -43,13 +43,6 @@ const plugins = [
     //         author: 'suyan'
     //     }
     // ]
-    [
-        "component",
-        {
-            "libraryName": "orion-pc-element",
-            "styleLibraryName": "theme-chalk"
-        }
-    ]
 ];
 
 module.exports = {

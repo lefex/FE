@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 
-const port = process.env.PORT || 8686;
+const port = process.env.PORT || 8687;
 const app = express();
 
 // 把文件夹 suyan 的内容交给 express.static
