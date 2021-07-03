@@ -29,6 +29,10 @@
 - [npm install -g 的时候别再输密码了](https://mp.weixin.qq.com/s/EhFt8rZh0brZyNgBuhriDA)
 - [使用 vim 不得不看的 2 个 tips](https://mp.weixin.qq.com/s/0zDETiTCU_GANaIthHegnw)
 
+## Vue 核心原理
+
+- [实现检测系统（撰写中）]()
+
 ## 项目经验
 
 - [使用百度开源的ESLint规范集让团队内部代码规范保持一致](https://mp.weixin.qq.com/s/HDPesIfXC7A2_L9j5yuiqw)
@@ -278,8 +282,6 @@
 - [webpack 性能优化之定位问题](https://mp.weixin.qq.com/s/WtC1RACuTmGZuvUWmZOtvg)
 - [这些资料助你搞透 Webpack](https://mp.weixin.qq.com/s/fu58YXwN3Mxn-7MFBNDCQw)
 - [统一管理多项目 webpack 配置文件](https://mp.weixin.qq.com/s/6J9X8s_QfQcv2g5Wr-qn-A)
-
-**第 9 阶段 搞懂搞透 webpack，首发公众号素燕，后续同步到这里**
 
 
 ## 🌹网站
