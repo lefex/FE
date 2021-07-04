@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "esnext",
+        "module": "es2015",
+        "strict": true,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": false,
+        "baseUrl": ".",
+        "noImplicitAny": false,
+    },
+    "inclued": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "src/declare.ts",
+        "src/**/*.js"
+    ],
+    "typeRoots": [
+        "@types"
+    ]
+}
