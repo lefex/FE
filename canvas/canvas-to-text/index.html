@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/mock/enable.css">
+    <link rel="stylesheet" type="text/css" href="./src/mock/disable.css">
+    <title>canvas render text</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .render-css-wrap {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+        }
+        #render-canvas-warp {
+            background-color: #fff;
+        }
+
+        .custom-text-enable {
+            font-family: 'a5a5099ebd64783e09122bbb0050001';
+            font-size: 40px;
+        }
+
+        .custom-text-disable {
+            font-family: '08c71f492b160b4e767fcf980010001';
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="render-css-wrap">
+        <p>CSS渲染 - 均可正常渲染</p>
+        <p class="custom-text-enable">第一集《自然的馈赠》</p>
+        <p class="custom-text-disable">系列晶闸管触发器在可逆直流稳压电源的应用</p>
+    </div>
+    <div id="render-canvas-warp">
+        <p>canvas 渲染</p>
+    </div>
+    <script src="./index.ts" type="module"></script>
+</body>
+</html>
