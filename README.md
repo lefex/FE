@@ -21,7 +21,7 @@
 
 ### 微信公众号，内容同步
 
-![](https://s1.ax1x.com/2020/10/10/06VvOx.png)
+![](https://z3.ax1x.com/2021/07/25/W2XZGR.png)
 
 ## 强烈推荐
 
