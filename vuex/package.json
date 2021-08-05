@@ -1,0 +1,23 @@
+{
+  "name": "vuex-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vite.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.4.4",
+    "vite-plugin-vue2": "^1.7.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vuex": "^3.6.2"
+  }
+}
