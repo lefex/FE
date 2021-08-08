@@ -4,14 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .wrap {
+            position: relative;
+            background-color: antiquewhite;
+            width: 200px;
+            height: 200px;
+        }
+        .sub1 {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: rebeccapurple;
+            width: 160px;
+            height: 160px;
+        }
+        .sub2 {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            background-color: royalblue;
+            width: 120px;
+            height: 120px;
+        }
+    </style>
 </head>
 <body>
-    <div onclick="didClicked()">点我吧</div>
+    <div id="wrap" class="wrap" onclick="didClicked()">
+        <div id="sub1" class="sub1" onclick="didClicked1()">
+            <div id="sub2" class="sub2" onclick="didClicked2()"></div>
+        </div>
+    </div>
     <script>
-        function didClicked() {
-            console.log('click');
-            console.trace();
-        }
+        // https://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing
+        // https://www.quirksmode.org/js/events_order.html
+        // preventDefault
+        // stopPropagation
+        document.body.addEventListener('click', (e) => {
+            console.log('click body');
+        }, true);
+        document.getElementById('wrap').addEventListener('click', (e) => {
+            console.log('click wrap');
+            // e.stopPropagation();
+        }, true);
+        document.getElementById('sub1').addEventListener('click', (e) => {
+            console.log('click sub1');
+        }, true);
+        document.getElementById('sub2').addEventListener('click', (e) => {
+            console.log('click sub2');
+            // e.stopPropagation();
+        }, true);
     </script>
 </body>
 </html>
