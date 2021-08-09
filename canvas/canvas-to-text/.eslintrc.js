@@ -6,6 +6,7 @@
  */
 
 module.exports = {
+    root: true,
     extends: [
         '@ecomfe/eslint-config',
         '@ecomfe/eslint-config/typescript'
