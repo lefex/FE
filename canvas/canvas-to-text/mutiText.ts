@@ -122,7 +122,7 @@ function throttle(fn, delay){
     return function() {
        if(!valid){
            //休息时间 暂不接客
-           return false 
+           return false
        }
        // 工作时间，执行函数并且在间隔期内把状态位设为无效
         valid = false
@@ -134,7 +134,7 @@ function throttle(fn, delay){
 }
 
 const addEvent = () => {
-    let parent = document.getElementById('muti-text-demo');
+    let parent = document.getElementById('muti-canvas');
     let lastHitNode = null;
     let drawNodes = [];
     let isValid = true;
@@ -142,9 +142,10 @@ const addEvent = () => {
         return drawNodes.every(item => item.lineNum !== node.lineNum);
     }
     const handleMove = (e) => {
-        if (e.target.id !== 'muti-canvas') {
-            // return;
-        }
+        e.stopPropagation();
+        // if (e.target.id !== 'muti-canvas') {
+        //     // return;
+        // }
         if (!isValid) {
             return;
         }
@@ -152,16 +153,16 @@ const addEvent = () => {
             isValid = false;
             setTimeout(() => {
                 isValid = true;
-            }, 200);
-            console.log('e = ', e.target);
+            }, 0);
+            // console.log('e = ', e.target);
             console.log(`offsetX = ${e.offsetX}, offsetY = ${e.offsetY}`);
             // 页面的距离
             // console.log(`pageX = ${e.pageX}, pageY = ${e.pageY}`);
-            console.log(`clientX = ${e.clientX}, clientY = ${e.clientY}`);
+            // console.log(`clientX = ${e.clientX}, clientY = ${e.clientY}`);
          /**
           * 文本框选择思路：
-          * 
-          * 
+          *
+          *
          */
             let hitNode = isInNodeArea(e);
             if (hitNode) {
@@ -175,7 +176,7 @@ const addEvent = () => {
                          let id = 'select-line' + lastHitNode.lineNum;
                          let lastLineDom = document.getElementById(id) as HTMLElement;
                          lastLineDom.style.width = `${lastHitNode.w}px`;
- 
+
                          // 2.开启新的一行
                          let lineDom = document.createElement('div');
                          lineDom.style.position = 'absolute';
@@ -187,11 +188,14 @@ const addEvent = () => {
                          // 需要从头画到鼠标的位置
                          lineDom.style.width = `${e.offsetX}px`;
                          lineDom.id = 'select-line' + hitNode.lineNum;
+                         lineDom.addEventListener('mousemove', e => {
+
+                         });
                          lastHitNode = hitNode;
 
                          let parent = document.getElementById('muti-text-demo');
                          parent.appendChild(lineDom);
- 
+
                     }
                     else {
                          // 这是第一行
@@ -211,7 +215,14 @@ const addEvent = () => {
                     drawNodes.push(hitNode);
                 }
                 else {
-                    let width = e.offsetX;
+                    // 第1行的宽度：鼠标下落的 e.offsetX - startX
+                    // 画一块连续的区域
+                    // 可以向上、还可以向下
+                    // 画到第二行时，宽度就是 e.offsetX
+                    let width = e.offsetX - startX;
+                    if (drawNodes.length > 1) {
+                        width = e.offsetX;
+                    }
                     let id = 'select-line' + hitNode.lineNum;
                     let lineDom = document.getElementById(id) as HTMLElement;
                     if (!lineDom) {
@@ -232,25 +243,35 @@ const addEvent = () => {
         }
      }
     parent.addEventListener('mousedown', (e) => {
-        if (e.target.id !== 'muti-canvas') {
-            return;
-        }
-        mouseDown = true;
+        // if (e.target.id !== 'muti-canvas') {
+        //     return;
+        // }
         console.log('mouse down', e);
         startX = e.offsetX;
         startY = e.offsetY;
         drawNodes = [];
-    });
-    parent.addEventListener('mousemove', handleMove);
+        mouseDown = true;
+    }, true);
+    parent.addEventListener('mousemove', handleMove, true);
     parent.addEventListener('mouseup', (e) => {
-        if (e.target.id !== 'muti-canvas') {
-            return;
-        }
         mouseDown = false;
+        console.log('mouseup', e);
+        // if (e.target.id !== 'muti-canvas') {
+        //     return;
+        // }
         lastHitNode = null;
         startX = 0;
         startY = 0;
-        console.log('mouse move', e);
+    }, true);
+    document.querySelector('html').addEventListener('mouseup', function (e) {
+        mouseDown = false;
+        console.log('html mouseup', e);
+        // if (e.target.id !== 'muti-canvas') {
+        //     return;
+        // }
+        lastHitNode = null;
+        startX = 0;
+        startY = 0;
     });
 }
 
