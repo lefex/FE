@@ -3,7 +3,7 @@
  * @description 使用 JavaScript 创建 Canvas
  */
 
-function syDraw() {
+ function toDraw() {
     const parentId = 'canvas-warp';
     const canvasWidth = 400;
     const canvasHeight = 400;
@@ -67,10 +67,19 @@ function syDraw() {
         }
     };
 
-    const drawReact = (ctx: CanvasRenderingContext2D) => {
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(40, 40, 120, 80);
-    }
+const drawReact = (ctx: CanvasRenderingContext2D) => {
+    ctx.fillStyle = '#555';
+    ctx.fillRect(80, 40, 120, 80);
+}
+
+const strokeReact = (ctx: CanvasRenderingContext2D) => {
+    ctx.strokeStyle = '#555';
+    ctx.strokeRect(80, 40, 120, 80);
+}
+
+const clearReact = (ctx: CanvasRenderingContext2D) => {
+    ctx.clearRect(120, 80, 80, 80);
+}
 
     // 1. 创建 canvas
     let canvas = createACanvas();
@@ -86,7 +95,9 @@ function syDraw() {
     parentDom.appendChild(canvas);
 
     // 4. 在画布中画一个矩形区域
-    drawReact(ctx);
+    // drawReact(ctx);
+    // strokeReact(ctx);
+    clearReact(ctx);
 }
 
-syDraw();
+toDraw();
