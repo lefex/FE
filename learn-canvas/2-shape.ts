@@ -3,101 +3,30 @@
  * @description 使用 JavaScript 创建 Canvas
  */
 
- function toDraw() {
-    const parentId = 'canvas-warp';
-    const canvasWidth = 400;
-    const canvasHeight = 400;
-    const gridSpace = 40;
-    const lineColor = '#cec';
-    let dprValue = window.devicePixelRatio || 1;
+import {initCanvas} from './share';
 
-    const createACanvas = () => {
-        let canvas = document.createElement('canvas') as HTMLCanvasElement;
-        // 设置画布的宽度
-        canvas.width = canvasWidth * dprValue;
-        // 设置画布的高度
-        canvas.height = canvasHeight * dprValue;
-        // 设置画布的 CSS 样式
-        canvas.style.width = `${canvasWidth}px`;
-        canvas.style.height = `${canvasHeight}px`;
-        canvas.style.backgroundColor = '#fff';
-        canvas.style.marginLeft = '40px';
-        canvas.style.marginTop = '40px';
-        return canvas;
+function syRunDrawRectDemo() {
+    const drawReact = (ctx: CanvasRenderingContext2D) => {
+        ctx.fillStyle = '#555';
+        ctx.fillRect(40, 40, 80, 80);
     }
 
-    // 绘制网格
-    const drawGrid = (ctx: CanvasRenderingContext2D) => {
-        let xCount = canvasHeight / gridSpace;
-        let yCount = canvasWidth / gridSpace;
+    const strokeReact = (ctx: CanvasRenderingContext2D) => {
+        ctx.strokeStyle = '#555';
+        ctx.strokeRect(200, 40, 120, 80);
+    }
 
-        const drawValue = (i, isX) => {
-            ctx.font = '12px';
-            ctx.textAlign = 'left';
-            ctx.textBaseline = 'top';
-            ctx.fillStyle = '#222';
-            if (isX) {
-                ctx.fillText(`${i * gridSpace}`, 0, gridSpace * i);
-            }
-            else {
-                ctx.fillText(`${i * gridSpace}`, gridSpace * i, 0);
-            }
-        }
-
-        for (let i = 0; i < xCount; i++) {
-            ctx.beginPath();
-            ctx.moveTo(0, gridSpace * i);
-            ctx.lineTo(canvasWidth, gridSpace * i);
-            ctx.strokeStyle = lineColor;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-            drawValue(i, true);
-
-        }
-
-        for (let i = 0; i < yCount; i++) {
-            ctx.beginPath();
-            ctx.moveTo(gridSpace * i, 0);
-            ctx.lineTo(gridSpace * i, canvasHeight);
-            ctx.strokeStyle = lineColor;
-            ctx.lineWidth = 1;
-            ctx.stroke();
-
-            drawValue(i, false);
-        }
-    };
-
-const drawReact = (ctx: CanvasRenderingContext2D) => {
-    ctx.fillStyle = '#555';
-    ctx.fillRect(80, 40, 120, 80);
-}
-
-const strokeReact = (ctx: CanvasRenderingContext2D) => {
-    ctx.strokeStyle = '#555';
-    ctx.strokeRect(80, 40, 120, 80);
-}
-
-const clearReact = (ctx: CanvasRenderingContext2D) => {
-    ctx.clearRect(120, 80, 80, 80);
-}
+    const clearReact = (ctx: CanvasRenderingContext2D) => {
+        ctx.clearRect(120, 200, 80, 80);
+    }
 
     // 1. 创建 canvas
-    let canvas = createACanvas();
+    let ctx = initCanvas();
 
-    let ctx = canvas.getContext('2d') as CanvasRenderingContext2D;
-    ctx.setTransform(dprValue, 0, 0, dprValue, 0, 0);
-
-    // 2. 画网格
-    drawGrid(ctx);
-
-    // 3. 把 canvas 添加到 DOM 节点中
-    let parentDom = document.getElementById(parentId);
-    parentDom.appendChild(canvas);
-
-    // 4. 在画布中画一个矩形区域
-    // drawReact(ctx);
-    // strokeReact(ctx);
+    // 在画布中画一个矩形区域
+    drawReact(ctx);
+    strokeReact(ctx);
     clearReact(ctx);
 }
 
-toDraw();
+syRunDrawRectDemo();
