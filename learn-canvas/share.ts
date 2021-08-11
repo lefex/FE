@@ -44,6 +44,7 @@ export function initCanvas(): CanvasRenderingContext2D {
             }
         }
 
+        // 绘制 x 轴的线
         for (let i = 0; i < xCount; i++) {
             ctx.beginPath();
             ctx.moveTo(0, gridSpace * i);
@@ -55,6 +56,7 @@ export function initCanvas(): CanvasRenderingContext2D {
 
         }
 
+        // 绘制 y 轴的线
         for (let i = 0; i < yCount; i++) {
             ctx.beginPath();
             ctx.moveTo(gridSpace * i, 0);
