@@ -9,13 +9,36 @@
         body {
             background-color: #f5f5f5;
         }
+        .draw-wrap {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #canvas-warp {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <h1>和素燕一起学可视化</h1>
-    <div id="canvas-warp"></div>
+    <div class="draw-wrap">
+        <h1>和素燕一起学可视化</h1>
+        <div id="canvas-warp"></div>
+    </div>
     <!-- <script src="./1-create-canvas.ts" type="module"></script> -->
-    <script src="./2-shape-rect.ts" type="module"></script>
+    <!-- <script src="./2-shape-rect.ts" type="module"></script> -->
     <!-- <script src="./3-shape-path.ts" type="module"></script> -->
+    <!-- <script src="./4-arcto.ts" type="module"></script> -->
+    <!-- <script src="./5-quadratic-bezier.ts" type="module"></script> -->
+    <!-- <script src="./6-cubic-bezier.ts" type="module"></script> -->
+    <!-- <script src="./7-path2D.ts" type="module"></script> -->
+    <!-- <script src="./8.-gradient.ts" type="module"></script> -->
+    <!-- <script src="./9-pattern-shadow.ts" type="module"></script> -->
+    <script src="./10-image.ts" type="module"></script>
+
 </body>
 </html>
