@@ -1,7 +1,7 @@
 const drawImage = () => {
     const canvas = new fabric.Canvas('draw-app');
 
-    let zly = fabric.Image.fromURL('./img/zly.jpeg', aImage => {
+    fabric.Image.fromURL('./img/zly.jpeg', aImage => {
         // 添加过滤器
         aImage.filters.push(new fabric.Image.filters.Sepia());
         // aImage.filters.push(new fabric.Image.filters.BaseFilter());

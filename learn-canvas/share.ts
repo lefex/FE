@@ -5,8 +5,8 @@
 
 export function initCanvas(): CanvasRenderingContext2D {
     const parentId = 'canvas-warp';
-    const canvasWidth = 400;
-    const canvasHeight = 400;
+    const canvasWidth = 800;
+    const canvasHeight = 600;
     const gridSpace = 40;
     const lineColor = '#cec';
     const edge = 20;

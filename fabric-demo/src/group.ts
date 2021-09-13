@@ -25,9 +25,5 @@ const drawGroup = () => {
     canvas.add(group);
 
     group.item(0).set('fill', 'red');
-    group.item(1).set({
-        text: '渲染引擎',
-        fill: 'white'
-    });
 }
 drawGroup();
