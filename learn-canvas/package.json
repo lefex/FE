@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "pm2": "pm2 start node_modules/vite/bin/vite.js"
   },
   "keywords": [],
   "author": "",

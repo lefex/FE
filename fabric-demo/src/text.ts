@@ -42,7 +42,7 @@ const text1 = new fabric.IText('我们的家乡\n你觉得好不好！\n非常�
             2: { fill: 'blue', fontSize: 50 }
         }
     }
-    });
+});
 
 const text2 = new fabric.Textbox('我 in 北京😀😃🤬(´▽`ʃƪ)＼(☆o☆)／æ🥰🍊🎿🚝🆔🇰🇵', {
     top: 300,
