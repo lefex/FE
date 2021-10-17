@@ -4,11 +4,11 @@
  */
 
 import {initCanvas} from './share';
+import {GridSize} from './constant';
 
 function syDraw() {
     const drawReact = (ctx: CanvasRenderingContext2D) => {
-        ctx.fillStyle = 'blue';
-        ctx.fillRect(40, 40, 120, 80);
+        ctx.fillRect(GridSize, GridSize, GridSize * 2, 80);
     }
 
     let ctx = initCanvas();

@@ -4,20 +4,19 @@
  */
 
 import {initCanvas} from './share';
+import {GridSize} from './constant';
 
 function syRunDrawRectDemo() {
     const drawReact = (ctx: CanvasRenderingContext2D) => {
-        ctx.fillStyle = '#555';
-        ctx.fillRect(40, 40, 80, 80);
+        ctx.fillRect(GridSize * 8, GridSize, GridSize * 2, GridSize * 2);
     }
 
     const strokeReact = (ctx: CanvasRenderingContext2D) => {
-        ctx.strokeStyle = '#555';
-        ctx.strokeRect(200, 40, 120, 80);
+        ctx.strokeRect(GridSize * 8, GridSize * 4, GridSize * 2, GridSize);
     }
 
     const clearReact = (ctx: CanvasRenderingContext2D) => {
-        ctx.clearRect(120, 200, 80, 80);
+        ctx.clearRect(GridSize * 9, GridSize * 1, GridSize * 1, GridSize * 1);
     }
 
     const drawColorPannel = (ctx: CanvasRenderingContext2D) => {
@@ -25,7 +24,7 @@ function syRunDrawRectDemo() {
             for (let j = 0; j < 6; j++){
               ctx.fillStyle = 'rgb(' + Math.floor(255-42.5*i) + ',' +
                                Math.floor(255-42.5*j) + ',0)';
-              ctx.fillRect(j*25, i*25, 25, 25);
+              ctx.fillRect(GridSize + j*GridSize, GridSize + i*GridSize, GridSize, GridSize);
             }
           }
     }

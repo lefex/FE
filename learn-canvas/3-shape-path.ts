@@ -4,27 +4,28 @@
  */
 
 import { initCanvas } from './share';
+import {GridSize} from './constant';
 
 function syRunDrawPathDemo() {
-// 绘制一根线
-const drawLine = (ctx: CanvasRenderingContext2D) => {
-    // 不调用 beginPath 会有意想不到的结果
-    ctx.beginPath();
-    // 移动移动到某个位置，可以作为绘图的起点，或者绘制之间不连接的 path
-    // 线宽
-    ctx.lineWidth = 30;
-    // 线顶点的样式 'butt', 'round', 'square'
-    // butt 默认样式，不会导致线变长
-    // round 圆头，会导致两顶点处的线变长 lineWidth/2
-    // square 方头，会导致两顶点处线变长 lineWidth/2
-    ctx.lineCap = 'round';
+    // 绘制一根线
+    const drawLine = (ctx: CanvasRenderingContext2D) => {
+        // 不调用 beginPath 会有意想不到的结果
+        ctx.beginPath();
+        // 移动移动到某个位置，可以作为绘图的起点，或者绘制之间不连接的 path
+        // 线宽
+        ctx.lineWidth = 20;
+        // 线顶点的样式 'butt', 'round', 'square'
+        // butt 默认样式，不会导致线变长
+        // round 圆头，会导致两顶点处的线变长 lineWidth/2
+        // square 方头，会导致两顶点处线变长 lineWidth/2
+        ctx.lineCap = 'round';
 
-    // 在画线的过程中需要注意最终线被画到了那个区域
-    ctx.moveTo(80, 120);
-    // lineTo 画一条直线
-    ctx.lineTo(320, 120);
-    ctx.stroke();
-}
+        // 在画线的过程中需要注意最终线被画到了那个区域
+        ctx.moveTo(GridSize * 2, GridSize * 2);
+        // lineTo 画一条直线
+        ctx.lineTo(GridSize * 5, GridSize * 5);
+        ctx.stroke();
+    }
 
     const drawLineJoinStyle = (ctx: CanvasRenderingContext2D) => {
         ctx.beginPath();
@@ -42,7 +43,6 @@ const drawLine = (ctx: CanvasRenderingContext2D) => {
         // ctx.lineJoin = 'round';
 
         let dashs = ctx.getLineDash();
-        console.log('dashs = ', dashs);
         ctx.setLineDash([20]);
 
         ctx.stroke();
@@ -68,45 +68,39 @@ const drawLine = (ctx: CanvasRenderingContext2D) => {
         ctx.fill();
     }
 
-const drawArcs = (ctx: CanvasRenderingContext2D) => {
-    // arc(x, y, radius, startAngle, endAngle, counterclockwise)
-    ctx.beginPath();
-    // false 顺时针 true 逆时针
-    // 弧度和角度
-    // 弧度是角的度量单位
-    // 弧长等于半径的弧，其所对的圆心角为一弧度
-    // 弧度表示：弧长与半径长相等所对应的角度
-    // 圆的弧长为 2πr，一个圆的弧度为 2πr / r = 2π，π为圆周率，约为 3.14 2π = 2*3.14=6.28
-    // 1π 为 180度，1度 = π / 180, 1弧度 = 180 / π
+    const drawArcs = (ctx: CanvasRenderingContext2D) => {
+        // arc(x, y, radius, startAngle, endAngle, counterclockwise)
+        ctx.beginPath();
+        // false 顺时针 true 逆时针
+        // 弧度和角度
+        // 弧度是角的度量单位
+        // 弧长等于半径的弧，其所对的圆心角为一弧度
+        // 弧度表示：弧长与半径长相等所对应的角度
+        // 圆的弧长为 2πr，一个圆的弧度为 2πr / r = 2π，π为圆周率，约为 3.14 2π = 2*3.14=6.28
+        // 1π 为 180度，1度 = π / 180, 1弧度 = 180 / π
 
-    // 起点为 3 点钟方向
-    // 画一弧度
-    // ctx.arc(80, 160, 40, 0, 1, false); // Outer circle
-    // 画 90 度
-    // ctx.arc(80, 160, 40, 0, Math.PI / 180 * 90);
-    ctx.arc(80, 160, 40, 0, Math.PI / 180 * 360, false);
+        // 起点为 3 点钟方向
+        // 画一弧度
+        // ctx.arc(80, 160, 40, 0, 1, false); // Outer circle
+        // 画 90 度
+        // ctx.arc(80, 160, 40, 0, Math.PI / 180 * 90);
+        ctx.arc(80, 160, 40, 0, Math.PI / 180 * 360, false);
 
-    // 如何才能让起点为 12 点钟方向
-    // ctx.arc(80, 160, 40, Math.PI / 180 * 270, Math.PI / 180 * 180, false);
+        // 如何才能让起点为 12 点钟方向
+        // ctx.arc(80, 160, 40, Math.PI / 180 * 270, Math.PI / 180 * 180, false);
 
-    ctx.stroke();
-}
+        ctx.stroke();
+    }
 
     // 1. 创建 canvas
     let ctx = initCanvas();
 
-    // 初始化画布的一些属性
-    // 设置线的颜色
-    ctx.strokeStyle = 'red';
-    ctx.fillStyle = '#222';
-    ctx.lineWidth = 4;
-
     // 在画布中画一个矩形区域
-    // drawLine(ctx);
-    // drawRect(ctx);
-    // drawTriangle(ctx);
+    drawLine(ctx);
+    drawRect(ctx);
+    drawTriangle(ctx);
     drawArcs(ctx);
-    // drawLineJoinStyle(ctx);
+    drawLineJoinStyle(ctx);
 }
 
 syRunDrawPathDemo();
