@@ -5,8 +5,8 @@
 
 export function initCanvas(): CanvasRenderingContext2D {
     const parentId = 'canvas-warp';
-    const canvasWidth = 800;
-    const canvasHeight = 600;
+    const canvasWidth = 1400;
+    const canvasHeight = 800;
     const gridSpace = 40;
     const lineColor = '#cec';
     const edge = 20;
@@ -22,7 +22,7 @@ export function initCanvas(): CanvasRenderingContext2D {
         // 设置画布的 CSS 样式
         canvas.style.width = `${canvasWidth}px`;
         canvas.style.height = `${canvasHeight}px`;
-        canvas.style.backgroundColor = '#fff';
+        canvas.style.backgroundColor = '#222';
         return canvas;
     }
 
@@ -40,6 +40,8 @@ export function initCanvas(): CanvasRenderingContext2D {
         canvas.style.left = '0';
         canvas.style.width = '100%';
         canvas.style.height = '100%';
+        // 可以设置字符间距
+        canvas.style.letterSpacing = '0px';
         return canvas;
     }
 
