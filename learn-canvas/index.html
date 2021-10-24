@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>创建 canvas</title>
     <style>
+        #sy-canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 600px;
+            height: 300px;
+            background-color: antiquewhite;
+        }
         * {
             padding: 0;
             margin: 0;
@@ -29,10 +37,9 @@
     </style>
 </head>
 <body>
-    <div class="draw-wrap">
-        <div id="canvas-warp"></div>
-    </div>
-    <!-- <script src="./1-create-canvas.ts" type="module"></script> -->
+    <canvas id="sy-canvas"></canvas>
+    <div id="canvas-warp"></div>
+    <script src="./1-create-canvas.ts" type="module"></script>
     <!-- <script src="./2-shape-rect.ts" type="module"></script> -->
     <!-- <script src="./3-shape-path.ts" type="module"></script> -->
     <!-- <script src="./4-arcto.ts" type="module"></script> -->
@@ -48,7 +55,7 @@
     <!-- <script src="./14-translate.ts" type="module"></script> -->
     <!-- <script src="./15-transform.ts" type="module"></script> -->
     <!-- <script src="./16-sin-cos-tan.ts" type="module"></script> -->
-    <script src="./17-transform2.ts" type="module"></script>
+    <!-- <script src="./17-transform2.ts" type="module"></script> -->
 
 </body>
 </html>

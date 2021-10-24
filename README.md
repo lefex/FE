@@ -23,6 +23,10 @@
 
 关注公众号：素燕
 
+![公众号：素燕](https://upload-images.jianshu.io/upload_images/1664496-38caaf22bb2dfda1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![公众号预览](https://upload-images.jianshu.io/upload_images/1664496-9e04dfdec37ceec1.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 ## 强烈推荐
 
 - [10x 程序员 · 提高 shell 的使用效率](https://mp.weixin.qq.com/s/cHexunWiAy4ms32UWVz7_Q)

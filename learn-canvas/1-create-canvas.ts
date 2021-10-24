@@ -11,8 +11,12 @@ function syDraw() {
         ctx.fillRect(GridSize, GridSize, GridSize * 2, 80);
     }
 
-    let ctx = initCanvas();
-    drawReact(ctx);
+    const useHTML = () => {
+        let canvasElement = document.getElementById('sy-canvas') as HTMLCanvasElement;
+    }
+
+    // let ctx = initCanvas();
+    // drawReact(ctx);
 }
 
 syDraw();
