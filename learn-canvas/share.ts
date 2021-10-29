@@ -26,7 +26,7 @@ export enum SYAxisPos {
 export function initCanvas(originAxis: SYAxisPos = SYAxisPos.TopLeft): CanvasRenderingContext2D {
     const pageWidth = document.documentElement.clientWidth;
     const pageHeight = document.documentElement.clientHeight;
-    const parentId = 'canvas-warp';
+    const parentId = 'canvas-wrap';
     const canvasWidth = pageWidth;
     const canvasHeight = pageHeight;
     const gridSpace = GridSize;

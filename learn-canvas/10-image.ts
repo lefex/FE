@@ -4,6 +4,7 @@
  */
 
 import { initCanvas } from './share';
+import { GridSize } from './constant';
 
 function syRunDrawRectDemo() {
     const drawImageAsPattern = (ctx: CanvasRenderingContext2D) => {
@@ -32,6 +33,19 @@ function syRunDrawRectDemo() {
             let dw: number = width;
             let scale = dw / sw;
             ctx.drawImage(img, 20, 20, sw * scale, sh * scale);
+        }
+    }
+
+    const drawImageWithErrorSize = (ctx: CanvasRenderingContext2D) => {
+        let img = new Image();
+        img.src = 'gzh.png';
+        img.onload = function () {
+            ctx.font = '12px Times';
+            ctx.fillText(`width:${img.width}  height:${img.height}`, GridSize, GridSize - 15);
+            // ctx.drawImage(img, GridSize, GridSize, img.width, img.height);
+            const avtarWidth = 400.2;
+            const avatarX = 40;
+            ctx.drawImage(img, avatarX, avatarX, avtarWidth, avtarWidth, GridSize, GridSize, avtarWidth, avtarWidth);
         }
     }
 
@@ -111,7 +125,9 @@ function syRunDrawRectDemo() {
 
     // drawImage(ctx);
 
-    drawImageCopy(ctx, 600);
+    // drawImageCopy(ctx, 600);
+
+    drawImageWithErrorSize(ctx);
 }
 
 syRunDrawRectDemo();

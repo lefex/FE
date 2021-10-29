@@ -3,7 +3,7 @@ const height = 80;
 let index = 0;
 
 const draw = (font, text) => {
-    let parentDom = document.getElementById('render-canvas-warp');
+    let parentDom = document.getElementById('render-canvas-wrap');
 
     let textCanvas = document.createElement('canvas');
     let ratio = window.devicePixelRatio;
