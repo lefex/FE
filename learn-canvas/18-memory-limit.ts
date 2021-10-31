@@ -12,83 +12,100 @@ const run = function() {
     const canvasCount = 2000;
     const canvasSelector = 'sycanvas';
     const pageSelector = 'sypage';
+    const isResetWidth = false;
     let totalMemoryCost = 0;
-    let scrolled = false;
-    let lastRenderedPageIndexs: number[] = [];
     const datas = [];
     for (let i = 0; i < canvasCount; i++) {
         datas.push({
-            text: `祖国你好${i + 1}`,
+            text: `第${i + 1}页，公众号素燕`,
             rendered: false
         })
     }
 
-    let intersectionObeserver = new IntersectionObserver(entries => {
-        entries.forEach((entry: IntersectionObserverEntry) => {
-            let pageIndex = entry.target.id.split('-')[1];
-            if (entry.intersectionRatio > 0) {
-                console.log(`${entry.target.id}-出现了`);
-                let canvas = entry.target as HTMLCanvasElement;
-                if (canvas.width === 0) {
-                    canvas.width = width;
-                    canvas.height = height;
-                    let ctx = canvas.getContext('2d');
-                    if (!ctx) {
-                        console.error('ctx is null');
-                    }
-                    else {
-                        ctx.scale(2, 2);
-                        ctx.fillStyle = '#fff';
-                        ctx.font = '60px Times';
-                        ctx.textBaseline = 'top';
-                        for (let i = 0; i < 4; i++) {
-                            ctx.fillText(`${datas[+pageIndex-1].text}`, 0, 60 * i);
-                        }
+    const resetWidth = (entry: IntersectionObserverEntry) => {
+        let pageIndex = entry.target.id.split('-')[1];
+        let canvas = entry.target as HTMLCanvasElement;
+        if (entry.intersectionRatio > 0) {
+            console.log(`${entry.target.id}-出现了`);
+            if (canvas.width === 0) {
+                canvas.width = width;
+                canvas.height = height;
+                let ctx = canvas.getContext('2d');
+                ctx.scale(2, 2);
+                ctx.fillStyle = '#fff';
+                ctx.font = '40px Times';
+                ctx.textBaseline = 'top';
+                for (let i = 0; i < 1; i++) {
+                    ctx.fillText(`${datas[+pageIndex-1].text}`, 0, 60 * i);
+                }
+            }
+        }
+        else {
+            console.log(`${entry.target.id}-消失了`);
+            canvas.width = 0;
+            canvas.height = 0;
+        }
+    }
+
+    const removeCanvasEl = (entry: IntersectionObserverEntry) => {
+        let pageIndex = entry.target.id.split('-')[1];
+        if (entry.intersectionRatio > 0) {
+            console.log(`${entry.target.id}-出现了`);
+            let pageEl = entry.target as HTMLElement;
+            let canvasEl = document.getElementById(`${canvasSelector}-${pageIndex}`) as HTMLCanvasElement;
+            if (!canvasEl) {
+                canvasEl = document.createElement('canvas') as HTMLCanvasElement;
+                canvasEl.style.position = 'absolute';
+                canvasEl.style.left = '0';
+                canvasEl.style.top = '0';
+                canvasEl.width = width;
+                canvasEl.height = height;
+                canvasEl.style.width = `${width}px`;
+                canvasEl.style.height = `${height}px`;
+                canvasEl.id = `${canvasSelector}-${pageIndex}`;
+                canvasEl.style.border = '2px solid #fff';
+                pageEl.appendChild(canvasEl);
+
+                let ctx = canvasEl.getContext('2d');
+                if (!ctx) {
+                    console.error('ctx is null');
+                }
+                else {
+                    ctx.scale(2, 2);
+                    ctx.fillStyle = '#fff';
+                    ctx.font = '40px Times';
+                    ctx.textBaseline = 'top';
+                    for (let i = 0; i < 1; i++) {
+                        ctx.fillText(`${datas[+pageIndex-1].text}`, 0, 60 * i);
                     }
                 }
             }
+        }
+        else {
+            console.log(`${entry.target.id}-消失了`);
+
+            let canvasEl = document.getElementById(`${canvasSelector}-${pageIndex}`);
+            if (canvasEl) {
+                let parentEl = canvasEl.parentElement;
+                parentEl.removeChild(canvasEl);
+            }
+        }
+    }
+
+    let intersectionObeserver = new IntersectionObserver(entries => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+            if (isResetWidth) {
+                resetWidth(entry);
+            }
             else {
-                console.log(`${entry.target.id}-消失了`);
-                let canvas = entry.target as HTMLCanvasElement;
-                if (canvas.width > 0) {
-                    canvas.width = 0;
-                    canvas.height = 0;
-                }
+                removeCanvasEl(entry);
             }
         });
     }, {
-        threshold: [0, 0.5, 1]
+        threshold: [0]
     });
 
-    const clear = () => {
-        // clearn memory
-        let removeCount = 20;
-        for(let j = 0; j < removeCount; j++) {
-            let renderedCanvas = document.getElementById(`${canvasSelector}-${j}`) as HTMLCanvasElement;
-            console.log(renderedCanvas);
-            if (renderedCanvas) {
-                renderedCanvas.parentNode.removeChild(renderedCanvas);
-            }
-        }
-        let removeCanvas = document.getElementById(`${canvasSelector}-${removeCount + 2}`) as HTMLCanvasElement;
-        if (removeCanvas) {
-            let ctx = removeCanvas.getContext('2d');
-            console.log('after remove', ctx);
-        }
-    }
-
-    const clearCanvas = (canvasEl) => {
-        setTimeout(() => {
-            // 修改了宽度已经渲染的内容会被清除
-            canvasEl.width = 300;
-            canvasEl.height = 300;
-            let ctx2 = canvasEl.getContext('2d');
-            let imageData = ctx2.getImageData(0, 0, width, height);
-            console.log('get image data2 = ', imageData);
-        }, 1000);
-    }
-
-    const createCanvas = () => {
+    const createPageCanvas = () => {
         for(let i = 0; i < datas.length; i++) {
             let pageEl = document.createElement('div');
             pageEl.id = `${pageSelector}-${i + 1}`;
@@ -118,69 +135,30 @@ const run = function() {
         }
     }
 
-    const getViewportPages = () => {
-        return [1, 2];
-    };
+    const createPage = () => {
+        for(let i = 0; i < datas.length; i++) {
+            let pageEl = document.createElement('div');
+            pageEl.id = `${pageSelector}-${i + 1}`;
+            pageEl.style.width = `${width}px`;
+            pageEl.style.height = `${height}px`;
+            pageEl.style.border = '2px solid green';
+            pageEl.style.position = 'relative';
+            pageEl.style.margin = '20px';
+            parentEl.appendChild(pageEl);
 
-    const renderCurrentPage = (pageIndexs?: number[]) => {
-        lastRenderedPageIndexs.forEach(pageIndex => {
-            let canvasEl = document.getElementById(`${canvasSelector}-${pageIndex}`) as HTMLCanvasElement;
-            canvasEl.width = width;
-            canvasEl.height = height;
-        });
+            intersectionObeserver.observe(pageEl);
 
-        let pages = pageIndexs?.length ? pageIndexs : getViewportPages();
-        pages.forEach(pageIndex => {
-            let canvasEl = document.getElementById(`${canvasSelector}-${pageIndex}`) as HTMLCanvasElement;
-            canvasEl.width = width;
-            canvasEl.height = height;
-            let ctx = canvasEl.getContext('2d');
-            if (!ctx) {
-                console.error('ctx is null');
-            }
-            else {
-                ctx.scale(2, 2);
-                ctx.fillStyle = '#fff';
-                ctx.font = '60px Times';
-                ctx.fillText(`${datas[pageIndex-1].text}`, 20, 60);
-            }
-
-            // 创建一个 image 元素显示 canvas 的内容，把 canvas 释放
-            // let imageEl = document.createElement('img') as HTMLImageElement;
-            // imageEl.width = canvasEl.width;
-            // imageEl.height = canvasEl.height;
-            // imageEl.style.position = 'absolute';
-            // imageEl.style.left = '0';
-            // imageEl.style.top = '0';
-            // imageEl.style.width = `${width}px`;
-            // imageEl.style.height = `${height}px`;
-            // let pageEl = document.getElementById(`${pageSelector}-${pageIndex}`);
-            // pageEl.appendChild(imageEl);
-
-
-        });
-        lastRenderedPageIndexs = pages;
+            let memoryCost = width * height * 4;
+            totalMemoryCost += memoryCost;
+        }
     }
 
-    const addScrollEvent = () => {
-        window.addEventListener('scroll', (e) => {
-            if (!scrolled) {
-                scrolled = true;
-                console.log('scroll', e);
-                let pageEl = document.getElementById(`${pageSelector}-1`);
-                let rect = pageEl.getBoundingClientRect();
-                console.log('rect = ', rect);
-            }
-            else {
-                setTimeout(() => {
-                    scrolled = false;
-                }, 200);
-            }
-        });
+    if (isResetWidth) {
+        createPageCanvas();
     }
-
-    createCanvas();
-    // renderCurrentPage();
+    else {
+        createPage();
+    }
 
     console.log(`cost total memory ${ totalMemoryCost / 1024 / 1024 } MB`);
 };
