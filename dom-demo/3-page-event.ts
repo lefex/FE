@@ -1,4 +1,9 @@
-const run3 = function () {
+/**
+ * @author 素燕（我有个公众号：素燕）
+ * @description 页面事件
+ */
+
+(function () {
     let rootEl = document.querySelector('.sy-dom-app') as HTMLElement;
     if (!rootEl) {
         return;
@@ -28,5 +33,4 @@ const run3 = function () {
     window.addEventListener('hashchange', e => {
         log('hashchange', e);
     })
-};
-run3();
+}());
