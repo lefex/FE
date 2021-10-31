@@ -1,4 +1,9 @@
-const run = function () {
+/**
+ * @author 素燕（我有个公众号：素燕）
+ * @description 鼠标事件
+ */
+
+(function () {
     let rootEl = document.querySelector('.sy-dom-app') as HTMLElement;
     if (!rootEl) {
         return;
@@ -143,5 +148,4 @@ const run = function () {
         // 阻止鼠标右键
         // e.preventDefault();
     })
-};
-run();
+}());

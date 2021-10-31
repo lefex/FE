@@ -1,4 +1,9 @@
-const run2 = function () {
+/**
+ * @author 素燕（我有个公众号：素燕）
+ * @description 键盘事件
+ */
+
+(function() {
     let rootEl = document.querySelector('.sy-dom-app') as HTMLElement;
     if (!rootEl) {
         return;
@@ -25,5 +30,4 @@ const run2 = function () {
     document.addEventListener('keyup', (e) => {
         log('keyup', e);
     });
-};
-run2();
+}());
