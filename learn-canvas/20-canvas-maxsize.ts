@@ -1,3 +1,8 @@
+/**
+ * @author 素燕（我有个公众号：素燕）
+ * @description 画布最大限制
+ */
+
 (function() {
     // safari 画布有最大的宽度限制
     console.log('begin draw!!');
