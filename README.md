@@ -7,6 +7,7 @@
 #### 网站入口，电子书入口（国内）：https://lefex.gitee.io/
 #### 网站入口，电子书入口（国外）： https://lefex.github.io/
 #### 大厂前端面试真题解析： https://lefex.github.io/bat
+#### 前端解决方案 https://github.com/lefex/FE/wiki
 
 ![官网](https://s1.ax1x.com/2020/10/16/0bz8KS.jpg)
 
