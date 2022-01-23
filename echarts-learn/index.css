@@ -1,0 +1,13 @@
+body {
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.sy-app {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #fff;
+}

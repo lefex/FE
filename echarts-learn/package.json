@@ -1,0 +1,20 @@
+{
+  "name": "dom-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "pm2": "pm2 start node_modules/vite/bin/vite.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "echarts": "^5.3.0-rc.1"
+  }
+}

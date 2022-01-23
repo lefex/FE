@@ -1,0 +1,1 @@
+### 成为echarts committer 心路历程
