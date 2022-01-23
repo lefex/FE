@@ -53,6 +53,7 @@ export function initCanvas(originAxis: SYAxisPos = SYAxisPos.TopLeft): CanvasRen
 
     const createDrawerCanvas = () => {
         let canvas = document.createElement('canvas') as HTMLCanvasElement;
+        canvas.id = 'sy-draw-canvas';
         // 设置画布的宽度
         canvas.width = canvasWidth * dprValue;
         // 设置画布的高度

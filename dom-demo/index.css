@@ -4,8 +4,14 @@ body {
 }
 
 .sy-dom-app {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
     height: 1200px;
     overflow: scroll;
     background-color: #fff;
+}
+
+.sy-select-wrap {
+    background-color: #f5f5f5;
 }

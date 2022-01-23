@@ -151,7 +151,15 @@ function syRunDemo() {
          * | 0  1  0 |
          * | 0  0  1 |
          *
-         * 缩放后的矩阵
+         * 旋转后的矩阵
+         * | cosθ  -sinθ  0 |
+         * | sinθ   cosθ  0 |
+         * |  0       0   1 |
+         *
+         * x' = cos45*x + -sin45*y + 0 = cos45*x - sin45*y
+         * y' = sin45*x + cos45*y + 0 = sin45*x + cos45*y
+         *
+         * 沿X轴旋转后的矩阵
          * | cosθ  -sinθ  0 |
          * | sinθ   cosθ  0 |
          * |  0       0   1 |

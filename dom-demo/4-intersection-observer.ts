@@ -6,7 +6,7 @@
 (function() {
     const width = 1000;
     const height = 600;
-    const count = 20;-
+    const count = 20;
     const pageSelector = 'sypage';
     const rootSelector = 'syroot';
     const datas = [];
