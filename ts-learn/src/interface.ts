@@ -60,7 +60,7 @@ class Dog implements AnimalInterface {
 // 接口继承
 interface ShapeInterface {
     width: number;
-    height: number;
+    height: number | 'auto';
 }
 
 interface CircleInteface extends ShapeInterface {
@@ -189,4 +189,14 @@ const bgColor: SyBgColor = {
     width: 100,
     height: 20,
     color: '#eee'
+}
+
+// 定义一个函数
+interface Handler {
+    // 定义函数
+    (name: string): void;
+}
+// 函数参数可以是一个函数
+const run = function play(handler: Handler) {
+    handler('go to work');
 }

@@ -56,6 +56,7 @@
         console.log('selection:', selection);
     });
 
+    // 输入时，内容还未插入文本框中
     document.addEventListener('compositionstart', e => {
 
     });

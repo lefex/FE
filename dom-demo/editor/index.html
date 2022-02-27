@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./editor.css">
+    <title>编辑器</title>
+</head>
+
+<body>
+    <div class="toolbar-container">
+        <span data-command="bold">B</span>
+    </div>
+    <div class="editor-container" contenteditable="true">
+        <h1>编辑器实现原理</h1>
+        <p>使用 <span class="code">contenteditable</span> 实现编辑器，这里面的内容都可以编辑。编辑器需要包含：</p>
+        <ol class="container">
+            <li>加粗</li>
+            <li>斜体</li>
+            <li>撤销</li>
+            <li>恢复</li>
+            <li>格式刷</li>
+            <li>清除格式</li>
+            <li>字体</li>
+            <li>下划线</li>
+            <li>字体颜色</li>
+            <li>填充颜色</li>
+            <li>对齐</li>
+            <li>首行缩进</li>
+            <li>行间距</li>
+            <li>字符间距</li>
+            <li>引用</li>
+            <li>分割线</li>
+            <li>表格</li>
+            <li>代码</li>
+            <li>表情</li>
+        </ol>
+        <h3>1.表格编辑</h3>
+        <!-- 表格嵌套表格 -->
+        <div class="table-container" contenteditable="true">
+            <table>
+                <caption>素燕的个人简介</caption>
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>公司</th>
+                        <th>职位</th>
+                        <th>爱好</th>
+                        <th>备注</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>素燕</td>
+                    <td>百度</td>
+                    <td>
+                        <!-- 嵌套的表格 -->
+                        <table id="table2">
+                            <tr>
+                                <td>前端</td>
+                                <td>iOS</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">行胜于言，愿意做有挑战的事情</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <p>写作</p>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>公众号素燕作者</li>
+                            <li>《前端小课》作者</li>
+                            <li>大前端工程师</li>
+                            <li>对技术充满热情</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- 列表 -->
+        <h3>2.列表</h3>
+        <h5>目前都有哪些知名的编辑器：</h5>
+        <ul>
+            <li>quill</li>
+            <li>slate</li>
+        </ul>
+        <h5>编辑器实现的等级划分：</h5>
+        <ol>
+            <li>L0: 依托于<span class="code">contenteditable</span>与<span class="code">document.excCommend()</span>
+            ，无需专门的编辑器团队，可扩展性差</li>
+            <li>L1: 依托于<span class="code">contenteditable</span></li>
+            <li>L2: 完全自己实现</li>
+        </ol>
+
+        <h3>3.图片</h3>
+        <p>试一试删除图片</p>
+        <img src="./avatar.jpg" width="120px"/>
+
+        <h3>4.链接</h3>
+        <p>发现没有下面的链接点不了</p>
+        <a href="https://github.com/lefex/FE">素燕的GitHub</a>
+
+        <h3>5.分割线</h3>
+        <p>我是一个分割线</p>
+        <hr>
+    </div>
+
+    <script src="./toolbar.ts" type="module"></script>
+</body>
+
+</html>

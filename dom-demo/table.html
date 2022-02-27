@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .table-container {
+            background-color: #f5f5f5;
+            width: 800px;
+            overflow: auto;
+            margin: 20px auto;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+        }
+
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 20px;
+        }
+
+        /* th {
+            background-color: rgb(235, 235, 235);
+        } */
+
+        td {
+            text-align: center;
+        }
+
+        /* tr:nth-child(even) td {
+            background-color: rgb(250, 250, 250);
+        }
+
+        tr:nth-child(odd) td {
+            background-color: rgb(245, 245, 245);
+        } */
+
+        caption {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics">MDN Guide</a>
+    <div class="table-container" contenteditable="true">
+        <table>
+            <!-- 描述表格的作用 -->
+            <caption>素燕学习表格编辑</caption>
+            <!-- 给列添加通用属性 -->
+            <colgroup>
+                <col style="width: 140px;background-color: yellow;">
+                <!-- span表示占居几列 -->
+                <col style="width: 80px;background-color: antiquewhite;" span="4">
+            </colgroup>
+            <!-- 表头 -->
+            <thead>
+                <th>表头1</th>
+                <th>表头2</th>
+                <th>表头3</th>
+                <th>表头4</th>
+                <th>表头5</th>
+            </thead>
+            <!-- 表尾 -->
+            <tfoot>
+                <tr>
+                    <td colspan="5">素燕2022年创建</td>
+                </tr>
+            </tfoot>
+            <!-- 表体 -->
+            <tbody>
+                <tr>
+                    <td>1-1</td>
+                    <td>1-2</td>
+                    <td>1-3</td>
+                    <td>1-4</td>
+                    <td>1-5</td>
+                </tr>
+                <tr>
+                    <td>2-1</td>
+                    <!-- 分成3个单元格 -->
+                    <td colspan="3">2-2\2-3\2-4</td>
+                    <td>2-5</td>
+                </tr>
+                <tr>
+                    <td>3-1</td>
+                    <td>3-2</td>
+                    <!-- 单元格占2行 -->
+                    <td rowspan="2">3-3/4-3</td>
+                    <td>3-4</td>
+                    <td>3-5</td>
+                </tr>
+                <tr>
+                    <!-- 上一行占了两行，这个只能放下4个单元格 -->
+                    <td>4-1</td>
+                    <td>4-2</td>
+                    <td>4-4</td>
+                    <td>4-5</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="table-container" contenteditable="true">
+        <table>
+            <tr>
+                <th colspan="2">Animals</th>
+            </tr>
+            <tr>
+                <th colspan="2">Hippopotamus</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Horse</th>
+                <td>Mare</td>
+            </tr>
+            <tr>
+                <td>Stallion</td>
+            </tr>
+            <tr>
+                <th colspan="2">Crocodile</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Chicken</th>
+                <td>Hen</td>
+            </tr>
+            <tr>
+                <td>Rooster</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 表格嵌套表格 -->
+    <div class="table-container" contenteditable="true">
+        <table>
+            <tr>
+              <th>姓名</th>
+              <th>素燕</th>
+            </tr>
+            <tr>
+              <td>公司</td>
+              <td>百度</td>
+            </tr>
+            <tr>
+              <td>职位</td>
+              <td>
+                <table id="table2">
+                    <tr>
+                      <td>前端</td>
+                      <td>iOS</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行胜于言，愿意做有挑战的事情</td>
+                    </tr>
+                  </table>
+              </td>
+            </tr>
+          </table>
+    </div>
+</body>
+
+</html>

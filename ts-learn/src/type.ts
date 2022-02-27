@@ -15,3 +15,12 @@ interface MyArray<Type> {
     pop(): Type | undefined;
     push(...items: Type[]): number;
 }
+
+type _ReaderOptions = {
+    rootId: string;
+    width?: number;
+}
+// 重命名一个 type
+type ReaderOptions = _ReaderOptions;
+
+type EventName = 'on' | 'off';

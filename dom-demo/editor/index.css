@@ -1,0 +1,33 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.editor-container {
+    background-color: #fff;
+    width: 800px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid blue;
+    margin-top: 44px;
+}
+
+.toolbar-container {
+    position: fixed;
+    top: 0;
+    height: 40px;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.toolbar-container span {
+    display: inline-block;
+    margin: 10px 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.code {
+    background-color: #f5f5f5;
+}

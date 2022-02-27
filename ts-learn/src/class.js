@@ -3,11 +3,10 @@
  * @author 公众号素燕
  * @description class使用
  */
-
 class Animal {
-    private _fullname: string = '';
-    name: string
-    constructor(name: string) {
+    _fullname = '';
+    name;
+    constructor(name) {
         this.name = name;
     }
     welcome() {
@@ -16,26 +15,17 @@ class Animal {
     run() {
         console.log(`${this.name} running`);
     }
-    // get fullname() {
-    //     console.log('begin get _fullname');
-    //     return this._fullname;
-    // }
-    // set fullname(value: string) {
-    //     console.log('begin set _fullname');
-    //     this._fullname = value;
-    // }
 }
-
 class Cattle extends Animal {
     // 静态变量，类拥有的变量
-    static from: string = 'BaoTou'
+    static from = 'BaoTou';
     // 只读属性必须在声明时或构造函数里被初始化
-    readonly age: number = 0;
+    age = 0;
     // 私有属性，只能在类的内部使用
-    private isOld() {
+    isOld() {
         return this.age > 10;
     }
-    constructor(name: string) {
+    constructor(name) {
         super(name);
         this.age = 0;
     }
@@ -43,53 +33,36 @@ class Cattle extends Animal {
         console.log('汪汪');
     }
 }
-
 // 抽象类
 // 抽象类不会被直接实例化，用来描述一个类该有哪些方法、属性等
-abstract class DownloadAbstract {
-    url: string;
-    constructor(url: string) {
+class DownloadAbstract {
+    url;
+    constructor(url) {
         this.url = url;
     }
-    // 抽象方法必须在派生类中实现
-    abstract startDownload(): void;
-    stopDonwload(): void {
+    stopDonwload() {
     }
 }
-
 class Download extends DownloadAbstract {
-    constructor(url: string) {
+    constructor(url) {
         super(url);
     }
     startDownload() {
         console.log('start downloading');
     }
 }
-
-// 真的不太懂，这是啥意思
-export type WithThisType<Func extends (...args: any) => any, This> =
-    (this: This, ...args: Parameters<Func>) => ReturnType<Func>;
-
 const CHART_NAME = '__chat';
-
-interface InitBasicOption {
-    root: string;
-    width: number;
-    cb?: WithThisType<any, any>;
-}
-
 class SCharts {
-    private [CHART_NAME]: string;
-
+    [CHART_NAME];
     constructor() {
         this[CHART_NAME] = 'suyan';
     }
-
     // setOption<Opt extends InitBasicOption>(option: Opt): void;
     // setOption<Opt extends InitBasicOption>(option: Opt, foceUpdate: boolean): void;
-    setOption<Opt extends InitBasicOption>(option: Opt, foceUpdate: boolean, eventNum: number): void {
+    setOption(option, foceUpdate, eventNum) {
         if (option.width === 0) {
             option.width = 100;
         }
     }
 }
+export {};
