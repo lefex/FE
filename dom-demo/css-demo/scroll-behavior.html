@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .label {
+            width: 100px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .box {
+            height: 400px;
+            border: 1px solid #ccc;
+            scroll-behavior: smooth;
+            overflow: scroll;
+        }
+
+        .content {
+            height: 100%;
+            padding: 0 20px;
+            position: relative;
+            overflow: hidden;
+            border: 1px dashed red;
+            margin-bottom: 10px;
+        }
+
+        .box input {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 1px;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+        }
+
+        .tab {
+            top: 0;
+            height: 44px;
+            z-index: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>scroll-behavior 让滚动更顺滑</h1>
+
+    <div class="tab">
+        <label class="label" for="tab1">选项卡1</label>
+        <label class="label" for="tab2">选项卡2</label>
+        <label class="label" for="tab3">选项卡3</label>
+    </div>
+    <div class="box">
+        <div class="content"><input id="tab1">
+            <p>我是选项卡1对应的美女</p>
+            <img width="400px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp8.itc.cn%2Fq_70%2Fimages03%2F20211022%2Ffef6add8bb094096a9ea018b748d6ad3.jpeg&refer=http%3A%2F%2Fp8.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649665365&t=0f65427acd6f0654db97cce8091a3ac6" />
+        </div>
+        <div class="content"><input id="tab2">
+            <p>我是选项卡2对应的美女</p>
+            <img width="400px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp9.itc.cn%2Fimages01%2F20210416%2F13e77aba35344bda82c743e7b2685989.jpeg&refer=http%3A%2F%2Fp9.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649665365&t=62d67e1fdf4804fe2e8f3370edf069d5" />
+        </div>
+        <div class="content"><input id="tab3">
+            <p>我是选项卡3对应的美女</p>
+            <img width="400px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201708%2F17%2F20170817095030_eHzcC.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649665466&t=685e749a67954982e31260c5bf6393f0" />
+        </div>
+    </div>
+</body>
+
+</html>

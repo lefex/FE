@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>滚动到指定元素</title>
+    <style>
+        .tab-box {
+            top: 0;
+            height: 44px;
+            z-index: 100;
+            margin: 0 auto;
+            width: 240px;
+        }
+
+        .label {
+            width: 100px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #eee;
+            text-align: center;
+        }
+
+        .content-wrap {
+            display: flex;
+            height: 500px;
+            width: 300px;
+            scroll-behavior: smooth;
+            overflow: hidden;
+            border: 1px solid #222;
+            margin: 0 auto;
+        }
+
+        .content-wrap .content {
+            display: inline-block;
+            box-sizing: border-box;
+            position: relative;
+            border: 1px dashed red;
+        }
+
+        .content input {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 10px;
+            width: 1px;
+            border: 0;
+            padding: 0;
+            clip: rect(0 0 0 0);
+        }
+
+        h4 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>利用input滚动到指定位置</h2>
+    <div class="tab-box">
+        <label class="label" for="num1">一</label>
+        <label class="label" for="num2">二</label>
+        <label class="label" for="num3">三</label>
+        <label class="label" for="num4">四</label>
+        <label class="label" for="num5">五</label>
+        <label class="label" for="num6">六</label>
+    </div>
+    <div class="content-wrap">
+        <div class="content"><input id="num1"/>
+            <h4>第1位置美女</h4>
+            <img width="300px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp8.itc.cn%2Fq_70%2Fimages03%2F20211022%2Ffef6add8bb094096a9ea018b748d6ad3.jpeg&refer=http%3A%2F%2Fp8.itc.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649665365&t=0f65427acd6f0654db97cce8091a3ac6" />
+        </div>
+        <div class="content"><input id="num2"/>
+            <h4>第2位置美女</h4>
+            <img width="300px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.jj20.com%2Fup%2Fallimg%2Fmx06%2F0QGQ32247%2F1PQG32247-7.jpg&refer=http%3A%2F%2Fpic.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649667185&t=c5ac31646afc3869462ed5521cf82bc3" />
+        </div>
+        <div class="content"><input id="num3"/>
+            <h4>第3位置美女</h4>
+            <img width="300px" src="https://img1.baidu.com/it/u=3270085785,2483184290&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=745" />
+        </div>
+        <div class="content"><input id="num4"/>
+            <h4>第4位置美女</h4>
+            <img width="300px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fdingyue.nosdn.127.net%2FS6gPn5o1q7jyAQ9axBmEb7HLqjLu5v7h8tW7pL%3D8m2sC21539696175328compressflag.jpg&refer=http%3A%2F%2Fdingyue.nosdn.127.net&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649667363&t=0197cde8dc7f89ba0c8d7fa5aec09beb" />
+        </div>
+        <div class="content"><input id="num5"/>
+            <h4>第5位置美女</h4>
+            <img width="300px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fp2.cri.cn%2FM00%2F60%2F3B%2FCqgNOleGyGuAawciAAAAAAAAAAA083.950x1425.jpg&refer=http%3A%2F%2Fp2.cri.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649667363&t=f3c30b231f685c50391da8f8e10ca792" />
+        </div>
+        <div class="content"><input id="num6"/>
+            <h4>第6位置美女</h4>
+            <img width="300px" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fc-ssl.duitang.com%2Fuploads%2Fitem%2F201506%2F06%2F20150606143711_ZaxRk.thumb.1000_0.jpeg&refer=http%3A%2F%2Fc-ssl.duitang.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1649667363&t=82505d94739ca58a26b40f279394a6d8" />
+        </div>
+    </div>
+</body>
+</html>
