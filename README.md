@@ -8,7 +8,7 @@
 #### 网站入口，电子书入口（国外）： https://lefex.github.io/
 #### 大厂前端面试真题解析： https://lefex.github.io/bat
 
-## [前端专题](https://github.com/lefex/FE/wiki/topic)
+## [前端专题](https://github.com/lefex/FE/wiki)
 
 汇集了前端各种解决方案，比如编辑器、在线编辑、工程化、性能优化、浏览器插件、Javascript、DOM、Canvas宝贝、SVG等等，持续更新！！！
 
