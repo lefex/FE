@@ -7,7 +7,6 @@
 #### 网站入口，电子书入口（国内）：https://lefex.gitee.io/
 #### 网站入口，电子书入口（国外）： https://lefex.github.io/
 #### 大厂前端面试真题解析： https://lefex.github.io/bat
-#### 前端解决方案 https://github.com/lefex/FE/wiki
 
 ![官网](https://s1.ax1x.com/2020/10/16/0bz8KS.jpg)
 
@@ -20,13 +19,17 @@
 - [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
-### 微信公众号，内容同步
+## 前端专题
+
+汇集了前端各种解决方案，比如编辑器、在线编辑、工程化、性能优化、浏览器插件、Javascript、DOM、Canvas宝贝、SVG等等，持续更新！！！
+
+[🐶前往查看](https://github.com/lefex/FE/wiki)
+
+## 微信公众号，内容同步
 
 关注公众号：素燕
 
 ![公众号：素燕](https://upload-images.jianshu.io/upload_images/1664496-38caaf22bb2dfda1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
-![公众号预览](https://upload-images.jianshu.io/upload_images/1664496-9e04dfdec37ceec1.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 强烈推荐
 
