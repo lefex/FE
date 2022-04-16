@@ -8,10 +8,6 @@
 #### 网站入口，电子书入口（国外）： https://lefex.github.io/
 #### 大厂前端面试真题解析： https://lefex.github.io/bat
 
-## [前端专题](https://github.com/lefex/FE/wiki)
-
-汇集了前端各种解决方案，比如编辑器、在线编辑、工程化、性能优化、浏览器插件、Javascript、DOM、Canvas宝贝、SVG等等，持续更新！！！
-
 ![官网](https://s1.ax1x.com/2020/10/16/0bz8KS.jpg)
 
 前端小课，一本帮助你学习前端的多媒体电子书。每天一小课，分阶段、系统地学习前端知识。如果你有编程基础，这个课程非常适合你。
@@ -23,7 +19,13 @@
 - [2020年我对大前端的认知](https://mp.weixin.qq.com/s/7v-f9ZbxsehiIGX3l0uO-A)
 - [demo 合集](https://github.com/lefex/FE/tree/master/%E7%AC%AC%E4%B8%80%E9%98%B6%E6%AE%B5/code)
 
-### 微信公众号，内容同步
+## 前端专题
+
+汇集了前端各种解决方案，比如编辑器、在线编辑、工程化、性能优化、浏览器插件、Javascript、DOM、Canvas宝贝、SVG等等，持续更新！！！
+
+[🐶前往查看](https://github.com/lefex/FE/wiki)
+
+## 微信公众号，内容同步
 
 关注公众号：素燕
 
