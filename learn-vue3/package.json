@@ -1,0 +1,23 @@
+{
+  "name": "ios-and-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "eslint": "^8.1.0",
+    "typescript": "^4.4.4",
+    "vite": "^2.6.4"
+  }
+}

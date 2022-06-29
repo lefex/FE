@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autotrack</title>
+    <script src="./track.js"></script>
+</head>
+<body>
+    <h1>自动收集数据</h1>
+    <button>点我呀</button>
+
+    <script>
+        let track = __tea_iife_export__.default;
+        track.init({
+            beat: true,
+            change: false,
+            click: true,
+            hashTag: false,
+            impr: false,
+            mode: "proxy-capturing",
+            pv: true,
+            submit: false
+        });
+    </script>
+</body>
+</html>
