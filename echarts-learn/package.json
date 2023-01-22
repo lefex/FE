@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "vite": "^2.4.4"
+    "vite": "^2.9.13"
   },
   "dependencies": {
     "echarts": "^5.3.0-rc.1"
