@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "player": ["packages/audioPlayer/src/player/index"],
+      // 重命名路径解析
+      "@player/*": ["packages/audioPlayer/src/*"],
+      "@course/*": ["packages/course/src/*"]
+    },
+    // 指定项目的根目录
+    "rootDir": ".",
+    // 解析模块的方式
+    "moduleResolution": "node",
+    // 最终打包后支持类型
+    "target": "es2016",
+    // 打包结果输出的文件夹
+    "outDir": "dist",
+    // 打包输出模块格式
+    "module": "es6",
+    // true 只编译不输出
+    "noEmit": false,
+    "strict": false,
+    // 指定内置的库，比如dom相关的API
+    // "lib": [],
+    // 打包结果输出为单个文件
+    // "outFile": "dist/player.js",
+    // 只有这里面的类型才会对全局起作用，下面的jquery会对全局有作用
+    // "types": [
+    //   "jquery",
+    //   "babel"
+    // ],
+    "experimentalDecorators": true,
+    "declaration": true,
+  },
+  // "files": []
+  "include": [
+    "packages/*/src",
+  ]
+}
